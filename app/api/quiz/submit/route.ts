@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
     const { data: { session } } = await supabase.auth.getSession()
 
     let body = {}
-    let validatedData = {}
+    let validatedData: z.infer<typeof quizSubmissionSchema>
     
     try {
       body = await request.json()
@@ -124,7 +124,7 @@ export async function POST(request: NextRequest) {
               quizType: validatedData.quizType,
               primaryCareer: careerRecommendations.primaryCareer.title,
               matchScore: careerRecommendations.primaryCareer.match,
-              alternativeCareers: careerRecommendations.alternativeCareers.map(c => c.title)
+              alternativeCareers: careerRecommendations.alternativeCareers.map((c: any) => c.title)
             }
           })
 

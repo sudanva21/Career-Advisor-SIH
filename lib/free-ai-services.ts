@@ -966,6 +966,7 @@ Return ONLY valid JSON, no additional text or markdown.`
     missingSkills: string[]
     recommendations: string[]
     improvementAreas: string[]
+    coverLetterSuggestions: string[]
   }> {
     const prompt = `Compare this resume against the job description and provide a detailed match analysis:
 
@@ -981,7 +982,8 @@ Analyze the match and return JSON in this format:
   "matchingSkills": ["skills from resume that match job"],
   "missingSkills": ["required skills not found in resume"],
   "recommendations": ["specific recommendations to improve match"],
-  "improvementAreas": ["areas to focus development on"]
+  "improvementAreas": ["areas to focus development on"],
+  "coverLetterSuggestions": ["suggestions for cover letter content"]
 }
 
 Return ONLY valid JSON, no additional text.`
@@ -996,7 +998,8 @@ Return ONLY valid JSON, no additional text.`
         matchingSkills: ["General experience", "Communication skills"],
         missingSkills: ["Specific technical requirements"],
         recommendations: ["Highlight relevant experience", "Learn missing technical skills"],
-        improvementAreas: ["Technical skills", "Industry experience"]
+        improvementAreas: ["Technical skills", "Industry experience"],
+        coverLetterSuggestions: ["Emphasize your relevant experience", "Show enthusiasm for the role", "Address any skill gaps with learning plans"]
       }
     }
   }

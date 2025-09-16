@@ -1,12 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
-import { getValidatedConfig } from '@/lib/env-validation'
-import { GoogleGenerativeAI } from '@google/generative-ai'
+import { FreeAIService } from '@/lib/free-ai-services'
 
 export async function POST(request: NextRequest) {
   try {
-    const config = getValidatedConfig()
     const supabase = createRouteHandlerClient({ cookies })
     const { data: { session } } = await supabase.auth.getSession()
 
@@ -16,9 +14,8 @@ export async function POST(request: NextRequest) {
 
     const { preferences } = await request.json()
 
-    // Initialize Gemini
-    const genAI = new GoogleGenerativeAI(config.GOOGLE_API_KEY)
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" })
+    // Initialize Free AI Service
+    const aiService = FreeAIService.getInstance()
 
     // Generate personalized quiz questions
     const prompt = `Generate a personalized career assessment quiz with 8-10 questions based on these preferences:
@@ -54,9 +51,8 @@ Requirements:
 
 Return ONLY valid JSON, no additional text.`
 
-    const result = await model.generateContent(prompt)
-    const response = result.response
-    const text = response.text()
+    const result = await aiService.generateResponse(prompt, { maxTokens: 2000 })
+    const text = result.content
     
     let questionsData
     try {
