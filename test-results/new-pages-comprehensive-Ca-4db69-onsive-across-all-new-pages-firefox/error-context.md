@@ -1,0 +1,427 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link "CA Career Advisor" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e7] [cursor=pointer]: CA
+          - generic [ref=e8] [cursor=pointer]: Career Advisor
+        - button [ref=e10] [cursor=pointer]:
+          - img [ref=e11] [cursor=pointer]
+      - generic [ref=e15]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+        - link "Colleges" [ref=e17] [cursor=pointer]:
+          - /url: /colleges
+        - button "Features" [ref=e19] [cursor=pointer]:
+          - generic [ref=e20] [cursor=pointer]: Features
+          - img [ref=e21] [cursor=pointer]
+        - button "Language - English" [ref=e25] [cursor=pointer]:
+          - img [ref=e26] [cursor=pointer]
+          - img [ref=e33] [cursor=pointer]
+  - main [ref=e37]:
+    - generic [ref=e38]:
+      - generic [ref=e43]:
+        - generic [ref=e45]:
+          - img [ref=e46]
+          - generic [ref=e49]: Career Blog
+        - heading "Career Blog" [level=1] [ref=e50]:
+          - generic [ref=e51]: Career Blog
+        - paragraph [ref=e52]: Stay ahead in your career with insights from industry experts, success stories, and practical advice to navigate your professional journey.
+        - generic [ref=e54]:
+          - img [ref=e55]
+          - textbox "Search articles, topics, and insights..." [ref=e58]
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - img [ref=e63]
+          - generic [ref=e66]: 500+
+          - generic [ref=e67]: Blog Posts
+        - generic [ref=e68]:
+          - img [ref=e69]
+          - generic [ref=e72]: 2M+
+          - generic [ref=e73]: Monthly Readers
+        - generic [ref=e74]:
+          - img [ref=e75]
+          - generic [ref=e77]: 15K+
+          - generic [ref=e78]: Comments
+        - generic [ref=e79]:
+          - img [ref=e80]
+          - generic [ref=e82]: 4.9★
+          - generic [ref=e83]: Reader Rating
+      - generic [ref=e85]:
+        - heading "Trending Topics" [level=2] [ref=e87]:
+          - text: Trending
+          - generic [ref=e88]: Topics
+        - generic [ref=e89]:
+          - generic [ref=e90] [cursor=pointer]:
+            - generic [ref=e91] [cursor=pointer]: AI Careers
+            - generic [ref=e92] [cursor=pointer]: (45)
+          - generic [ref=e93] [cursor=pointer]:
+            - generic [ref=e94] [cursor=pointer]: Remote Work
+            - generic [ref=e95] [cursor=pointer]: (38)
+          - generic [ref=e96] [cursor=pointer]:
+            - generic [ref=e97] [cursor=pointer]: Resume Tips
+            - generic [ref=e98] [cursor=pointer]: (52)
+          - generic [ref=e99] [cursor=pointer]:
+            - generic [ref=e100] [cursor=pointer]: Interview Prep
+            - generic [ref=e101] [cursor=pointer]: (41)
+          - generic [ref=e102] [cursor=pointer]:
+            - generic [ref=e103] [cursor=pointer]: Career Change
+            - generic [ref=e104] [cursor=pointer]: (29)
+          - generic [ref=e105] [cursor=pointer]:
+            - generic [ref=e106] [cursor=pointer]: Skill Development
+            - generic [ref=e107] [cursor=pointer]: (33)
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - img [ref=e111]
+            - generic [ref=e113]: "Filter by Category:"
+          - combobox [ref=e115]:
+            - option "All" [selected]
+            - option "Career Tips"
+            - option "Industry Insights"
+            - option "Success Stories"
+            - option "Technology"
+            - option "Education"
+            - option "Workplace"
+          - generic [ref=e116]: 6 articles
+      - generic [ref=e118]:
+        - heading "Featured Articles" [level=2] [ref=e120]:
+          - text: Featured
+          - generic [ref=e121]: Articles
+        - generic [ref=e122]:
+          - article [ref=e123]:
+            - generic [ref=e126]: Featured
+            - img [ref=e128]
+            - generic [ref=e131]:
+              - generic [ref=e132]:
+                - generic [ref=e133]: Technology
+                - generic [ref=e134]:
+                  - img [ref=e135]
+                  - generic [ref=e140]: 1/20/2024
+              - 'heading "The Future of AI Careers: What Students Need to Know in 2024" [level=3] [ref=e141]'
+              - paragraph [ref=e142]: Artificial Intelligence is reshaping the job market. Discover the hottest AI careers, required skills, and how to prepare for the future of work in this comprehensive guide.
+              - generic [ref=e143]:
+                - generic [ref=e144]:
+                  - img [ref=e145]
+                  - generic [ref=e148]: Sudanva
+                - generic [ref=e149]:
+                  - img [ref=e150]
+                  - generic [ref=e153]: 8 min read
+              - generic [ref=e155]:
+                - generic [ref=e156]:
+                  - img [ref=e157]
+                  - generic [ref=e160]: 15,420
+                - generic [ref=e161]:
+                  - img [ref=e162]
+                  - generic [ref=e164]: "342"
+                - generic [ref=e165]:
+                  - img [ref=e166]
+                  - generic [ref=e168]: "89"
+              - button "Read Article" [ref=e169] [cursor=pointer]:
+                - generic [ref=e170] [cursor=pointer]: Read Article
+                - img [ref=e171] [cursor=pointer]
+          - article [ref=e174]:
+            - generic [ref=e177]: Featured
+            - img [ref=e179]
+            - generic [ref=e182]:
+              - generic [ref=e183]:
+                - generic [ref=e184]: Career Tips
+                - generic [ref=e185]:
+                  - img [ref=e186]
+                  - generic [ref=e191]: 1/18/2024
+              - heading "10 Resume Mistakes That Cost You Job Interviews" [level=3] [ref=e192]
+              - paragraph [ref=e193]: Avoid these common resume pitfalls that prevent you from getting interview calls. Learn what recruiters really look for and how to make your resume stand out.
+              - generic [ref=e194]:
+                - generic [ref=e195]:
+                  - img [ref=e196]
+                  - generic [ref=e199]: Career Expert Team
+                - generic [ref=e200]:
+                  - img [ref=e201]
+                  - generic [ref=e204]: 6 min read
+              - generic [ref=e206]:
+                - generic [ref=e207]:
+                  - img [ref=e208]
+                  - generic [ref=e211]: 23,150
+                - generic [ref=e212]:
+                  - img [ref=e213]
+                  - generic [ref=e215]: "567"
+                - generic [ref=e216]:
+                  - img [ref=e217]
+                  - generic [ref=e219]: "123"
+              - button "Read Article" [ref=e220] [cursor=pointer]:
+                - generic [ref=e221] [cursor=pointer]: Read Article
+                - img [ref=e222] [cursor=pointer]
+          - article [ref=e225]:
+            - generic [ref=e228]: Featured
+            - img [ref=e230]
+            - generic [ref=e233]:
+              - generic [ref=e234]:
+                - generic [ref=e235]: Success Stories
+                - generic [ref=e236]:
+                  - img [ref=e237]
+                  - generic [ref=e242]: 1/15/2024
+              - 'heading "From Dropout to Tech CEO: Sarah''s Inspiring Journey" [level=3] [ref=e243]'
+              - paragraph [ref=e244]: How Sarah Chen overcame early setbacks to build a successful tech company. A story of resilience, learning, and career transformation.
+              - generic [ref=e245]:
+                - generic [ref=e246]:
+                  - img [ref=e247]
+                  - generic [ref=e250]: CareerGuide Stories
+                - generic [ref=e251]:
+                  - img [ref=e252]
+                  - generic [ref=e255]: 12 min read
+              - generic [ref=e257]:
+                - generic [ref=e258]:
+                  - img [ref=e259]
+                  - generic [ref=e262]: 8,940
+                - generic [ref=e263]:
+                  - img [ref=e264]
+                  - generic [ref=e266]: "234"
+                - generic [ref=e267]:
+                  - img [ref=e268]
+                  - generic [ref=e270]: "67"
+              - button "Read Article" [ref=e271] [cursor=pointer]:
+                - generic [ref=e272] [cursor=pointer]: Read Article
+                - img [ref=e273] [cursor=pointer]
+      - generic [ref=e277]:
+        - heading "Latest Articles" [level=2] [ref=e279]:
+          - text: Latest
+          - generic [ref=e280]: Articles
+        - generic [ref=e281]:
+          - article [ref=e282]:
+            - generic [ref=e283]:
+              - img [ref=e286]
+              - generic [ref=e289]:
+                - generic [ref=e290]:
+                  - generic [ref=e291]: Workplace
+                  - generic [ref=e292]:
+                    - img [ref=e293]
+                    - generic [ref=e298]: 1/12/2024
+                  - generic [ref=e299]:
+                    - img [ref=e300]
+                    - generic [ref=e303]: 10 min read
+                - 'heading "Remote Work Revolution: Building Your Home Office Career" [level=3] [ref=e304]'
+                - paragraph [ref=e305]: Master the art of remote work with proven strategies for productivity, communication, and career advancement in virtual environments.
+                - generic [ref=e306]:
+                  - generic [ref=e307]: "#Remote Work"
+                  - generic [ref=e308]: "#Productivity"
+                  - generic [ref=e309]: "#Work From Home"
+                  - generic [ref=e310]: "#Career Growth"
+                - generic [ref=e311]:
+                  - generic [ref=e312]:
+                    - generic [ref=e313]:
+                      - img [ref=e314]
+                      - generic [ref=e317]: Remote Work Specialist
+                    - generic [ref=e318]:
+                      - img [ref=e319]
+                      - generic [ref=e322]: 12,760
+                    - generic [ref=e323]:
+                      - img [ref=e324]
+                      - generic [ref=e326]: "398"
+                    - generic [ref=e327]:
+                      - img [ref=e328]
+                      - generic [ref=e330]: "145"
+                  - button "Read More" [ref=e331] [cursor=pointer]:
+                    - generic [ref=e332] [cursor=pointer]: Read More
+                    - img [ref=e333] [cursor=pointer]
+          - article [ref=e336]:
+            - generic [ref=e337]:
+              - img [ref=e340]
+              - generic [ref=e343]:
+                - generic [ref=e344]:
+                  - generic [ref=e345]: Industry Insights
+                  - generic [ref=e346]:
+                    - img [ref=e347]
+                    - generic [ref=e352]: 1/10/2024
+                  - generic [ref=e353]:
+                    - img [ref=e354]
+                    - generic [ref=e357]: 7 min read
+                - 'heading "Healthcare Careers Post-Pandemic: New Opportunities" [level=3] [ref=e358]'
+                - paragraph [ref=e359]: Explore emerging healthcare careers and how the pandemic has created new opportunities in medical technology, telemedicine, and public health.
+                - generic [ref=e360]:
+                  - generic [ref=e361]: "#Healthcare"
+                  - generic [ref=e362]: "#Medical Careers"
+                  - generic [ref=e363]: "#Pandemic Impact"
+                  - generic [ref=e364]: "#Growth Industries"
+                - generic [ref=e365]:
+                  - generic [ref=e366]:
+                    - generic [ref=e367]:
+                      - img [ref=e368]
+                      - generic [ref=e371]: Dr. Medical Expert
+                    - generic [ref=e372]:
+                      - img [ref=e373]
+                      - generic [ref=e376]: 9,340
+                    - generic [ref=e377]:
+                      - img [ref=e378]
+                      - generic [ref=e380]: "187"
+                    - generic [ref=e381]:
+                      - img [ref=e382]
+                      - generic [ref=e384]: "56"
+                  - button "Read More" [ref=e385] [cursor=pointer]:
+                    - generic [ref=e386] [cursor=pointer]: Read More
+                    - img [ref=e387] [cursor=pointer]
+          - article [ref=e390]:
+            - generic [ref=e391]:
+              - img [ref=e394]
+              - generic [ref=e397]:
+                - generic [ref=e398]:
+                  - generic [ref=e399]: Education
+                  - generic [ref=e400]:
+                    - img [ref=e401]
+                    - generic [ref=e406]: 1/8/2024
+                  - generic [ref=e407]:
+                    - img [ref=e408]
+                    - generic [ref=e411]: 9 min read
+                - 'heading "Skill-Based Hiring: Why Degrees Matter Less Than Before" [level=3] [ref=e412]'
+                - paragraph [ref=e413]: Companies are shifting focus from degrees to demonstrable skills. Learn how to showcase your abilities and thrive in the skill-based economy.
+                - generic [ref=e414]:
+                  - generic [ref=e415]: "#Skills"
+                  - generic [ref=e416]: "#Hiring Trends"
+                  - generic [ref=e417]: "#Education"
+                  - generic [ref=e418]: "#Career Strategy"
+                - generic [ref=e419]:
+                  - generic [ref=e420]:
+                    - generic [ref=e421]:
+                      - img [ref=e422]
+                      - generic [ref=e425]: HR Industry Expert
+                    - generic [ref=e426]:
+                      - img [ref=e427]
+                      - generic [ref=e430]: 11,250
+                    - generic [ref=e431]:
+                      - img [ref=e432]
+                      - generic [ref=e434]: "289"
+                    - generic [ref=e435]:
+                      - img [ref=e436]
+                      - generic [ref=e438]: "78"
+                  - button "Read More" [ref=e439] [cursor=pointer]:
+                    - generic [ref=e440] [cursor=pointer]: Read More
+                    - img [ref=e441] [cursor=pointer]
+      - generic [ref=e446]:
+        - img [ref=e447]
+        - heading "Stay Updated" [level=2] [ref=e453]
+        - paragraph [ref=e454]: Get the latest career insights, success stories, and expert advice delivered to your inbox every week.
+        - generic [ref=e455]:
+          - textbox "Enter your email" [ref=e456]
+          - button "Subscribe" [ref=e457] [cursor=pointer]
+  - contentinfo [ref=e458]:
+    - generic [ref=e460]:
+      - generic [ref=e461]:
+        - generic [ref=e462]:
+          - generic [ref=e463]:
+            - generic [ref=e464]:
+              - img [ref=e465]
+              - generic [ref=e471]:
+                - text: Career
+                - generic [ref=e472]: Guide
+            - paragraph [ref=e473]: Your comprehensive platform for career guidance and college recommendations powered by AI.
+            - generic [ref=e474]:
+              - generic [ref=e475]:
+                - img [ref=e476]
+                - generic [ref=e479]: sudanva7@gmail.com
+              - generic [ref=e480]:
+                - img [ref=e481]
+                - generic [ref=e483]: +91 7204686919
+              - generic [ref=e484]:
+                - img [ref=e485]
+                - generic [ref=e488]: 123 Innovation Drive, Tech City
+          - generic [ref=e489]:
+            - heading "Features" [level=3] [ref=e490]
+            - list [ref=e491]:
+              - listitem [ref=e492]:
+                - button "Features" [ref=e493] [cursor=pointer]:
+                  - generic [ref=e494] [cursor=pointer]: Features
+              - listitem [ref=e495]:
+                - button "Career Quiz" [ref=e496] [cursor=pointer]:
+                  - generic [ref=e497] [cursor=pointer]: Career Quiz
+              - listitem [ref=e498]:
+                - button "3D Career Tree" [ref=e499] [cursor=pointer]:
+                  - generic [ref=e500] [cursor=pointer]: 3D Career Tree
+              - listitem [ref=e501]:
+                - button "College Finder" [ref=e502] [cursor=pointer]:
+                  - generic [ref=e503] [cursor=pointer]: College Finder
+              - listitem [ref=e504]:
+                - button "Timeline Tracker" [ref=e505] [cursor=pointer]:
+                  - generic [ref=e506] [cursor=pointer]: Timeline Tracker
+          - generic [ref=e507]:
+            - heading "Company" [level=3] [ref=e508]
+            - list [ref=e509]:
+              - listitem [ref=e510]:
+                - button "About" [ref=e511] [cursor=pointer]:
+                  - generic [ref=e512] [cursor=pointer]: About
+              - listitem [ref=e513]:
+                - button "Team" [ref=e514] [cursor=pointer]:
+                  - generic [ref=e515] [cursor=pointer]: Team
+              - listitem [ref=e516]:
+                - button "Careers" [ref=e517] [cursor=pointer]:
+                  - generic [ref=e518] [cursor=pointer]: Careers
+              - listitem [ref=e519]:
+                - button "Press" [ref=e520] [cursor=pointer]:
+                  - generic [ref=e521] [cursor=pointer]: Press
+              - listitem [ref=e522]:
+                - button "Contact" [ref=e523] [cursor=pointer]:
+                  - generic [ref=e524] [cursor=pointer]: Contact
+          - generic [ref=e525]:
+            - heading "Support" [level=3] [ref=e526]
+            - list [ref=e527]:
+              - listitem [ref=e528]:
+                - button "Help" [ref=e529] [cursor=pointer]:
+                  - generic [ref=e530] [cursor=pointer]: Help
+              - listitem [ref=e531]:
+                - button "Study Materials" [ref=e532] [cursor=pointer]:
+                  - generic [ref=e533] [cursor=pointer]: Study Materials
+              - listitem [ref=e534]:
+                - button "Career Guides" [ref=e535] [cursor=pointer]:
+                  - generic [ref=e536] [cursor=pointer]: Career Guides
+              - listitem [ref=e537]:
+                - button "Blog" [ref=e538] [cursor=pointer]:
+                  - generic [ref=e539] [cursor=pointer]: Blog
+              - listitem [ref=e540]:
+                - button "API Docs" [ref=e541] [cursor=pointer]:
+                  - generic [ref=e542] [cursor=pointer]: API Docs
+          - generic [ref=e543]:
+            - heading "Legal" [level=3] [ref=e544]
+            - list [ref=e545]:
+              - listitem [ref=e546]:
+                - button "Privacy Policy" [ref=e547] [cursor=pointer]:
+                  - generic [ref=e548] [cursor=pointer]: Privacy Policy
+              - listitem [ref=e549]:
+                - button "Terms of Service" [ref=e550] [cursor=pointer]:
+                  - generic [ref=e551] [cursor=pointer]: Terms of Service
+              - listitem [ref=e552]:
+                - button "Cookie Policy" [ref=e553] [cursor=pointer]:
+                  - generic [ref=e554] [cursor=pointer]: Cookie Policy
+              - listitem [ref=e555]:
+                - button "GDPR" [ref=e556] [cursor=pointer]:
+                  - generic [ref=e557] [cursor=pointer]: GDPR
+        - generic [ref=e559]:
+          - generic [ref=e560]:
+            - link "Facebook" [ref=e561] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e562] [cursor=pointer]
+            - link "Twitter" [ref=e564] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e565] [cursor=pointer]
+            - link "Instagram" [ref=e567] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e568] [cursor=pointer]
+            - link "LinkedIn" [ref=e572] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e573] [cursor=pointer]
+            - link "GitHub" [ref=e577] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e578] [cursor=pointer]
+          - generic [ref=e581]:
+            - generic [ref=e582]: "Stay updated:"
+            - generic [ref=e583]:
+              - textbox "Enter your email" [ref=e584]
+              - button "Subscribe" [ref=e585] [cursor=pointer]
+      - generic [ref=e587]:
+        - paragraph [ref=e588]: © 2025 CareerGuide. All rights reserved. Built with ❤️ for students everywhere.
+        - button "Scroll to top" [ref=e589] [cursor=pointer]:
+          - img [ref=e590] [cursor=pointer]
+  - button "Open AI Career Assistant" [ref=e595] [cursor=pointer]:
+    - img [ref=e597] [cursor=pointer]
+  - alert [ref=e600]
+```

@@ -1,15 +1,19 @@
-/.claude
-/.vscode
-/FINAL_COMPLETE_SCHEMA.sql
-/FIXED_FINAL_COMPLETE_SCHEMA.sql
+# dependencies
 /node_modules
+
+# next.js build
 /.next
 /out
-/npm-debug.log*
-/yarn-debug.log*
-/yarn-error.log*
-/.DS_Store
-/.env.local
-/.env.development.local
-/.env.test.local
-/.env.production.local  
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# misc
+.DS_Store
+playwright-report
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

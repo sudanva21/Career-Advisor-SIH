@@ -1,0 +1,531 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "CA Career Advisor" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7] [cursor=pointer]: CA
+        - generic [ref=e8] [cursor=pointer]: Career Advisor
+      - generic [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Colleges" [ref=e11] [cursor=pointer]:
+          - /url: /colleges
+        - button "Features" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14] [cursor=pointer]: Features
+          - img [ref=e15] [cursor=pointer]
+        - button "Language - English" [ref=e18] [cursor=pointer]:
+          - img [ref=e19] [cursor=pointer]
+          - generic [ref=e26] [cursor=pointer]: English
+          - img [ref=e27] [cursor=pointer]
+        - generic [ref=e29]:
+          - link "Sign In" [ref=e30] [cursor=pointer]:
+            - /url: /auth/signin
+          - link "Sign Up" [ref=e31] [cursor=pointer]:
+            - /url: /auth/signup
+  - main [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e38]:
+        - generic [ref=e40]:
+          - img [ref=e41]
+          - generic [ref=e44]: Join Our Team
+        - heading "Careers" [level=1] [ref=e45]:
+          - generic [ref=e46]: Careers
+        - paragraph [ref=e47]: Join us in revolutionizing career guidance through AI and technology. Help millions of students discover their perfect career path.
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - heading "Why Work at CareerGuide?" [level=2] [ref=e51]:
+            - text: Why Work at
+            - generic [ref=e52]: CareerGuide
+            - text: "?"
+          - paragraph [ref=e53]: Be part of a mission-driven team that's transforming how students plan their careers.
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - img [ref=e56]
+            - heading "Cutting-Edge Technology" [level=3] [ref=e59]
+            - paragraph [ref=e60]: Work with the latest AI and web technologies to solve real-world career challenges.
+          - generic [ref=e61]:
+            - img [ref=e62]
+            - heading "Collaborative Culture" [level=3] [ref=e67]
+            - paragraph [ref=e68]: Join a diverse team of passionate professionals committed to student success.
+          - generic [ref=e69]:
+            - img [ref=e70]
+            - heading "Growth Opportunities" [level=3] [ref=e75]
+            - paragraph [ref=e76]: Rapid career advancement in a fast-growing EdTech startup environment.
+          - generic [ref=e77]:
+            - img [ref=e78]
+            - heading "Comprehensive Benefits" [level=3] [ref=e80]
+            - paragraph [ref=e81]: Health insurance, equity packages, learning budgets, and flexible work arrangements.
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - heading "Open Positions" [level=2] [ref=e85]:
+            - text: Open
+            - generic [ref=e86]: Positions
+          - paragraph [ref=e87]: Find your next opportunity and help us shape the future of career guidance.
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - img [ref=e91]
+            - generic [ref=e93]: "Filter by:"
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e96]: Department
+              - combobox [ref=e97]:
+                - option "All" [selected]
+                - option "Engineering"
+                - option "AI Research"
+                - option "Design"
+                - option "Product"
+                - option "Marketing"
+                - option "Operations"
+            - generic [ref=e98]:
+              - generic [ref=e99]: Location
+              - combobox [ref=e100]:
+                - option "All" [selected]
+                - option "Remote"
+                - option "India"
+                - option "Hybrid"
+          - generic [ref=e101]: 6 positions found
+        - generic [ref=e102]:
+          - generic [ref=e103]:
+            - generic [ref=e105]:
+              - img [ref=e107]
+              - generic [ref=e110]:
+                - heading "Senior AI Engineer" [level=3] [ref=e111]
+                - generic [ref=e112]:
+                  - generic [ref=e113]:
+                    - img [ref=e114]
+                    - generic [ref=e119]: AI Research
+                  - generic [ref=e120]:
+                    - img [ref=e121]
+                    - generic [ref=e124]: Remote
+                  - generic [ref=e125]:
+                    - img [ref=e126]
+                    - generic [ref=e129]: Full-time
+                  - generic [ref=e130]:
+                    - img [ref=e131]
+                    - generic [ref=e134]: ₹15-25 LPA
+            - paragraph [ref=e135]: Lead the development of our AI-powered career matching algorithms and recommendation systems.
+            - generic [ref=e136]:
+              - generic [ref=e137]:
+                - heading "Requirements" [level=4] [ref=e138]:
+                  - img [ref=e139]
+                  - generic [ref=e141]: Requirements
+                - list [ref=e142]:
+                  - listitem [ref=e143]:
+                    - generic [ref=e145]: 5+ years in AI/ML
+                  - listitem [ref=e146]:
+                    - generic [ref=e148]: Python, TensorFlow
+                  - listitem [ref=e149]:
+                    - generic [ref=e151]: NLP expertise
+                  - listitem [ref=e152]:
+                    - generic [ref=e154]: PhD preferred
+              - generic [ref=e155]:
+                - heading "Benefits" [level=4] [ref=e156]:
+                  - img [ref=e157]
+                  - generic [ref=e159]: Benefits
+                - list [ref=e160]:
+                  - listitem [ref=e161]:
+                    - generic [ref=e163]: Equity package
+                  - listitem [ref=e164]:
+                    - generic [ref=e166]: Health insurance
+                  - listitem [ref=e167]:
+                    - generic [ref=e169]: Learning budget
+                  - listitem [ref=e170]:
+                    - generic [ref=e172]: Flexible hours
+            - button "Apply Now" [ref=e173] [cursor=pointer]:
+              - generic [ref=e174] [cursor=pointer]: Apply Now
+              - img [ref=e175] [cursor=pointer]
+          - generic [ref=e178]:
+            - generic [ref=e180]:
+              - img [ref=e182]
+              - generic [ref=e185]:
+                - heading "Full-Stack Developer" [level=3] [ref=e186]
+                - generic [ref=e187]:
+                  - generic [ref=e188]:
+                    - img [ref=e189]
+                    - generic [ref=e194]: Engineering
+                  - generic [ref=e195]:
+                    - img [ref=e196]
+                    - generic [ref=e199]: India
+                  - generic [ref=e200]:
+                    - img [ref=e201]
+                    - generic [ref=e204]: Full-time
+                  - generic [ref=e205]:
+                    - img [ref=e206]
+                    - generic [ref=e209]: ₹8-15 LPA
+            - paragraph [ref=e210]: Build and maintain our career guidance platform using modern web technologies.
+            - generic [ref=e211]:
+              - generic [ref=e212]:
+                - heading "Requirements" [level=4] [ref=e213]:
+                  - img [ref=e214]
+                  - generic [ref=e216]: Requirements
+                - list [ref=e217]:
+                  - listitem [ref=e218]:
+                    - generic [ref=e220]: 3+ years experience
+                  - listitem [ref=e221]:
+                    - generic [ref=e223]: React, Node.js
+                  - listitem [ref=e224]:
+                    - generic [ref=e226]: TypeScript
+                  - listitem [ref=e227]:
+                    - generic [ref=e229]: Database knowledge
+              - generic [ref=e230]:
+                - heading "Benefits" [level=4] [ref=e231]:
+                  - img [ref=e232]
+                  - generic [ref=e234]: Benefits
+                - list [ref=e235]:
+                  - listitem [ref=e236]:
+                    - generic [ref=e238]: Stock options
+                  - listitem [ref=e239]:
+                    - generic [ref=e241]: Health coverage
+                  - listitem [ref=e242]:
+                    - generic [ref=e244]: Remote work
+                  - listitem [ref=e245]:
+                    - generic [ref=e247]: Growth opportunities
+            - button "Apply Now" [ref=e248] [cursor=pointer]:
+              - generic [ref=e249] [cursor=pointer]: Apply Now
+              - img [ref=e250] [cursor=pointer]
+          - generic [ref=e253]:
+            - generic [ref=e255]:
+              - img [ref=e257]
+              - generic [ref=e263]:
+                - heading "Product Designer" [level=3] [ref=e264]
+                - generic [ref=e265]:
+                  - generic [ref=e266]:
+                    - img [ref=e267]
+                    - generic [ref=e272]: Design
+                  - generic [ref=e273]:
+                    - img [ref=e274]
+                    - generic [ref=e277]: Hybrid
+                  - generic [ref=e278]:
+                    - img [ref=e279]
+                    - generic [ref=e282]: Full-time
+                  - generic [ref=e283]:
+                    - img [ref=e284]
+                    - generic [ref=e287]: ₹10-18 LPA
+            - paragraph [ref=e288]: Design intuitive user experiences that help students navigate their career journeys.
+            - generic [ref=e289]:
+              - generic [ref=e290]:
+                - heading "Requirements" [level=4] [ref=e291]:
+                  - img [ref=e292]
+                  - generic [ref=e294]: Requirements
+                - list [ref=e295]:
+                  - listitem [ref=e296]:
+                    - generic [ref=e298]: 4+ years UX design
+                  - listitem [ref=e299]:
+                    - generic [ref=e301]: Figma expertise
+                  - listitem [ref=e302]:
+                    - generic [ref=e304]: User research
+                  - listitem [ref=e305]:
+                    - generic [ref=e307]: Portfolio required
+              - generic [ref=e308]:
+                - heading "Benefits" [level=4] [ref=e309]:
+                  - img [ref=e310]
+                  - generic [ref=e312]: Benefits
+                - list [ref=e313]:
+                  - listitem [ref=e314]:
+                    - generic [ref=e316]: Creative freedom
+                  - listitem [ref=e317]:
+                    - generic [ref=e319]: Design budget
+                  - listitem [ref=e320]:
+                    - generic [ref=e322]: Conferences
+                  - listitem [ref=e323]:
+                    - generic [ref=e325]: Team retreats
+            - button "Apply Now" [ref=e326] [cursor=pointer]:
+              - generic [ref=e327] [cursor=pointer]: Apply Now
+              - img [ref=e328] [cursor=pointer]
+          - generic [ref=e331]:
+            - generic [ref=e333]:
+              - img [ref=e335]
+              - generic [ref=e337]:
+                - heading "Data Scientist" [level=3] [ref=e338]
+                - generic [ref=e339]:
+                  - generic [ref=e340]:
+                    - img [ref=e341]
+                    - generic [ref=e346]: AI Research
+                  - generic [ref=e347]:
+                    - img [ref=e348]
+                    - generic [ref=e351]: Remote
+                  - generic [ref=e352]:
+                    - img [ref=e353]
+                    - generic [ref=e356]: Full-time
+                  - generic [ref=e357]:
+                    - img [ref=e358]
+                    - generic [ref=e361]: ₹12-20 LPA
+            - paragraph [ref=e362]: Analyze career trends and build predictive models to improve our recommendations.
+            - generic [ref=e363]:
+              - generic [ref=e364]:
+                - heading "Requirements" [level=4] [ref=e365]:
+                  - img [ref=e366]
+                  - generic [ref=e368]: Requirements
+                - list [ref=e369]:
+                  - listitem [ref=e370]:
+                    - generic [ref=e372]: Statistics background
+                  - listitem [ref=e373]:
+                    - generic [ref=e375]: Python, R
+                  - listitem [ref=e376]:
+                    - generic [ref=e378]: ML experience
+                  - listitem [ref=e379]:
+                    - generic [ref=e381]: PhD preferred
+              - generic [ref=e382]:
+                - heading "Benefits" [level=4] [ref=e383]:
+                  - img [ref=e384]
+                  - generic [ref=e386]: Benefits
+                - list [ref=e387]:
+                  - listitem [ref=e388]:
+                    - generic [ref=e390]: Research time
+                  - listitem [ref=e391]:
+                    - generic [ref=e393]: Conference budget
+                  - listitem [ref=e394]:
+                    - generic [ref=e396]: Publication support
+                  - listitem [ref=e397]:
+                    - generic [ref=e399]: Flexible schedule
+            - button "Apply Now" [ref=e400] [cursor=pointer]:
+              - generic [ref=e401] [cursor=pointer]: Apply Now
+              - img [ref=e402] [cursor=pointer]
+          - generic [ref=e405]:
+            - generic [ref=e407]:
+              - img [ref=e409]
+              - generic [ref=e414]:
+                - heading "Product Manager" [level=3] [ref=e415]
+                - generic [ref=e416]:
+                  - generic [ref=e417]:
+                    - img [ref=e418]
+                    - generic [ref=e423]: Product
+                  - generic [ref=e424]:
+                    - img [ref=e425]
+                    - generic [ref=e428]: India
+                  - generic [ref=e429]:
+                    - img [ref=e430]
+                    - generic [ref=e433]: Full-time
+                  - generic [ref=e434]:
+                    - img [ref=e435]
+                    - generic [ref=e438]: ₹18-30 LPA
+            - paragraph [ref=e439]: Drive product strategy and roadmap for our career guidance platform.
+            - generic [ref=e440]:
+              - generic [ref=e441]:
+                - heading "Requirements" [level=4] [ref=e442]:
+                  - img [ref=e443]
+                  - generic [ref=e445]: Requirements
+                - list [ref=e446]:
+                  - listitem [ref=e447]:
+                    - generic [ref=e449]: 5+ years PM experience
+                  - listitem [ref=e450]:
+                    - generic [ref=e452]: Technical background
+                  - listitem [ref=e453]:
+                    - generic [ref=e455]: Analytics skills
+                  - listitem [ref=e456]:
+                    - generic [ref=e458]: Leadership
+              - generic [ref=e459]:
+                - heading "Benefits" [level=4] [ref=e460]:
+                  - img [ref=e461]
+                  - generic [ref=e463]: Benefits
+                - list [ref=e464]:
+                  - listitem [ref=e465]:
+                    - generic [ref=e467]: Equity stake
+                  - listitem [ref=e468]:
+                    - generic [ref=e470]: Strategy role
+                  - listitem [ref=e471]:
+                    - generic [ref=e473]: Team leadership
+                  - listitem [ref=e474]:
+                    - generic [ref=e476]: Growth potential
+            - button "Apply Now" [ref=e477] [cursor=pointer]:
+              - generic [ref=e478] [cursor=pointer]: Apply Now
+              - img [ref=e479] [cursor=pointer]
+          - generic [ref=e482]:
+            - generic [ref=e484]:
+              - img [ref=e486]
+              - generic [ref=e491]:
+                - heading "Marketing Manager" [level=3] [ref=e492]
+                - generic [ref=e493]:
+                  - generic [ref=e494]:
+                    - img [ref=e495]
+                    - generic [ref=e500]: Marketing
+                  - generic [ref=e501]:
+                    - img [ref=e502]
+                    - generic [ref=e505]: Hybrid
+                  - generic [ref=e506]:
+                    - img [ref=e507]
+                    - generic [ref=e510]: Full-time
+                  - generic [ref=e511]:
+                    - img [ref=e512]
+                    - generic [ref=e515]: ₹8-15 LPA
+            - paragraph [ref=e516]: Lead marketing initiatives to reach students and career counselors.
+            - generic [ref=e517]:
+              - generic [ref=e518]:
+                - heading "Requirements" [level=4] [ref=e519]:
+                  - img [ref=e520]
+                  - generic [ref=e522]: Requirements
+                - list [ref=e523]:
+                  - listitem [ref=e524]:
+                    - generic [ref=e526]: Digital marketing
+                  - listitem [ref=e527]:
+                    - generic [ref=e529]: Content strategy
+                  - listitem [ref=e530]:
+                    - generic [ref=e532]: Analytics
+                  - listitem [ref=e533]:
+                    - generic [ref=e535]: 3+ years experience
+              - generic [ref=e536]:
+                - heading "Benefits" [level=4] [ref=e537]:
+                  - img [ref=e538]
+                  - generic [ref=e540]: Benefits
+                - list [ref=e541]:
+                  - listitem [ref=e542]:
+                    - generic [ref=e544]: Creative campaigns
+                  - listitem [ref=e545]:
+                    - generic [ref=e547]: Marketing budget
+                  - listitem [ref=e548]:
+                    - generic [ref=e550]: Brand building
+                  - listitem [ref=e551]:
+                    - generic [ref=e553]: Growth hacking
+            - button "Apply Now" [ref=e554] [cursor=pointer]:
+              - generic [ref=e555] [cursor=pointer]: Apply Now
+              - img [ref=e556] [cursor=pointer]
+      - generic [ref=e561]:
+        - img [ref=e562]
+        - heading "Ready to Join Us?" [level=2] [ref=e567]
+        - paragraph [ref=e568]: Don't see a perfect fit? We're always looking for exceptional talent. Send us your resume and let's explore how you can contribute to our mission.
+        - generic [ref=e569]:
+          - button "Send Resume" [ref=e570] [cursor=pointer]
+          - button "Meet the Team" [ref=e571] [cursor=pointer]:
+            - img [ref=e572] [cursor=pointer]
+            - generic [ref=e577] [cursor=pointer]: Meet the Team
+        - generic [ref=e578]:
+          - heading "Application Process" [level=3] [ref=e579]
+          - generic [ref=e580]:
+            - generic [ref=e581]:
+              - generic [ref=e582]:
+                - generic [ref=e583]: "1"
+                - generic [ref=e584]: Apply
+              - paragraph [ref=e585]: Submit your application with resume and cover letter
+            - generic [ref=e586]:
+              - generic [ref=e587]:
+                - generic [ref=e588]: "2"
+                - generic [ref=e589]: Interview
+              - paragraph [ref=e590]: Technical and cultural fit interviews with our team
+            - generic [ref=e591]:
+              - generic [ref=e592]:
+                - generic [ref=e593]: "3"
+                - generic [ref=e594]: Join
+              - paragraph [ref=e595]: Welcome aboard and start making an impact!
+  - contentinfo [ref=e596]:
+    - generic [ref=e598]:
+      - generic [ref=e599]:
+        - generic [ref=e600]:
+          - generic [ref=e601]:
+            - generic [ref=e602]:
+              - img [ref=e603]
+              - generic [ref=e609]:
+                - text: Career
+                - generic [ref=e610]: Guide
+            - paragraph [ref=e611]: Your comprehensive platform for career guidance and college recommendations powered by AI.
+            - generic [ref=e612]:
+              - generic [ref=e613]:
+                - img [ref=e614]
+                - generic [ref=e617]: sudanva7@gmail.com
+              - generic [ref=e618]:
+                - img [ref=e619]
+                - generic [ref=e621]: +91 7204686919
+              - generic [ref=e622]:
+                - img [ref=e623]
+                - generic [ref=e626]: 123 Innovation Drive, Tech City
+          - generic [ref=e627]:
+            - heading "Features" [level=3] [ref=e628]
+            - list [ref=e629]:
+              - listitem [ref=e630]:
+                - button "Features" [ref=e631] [cursor=pointer]:
+                  - generic [ref=e632] [cursor=pointer]: Features
+              - listitem [ref=e633]:
+                - button "Career Quiz" [ref=e634] [cursor=pointer]:
+                  - generic [ref=e635] [cursor=pointer]: Career Quiz
+              - listitem [ref=e636]:
+                - button "3D Career Tree" [ref=e637] [cursor=pointer]:
+                  - generic [ref=e638] [cursor=pointer]: 3D Career Tree
+              - listitem [ref=e639]:
+                - button "College Finder" [ref=e640] [cursor=pointer]:
+                  - generic [ref=e641] [cursor=pointer]: College Finder
+              - listitem [ref=e642]:
+                - button "Timeline Tracker" [ref=e643] [cursor=pointer]:
+                  - generic [ref=e644] [cursor=pointer]: Timeline Tracker
+          - generic [ref=e645]:
+            - heading "Company" [level=3] [ref=e646]
+            - list [ref=e647]:
+              - listitem [ref=e648]:
+                - button "About" [ref=e649] [cursor=pointer]:
+                  - generic [ref=e650] [cursor=pointer]: About
+              - listitem [ref=e651]:
+                - button "Team" [ref=e652] [cursor=pointer]:
+                  - generic [ref=e653] [cursor=pointer]: Team
+              - listitem [ref=e654]:
+                - button "Careers" [ref=e655] [cursor=pointer]:
+                  - generic [ref=e656] [cursor=pointer]: Careers
+              - listitem [ref=e657]:
+                - button "Press" [ref=e658] [cursor=pointer]:
+                  - generic [ref=e659] [cursor=pointer]: Press
+              - listitem [ref=e660]:
+                - button "Contact" [ref=e661] [cursor=pointer]:
+                  - generic [ref=e662] [cursor=pointer]: Contact
+          - generic [ref=e663]:
+            - heading "Support" [level=3] [ref=e664]
+            - list [ref=e665]:
+              - listitem [ref=e666]:
+                - button "Help" [ref=e667] [cursor=pointer]:
+                  - generic [ref=e668] [cursor=pointer]: Help
+              - listitem [ref=e669]:
+                - button "Study Materials" [ref=e670] [cursor=pointer]:
+                  - generic [ref=e671] [cursor=pointer]: Study Materials
+              - listitem [ref=e672]:
+                - button "Career Guides" [ref=e673] [cursor=pointer]:
+                  - generic [ref=e674] [cursor=pointer]: Career Guides
+              - listitem [ref=e675]:
+                - button "Blog" [ref=e676] [cursor=pointer]:
+                  - generic [ref=e677] [cursor=pointer]: Blog
+              - listitem [ref=e678]:
+                - button "API Docs" [ref=e679] [cursor=pointer]:
+                  - generic [ref=e680] [cursor=pointer]: API Docs
+          - generic [ref=e681]:
+            - heading "Legal" [level=3] [ref=e682]
+            - list [ref=e683]:
+              - listitem [ref=e684]:
+                - button "Privacy Policy" [ref=e685] [cursor=pointer]:
+                  - generic [ref=e686] [cursor=pointer]: Privacy Policy
+              - listitem [ref=e687]:
+                - button "Terms of Service" [ref=e688] [cursor=pointer]:
+                  - generic [ref=e689] [cursor=pointer]: Terms of Service
+              - listitem [ref=e690]:
+                - button "Cookie Policy" [ref=e691] [cursor=pointer]:
+                  - generic [ref=e692] [cursor=pointer]: Cookie Policy
+              - listitem [ref=e693]:
+                - button "GDPR" [ref=e694] [cursor=pointer]:
+                  - generic [ref=e695] [cursor=pointer]: GDPR
+        - generic [ref=e697]:
+          - generic [ref=e698]:
+            - link "Facebook" [ref=e699] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e700] [cursor=pointer]
+            - link "Twitter" [ref=e702] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e703] [cursor=pointer]
+            - link "Instagram" [ref=e705] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e706] [cursor=pointer]
+            - link "LinkedIn" [ref=e710] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e711] [cursor=pointer]
+            - link "GitHub" [ref=e715] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e716] [cursor=pointer]
+          - generic [ref=e719]:
+            - generic [ref=e720]: "Stay updated:"
+            - generic [ref=e721]:
+              - textbox "Enter your email" [ref=e722]
+              - button "Subscribe" [ref=e723] [cursor=pointer]
+      - generic [ref=e725]:
+        - paragraph [ref=e726]: © 2025 CareerGuide. All rights reserved. Built with ❤️ for students everywhere.
+        - button "Scroll to top" [ref=e727] [cursor=pointer]:
+          - img [ref=e728] [cursor=pointer]
+  - button "Open AI Career Assistant" [ref=e733] [cursor=pointer]:
+    - img [ref=e735] [cursor=pointer]
+  - alert [ref=e738]
+```

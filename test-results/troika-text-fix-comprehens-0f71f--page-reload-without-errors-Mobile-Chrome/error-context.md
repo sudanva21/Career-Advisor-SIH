@@ -1,0 +1,264 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link "CA Career Advisor" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e7] [cursor=pointer]: CA
+          - generic [ref=e8] [cursor=pointer]: Career Advisor
+        - button [ref=e10] [cursor=pointer]:
+          - img [ref=e11] [cursor=pointer]
+      - generic [ref=e12]:
+        - link "Home" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - link "Colleges" [ref=e14] [cursor=pointer]:
+          - /url: /colleges
+        - button "Features" [ref=e16] [cursor=pointer]:
+          - generic [ref=e17] [cursor=pointer]: Features
+          - img [ref=e18] [cursor=pointer]
+        - button "Language - English" [ref=e22] [cursor=pointer]:
+          - img [ref=e23] [cursor=pointer]
+          - img [ref=e27] [cursor=pointer]
+        - generic [ref=e29]:
+          - link "Sign In" [ref=e30] [cursor=pointer]:
+            - /url: /auth/signin
+          - link "Sign Up" [ref=e31] [cursor=pointer]:
+            - /url: /auth/signup
+  - main [ref=e32]:
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - link "Back to Home" [ref=e37] [cursor=pointer]:
+          - /url: /
+          - img [ref=e38] [cursor=pointer]
+          - generic [ref=e40] [cursor=pointer]: Back to Home
+        - button "Hide Info" [ref=e41] [cursor=pointer]:
+          - img [ref=e42] [cursor=pointer]
+          - generic [ref=e44] [cursor=pointer]: Hide Info
+      - generic [ref=e45]:
+        - heading "3D Career Tree" [level=1] [ref=e46]:
+          - generic [ref=e47]: 3D Career Tree
+        - paragraph [ref=e48]: Explore career paths in an interactive 3D environment. Discover connections between skills, roles, and opportunities.
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - img [ref=e51]
+          - textbox "Search careers or skills..." [ref=e54]
+        - generic [ref=e55]:
+          - img [ref=e56]
+          - combobox [ref=e58]:
+            - option "All" [selected]
+            - option "Technology"
+            - option "Marketing"
+            - option "Design"
+            - option "Finance"
+            - option "Management"
+      - generic [ref=e59]:
+        - generic [ref=e61]:
+          - heading "Career Options (6)" [level=3] [ref=e62]:
+            - img [ref=e63]
+            - text: Career Options (6)
+          - generic [ref=e65]:
+            - button "Software Engineer Technology" [ref=e66] [cursor=pointer]:
+              - generic [ref=e67] [cursor=pointer]: Software Engineer
+              - generic [ref=e68] [cursor=pointer]: Technology
+            - button "Data Scientist Technology" [ref=e69] [cursor=pointer]:
+              - generic [ref=e70] [cursor=pointer]: Data Scientist
+              - generic [ref=e71] [cursor=pointer]: Technology
+            - button "Digital Marketing Manager Marketing" [ref=e72] [cursor=pointer]:
+              - generic [ref=e73] [cursor=pointer]: Digital Marketing Manager
+              - generic [ref=e74] [cursor=pointer]: Marketing
+            - button "UX Designer Design" [ref=e75] [cursor=pointer]:
+              - generic [ref=e76] [cursor=pointer]: UX Designer
+              - generic [ref=e77] [cursor=pointer]: Design
+            - button "Financial Analyst Finance" [ref=e78] [cursor=pointer]:
+              - generic [ref=e79] [cursor=pointer]: Financial Analyst
+              - generic [ref=e80] [cursor=pointer]: Finance
+            - button "Product Manager Management" [ref=e81] [cursor=pointer]:
+              - generic [ref=e82] [cursor=pointer]: Product Manager
+              - generic [ref=e83] [cursor=pointer]: Management
+        - generic [ref=e85]:
+          - heading "Software Engineer - Interactive View" [level=3] [ref=e86]:
+            - img [ref=e87]
+            - text: Software Engineer - Interactive View
+          - generic [ref=e89]:
+            - generic [ref=e94]:
+              - generic [ref=e97]: Main Career
+              - generic [ref=e100]: Related Careers
+              - generic [ref=e103]: Required Skills
+            - paragraph [ref=e105]: Drag to rotate • Scroll to zoom
+      - generic [ref=e106]:
+        - heading "Software Engineer Details" [level=3] [ref=e107]:
+          - img [ref=e108]
+          - text: Software Engineer Details
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - generic [ref=e113]:
+              - heading "Overview" [level=4] [ref=e114]
+              - paragraph [ref=e115]: Design, develop, and maintain software applications and systems using programming languages and development frameworks.
+            - generic [ref=e116]:
+              - heading "Work Environment" [level=4] [ref=e117]
+              - paragraph [ref=e118]: Office or Remote, collaborative team environment
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - heading "Salary Range" [level=4] [ref=e121]:
+                - img [ref=e122]
+                - text: Salary Range
+              - paragraph [ref=e125]: $85,000 - $150,000
+            - generic [ref=e126]:
+              - heading "Growth Rate" [level=4] [ref=e127]
+              - paragraph [ref=e128]: 22% (Above average)
+            - generic [ref=e129]:
+              - heading "Education" [level=4] [ref=e130]
+              - generic [ref=e131]:
+                - generic [ref=e132]: Computer Science
+                - generic [ref=e133]: Software Engineering
+                - generic [ref=e134]: Information Technology
+          - generic [ref=e135]:
+            - generic [ref=e136]:
+              - heading "Key Skills" [level=4] [ref=e137]
+              - generic [ref=e138]:
+                - generic [ref=e139]: Programming
+                - generic [ref=e140]: Problem Solving
+                - generic [ref=e141]: Algorithms
+                - generic [ref=e142]: Database Management
+                - generic [ref=e143]: Version Control
+                - generic [ref=e144]: Testing
+            - generic [ref=e145]:
+              - heading "Key Activities" [level=4] [ref=e146]
+              - generic [ref=e147]:
+                - generic [ref=e148]: • Code Development
+                - generic [ref=e149]: • System Design
+                - generic [ref=e150]: • Bug Fixing
+                - generic [ref=e151]: • Code Review
+                - generic [ref=e152]: • Documentation
+                - generic [ref=e153]: • Testing
+      - generic [ref=e155]:
+        - heading "Ready to Explore Your Career Path?" [level=3] [ref=e156]
+        - paragraph [ref=e157]: Take our career quiz to discover which path aligns with your interests and skills.
+        - generic [ref=e158]:
+          - link "Take Career Quiz" [ref=e159] [cursor=pointer]:
+            - /url: /quiz
+          - link "Create Learning Path" [ref=e160] [cursor=pointer]:
+            - /url: /roadmap
+  - contentinfo [ref=e161]:
+    - generic [ref=e163]:
+      - generic [ref=e164]:
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - generic [ref=e167]:
+              - img [ref=e168]
+              - generic [ref=e170]:
+                - text: Career
+                - generic [ref=e171]: Guide
+            - paragraph [ref=e172]: Your comprehensive platform for career guidance and college recommendations powered by AI.
+            - generic [ref=e173]:
+              - generic [ref=e174]:
+                - img [ref=e175]
+                - generic [ref=e178]: sudanva7@gmail.com
+              - generic [ref=e179]:
+                - img [ref=e180]
+                - generic [ref=e182]: +91 7204686919
+              - generic [ref=e183]:
+                - img [ref=e184]
+                - generic [ref=e187]: 123 Innovation Drive, Tech City
+          - generic [ref=e188]:
+            - heading "Features" [level=3] [ref=e189]
+            - list [ref=e190]:
+              - listitem [ref=e191]:
+                - button "Features" [ref=e192] [cursor=pointer]:
+                  - generic [ref=e193] [cursor=pointer]: Features
+              - listitem [ref=e194]:
+                - button "Career Quiz" [ref=e195] [cursor=pointer]:
+                  - generic [ref=e196] [cursor=pointer]: Career Quiz
+              - listitem [ref=e197]:
+                - button "3D Career Tree" [ref=e198] [cursor=pointer]:
+                  - generic [ref=e199] [cursor=pointer]: 3D Career Tree
+              - listitem [ref=e200]:
+                - button "College Finder" [ref=e201] [cursor=pointer]:
+                  - generic [ref=e202] [cursor=pointer]: College Finder
+              - listitem [ref=e203]:
+                - button "Timeline Tracker" [ref=e204] [cursor=pointer]:
+                  - generic [ref=e205] [cursor=pointer]: Timeline Tracker
+          - generic [ref=e206]:
+            - heading "Company" [level=3] [ref=e207]
+            - list [ref=e208]:
+              - listitem [ref=e209]:
+                - button "About" [ref=e210] [cursor=pointer]:
+                  - generic [ref=e211] [cursor=pointer]: About
+              - listitem [ref=e212]:
+                - button "Team" [ref=e213] [cursor=pointer]:
+                  - generic [ref=e214] [cursor=pointer]: Team
+              - listitem [ref=e215]:
+                - button "Careers" [ref=e216] [cursor=pointer]:
+                  - generic [ref=e217] [cursor=pointer]: Careers
+              - listitem [ref=e218]:
+                - button "Press" [ref=e219] [cursor=pointer]:
+                  - generic [ref=e220] [cursor=pointer]: Press
+              - listitem [ref=e221]:
+                - button "Contact" [ref=e222] [cursor=pointer]:
+                  - generic [ref=e223] [cursor=pointer]: Contact
+          - generic [ref=e224]:
+            - heading "Support" [level=3] [ref=e225]
+            - list [ref=e226]:
+              - listitem [ref=e227]:
+                - button "Help" [ref=e228] [cursor=pointer]:
+                  - generic [ref=e229] [cursor=pointer]: Help
+              - listitem [ref=e230]:
+                - button "Study Materials" [ref=e231] [cursor=pointer]:
+                  - generic [ref=e232] [cursor=pointer]: Study Materials
+              - listitem [ref=e233]:
+                - button "Career Guides" [ref=e234] [cursor=pointer]:
+                  - generic [ref=e235] [cursor=pointer]: Career Guides
+              - listitem [ref=e236]:
+                - button "Blog" [ref=e237] [cursor=pointer]:
+                  - generic [ref=e238] [cursor=pointer]: Blog
+              - listitem [ref=e239]:
+                - button "API Docs" [ref=e240] [cursor=pointer]:
+                  - generic [ref=e241] [cursor=pointer]: API Docs
+          - generic [ref=e242]:
+            - heading "Legal" [level=3] [ref=e243]
+            - list [ref=e244]:
+              - listitem [ref=e245]:
+                - button "Privacy Policy" [ref=e246] [cursor=pointer]:
+                  - generic [ref=e247] [cursor=pointer]: Privacy Policy
+              - listitem [ref=e248]:
+                - button "Terms of Service" [ref=e249] [cursor=pointer]:
+                  - generic [ref=e250] [cursor=pointer]: Terms of Service
+              - listitem [ref=e251]:
+                - button "Cookie Policy" [ref=e252] [cursor=pointer]:
+                  - generic [ref=e253] [cursor=pointer]: Cookie Policy
+              - listitem [ref=e254]:
+                - button "GDPR" [ref=e255] [cursor=pointer]:
+                  - generic [ref=e256] [cursor=pointer]: GDPR
+        - generic [ref=e258]:
+          - generic [ref=e259]:
+            - link "Facebook" [ref=e260] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e261] [cursor=pointer]
+            - link "Twitter" [ref=e263] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e264] [cursor=pointer]
+            - link "Instagram" [ref=e266] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e267] [cursor=pointer]
+            - link "LinkedIn" [ref=e270] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e271] [cursor=pointer]
+            - link "GitHub" [ref=e275] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e276] [cursor=pointer]
+          - generic [ref=e279]:
+            - generic [ref=e280]: "Stay updated:"
+            - generic [ref=e281]:
+              - textbox "Enter your email" [ref=e282]
+              - button "Subscribe" [ref=e283] [cursor=pointer]
+      - generic [ref=e285]:
+        - paragraph [ref=e286]: © 2025 CareerGuide. All rights reserved. Built with ❤️ for students everywhere.
+        - button "Scroll to top" [ref=e287] [cursor=pointer]:
+          - img [ref=e288] [cursor=pointer]
+  - button "Open AI Career Assistant" [ref=e292] [cursor=pointer]:
+    - img [ref=e294] [cursor=pointer]
+  - alert [ref=e297]
+```

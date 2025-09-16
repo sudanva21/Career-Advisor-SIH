@@ -1,0 +1,475 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "CA Career Advisor" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7] [cursor=pointer]: CA
+        - generic [ref=e8] [cursor=pointer]: Career Advisor
+      - generic [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Colleges" [ref=e11] [cursor=pointer]:
+          - /url: /colleges
+        - button "Features" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14] [cursor=pointer]: Features
+          - img [ref=e15] [cursor=pointer]
+        - button "Language - English" [ref=e18] [cursor=pointer]:
+          - img [ref=e19] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: English
+          - img [ref=e24] [cursor=pointer]
+        - generic [ref=e26]:
+          - link "Sign In" [ref=e27] [cursor=pointer]:
+            - /url: /auth/signin
+          - link "Sign Up" [ref=e28] [cursor=pointer]:
+            - /url: /auth/signup
+  - main [ref=e29]:
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - heading "Find Your Perfect College" [level=1] [ref=e35]:
+            - text: Find Your Perfect
+            - generic [ref=e36]: College
+          - paragraph [ref=e37]: Discover top engineering colleges across India with detailed information and insights
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - img [ref=e41]
+            - textbox "Search colleges or cities..." [ref=e44]
+          - generic [ref=e45]:
+            - button "Filters" [ref=e46] [cursor=pointer]:
+              - img [ref=e47] [cursor=pointer]
+              - generic [ref=e48] [cursor=pointer]: Filters
+            - generic [ref=e49]:
+              - button [ref=e50] [cursor=pointer]:
+                - img [ref=e51] [cursor=pointer]
+              - button [ref=e53] [cursor=pointer]:
+                - img [ref=e54] [cursor=pointer]
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - generic [ref=e60]:
+            - generic [ref=e61]:
+              - heading "Indian Institute of Technology Delhi" [level=3] [ref=e62]
+              - button [ref=e63] [cursor=pointer]:
+                - img [ref=e64] [cursor=pointer]
+            - generic [ref=e67]:
+              - img [ref=e68]
+              - generic [ref=e71]: New Delhi, Delhi
+            - generic [ref=e72]:
+              - generic [ref=e73]: Government
+              - generic [ref=e74]:
+                - img [ref=e75]
+                - generic [ref=e77]: "4.8"
+              - generic [ref=e78]:
+                - img [ref=e79]
+                - generic [ref=e81]: Est. 1961
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - img [ref=e85]
+                - generic [ref=e87]: Annual Fees
+              - paragraph [ref=e88]: "250000"
+            - generic [ref=e89]:
+              - generic [ref=e90]:
+                - img [ref=e91]
+                - generic [ref=e94]: Cutoff
+              - paragraph [ref=e95]: JEE Rank 1-500
+          - generic [ref=e96]:
+            - heading "Popular Courses" [level=4] [ref=e97]
+            - generic [ref=e98]:
+              - generic [ref=e99]: Computer Science
+              - generic [ref=e100]: Mechanical Engineering
+              - generic [ref=e101]: Electrical Engineering
+              - generic [ref=e102]: +2 more
+          - generic [ref=e103]:
+            - heading "All Available Courses" [level=4] [ref=e104]
+            - generic [ref=e105]:
+              - generic [ref=e106]: Computer Science
+              - generic [ref=e107]: Mechanical Engineering
+              - generic [ref=e108]: Electrical Engineering
+              - generic [ref=e109]: Civil Engineering
+              - generic [ref=e110]: Chemical Engineering
+          - generic [ref=e111]:
+            - button "View Details" [ref=e112] [cursor=pointer]
+            - generic [ref=e113]:
+              - link "Visit" [ref=e114] [cursor=pointer]:
+                - /url: https://home.iitd.ac.in
+                - generic [ref=e115] [cursor=pointer]: Visit
+                - img [ref=e116] [cursor=pointer]
+              - button "Compare" [ref=e120] [cursor=pointer]
+        - generic [ref=e122]:
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - heading "National Institute of Technology Trichy" [level=3] [ref=e126]
+              - button [ref=e127] [cursor=pointer]:
+                - img [ref=e128] [cursor=pointer]
+            - generic [ref=e131]:
+              - img [ref=e132]
+              - generic [ref=e135]: Tiruchirappalli, Tamil Nadu
+            - generic [ref=e136]:
+              - generic [ref=e137]: Government
+              - generic [ref=e138]:
+                - img [ref=e139]
+                - generic [ref=e141]: "4.7"
+              - generic [ref=e142]:
+                - img [ref=e143]
+                - generic [ref=e145]: Est. 1964
+          - generic [ref=e146]:
+            - generic [ref=e147]:
+              - generic [ref=e148]:
+                - img [ref=e149]
+                - generic [ref=e151]: Annual Fees
+              - paragraph [ref=e152]: "175000"
+            - generic [ref=e153]:
+              - generic [ref=e154]:
+                - img [ref=e155]
+                - generic [ref=e158]: Cutoff
+              - paragraph [ref=e159]: JEE Rank 800-3000
+          - generic [ref=e160]:
+            - heading "Popular Courses" [level=4] [ref=e161]
+            - generic [ref=e162]:
+              - generic [ref=e163]: Computer Science
+              - generic [ref=e164]: Electronics
+              - generic [ref=e165]: Mechanical
+              - generic [ref=e166]: +2 more
+          - generic [ref=e167]:
+            - heading "All Available Courses" [level=4] [ref=e168]
+            - generic [ref=e169]:
+              - generic [ref=e170]: Computer Science
+              - generic [ref=e171]: Electronics
+              - generic [ref=e172]: Mechanical
+              - generic [ref=e173]: Civil
+              - generic [ref=e174]: Chemical
+          - generic [ref=e175]:
+            - button "View Details" [ref=e176] [cursor=pointer]
+            - generic [ref=e177]:
+              - link "Visit" [ref=e178] [cursor=pointer]:
+                - /url: https://www.nitt.edu
+                - generic [ref=e179] [cursor=pointer]: Visit
+                - img [ref=e180] [cursor=pointer]
+              - button "Compare" [ref=e184] [cursor=pointer]
+        - generic [ref=e186]:
+          - generic [ref=e188]:
+            - generic [ref=e189]:
+              - heading "Birla Institute of Technology and Science" [level=3] [ref=e190]
+              - button [ref=e191] [cursor=pointer]:
+                - img [ref=e192] [cursor=pointer]
+            - generic [ref=e195]:
+              - img [ref=e196]
+              - generic [ref=e199]: Pilani, Rajasthan
+            - generic [ref=e200]:
+              - generic [ref=e201]: Private
+              - generic [ref=e202]:
+                - img [ref=e203]
+                - generic [ref=e205]: "4.6"
+              - generic [ref=e206]:
+                - img [ref=e207]
+                - generic [ref=e209]: Est. 1964
+          - generic [ref=e210]:
+            - generic [ref=e211]:
+              - generic [ref=e212]:
+                - img [ref=e213]
+                - generic [ref=e215]: Annual Fees
+              - paragraph [ref=e216]: "450000"
+            - generic [ref=e217]:
+              - generic [ref=e218]:
+                - img [ref=e219]
+                - generic [ref=e222]: Cutoff
+              - paragraph [ref=e223]: BITSAT 350+
+          - generic [ref=e224]:
+            - heading "Popular Courses" [level=4] [ref=e225]
+            - generic [ref=e226]:
+              - generic [ref=e227]: Computer Science
+              - generic [ref=e228]: Electronics
+              - generic [ref=e229]: Mechanical
+              - generic [ref=e230]: +2 more
+          - generic [ref=e231]:
+            - heading "All Available Courses" [level=4] [ref=e232]
+            - generic [ref=e233]:
+              - generic [ref=e234]: Computer Science
+              - generic [ref=e235]: Electronics
+              - generic [ref=e236]: Mechanical
+              - generic [ref=e237]: Chemical
+              - generic [ref=e238]: Biotechnology
+          - generic [ref=e239]:
+            - button "View Details" [ref=e240] [cursor=pointer]
+            - generic [ref=e241]:
+              - link "Visit" [ref=e242] [cursor=pointer]:
+                - /url: https://www.bits-pilani.ac.in
+                - generic [ref=e243] [cursor=pointer]: Visit
+                - img [ref=e244] [cursor=pointer]
+              - button "Compare" [ref=e248] [cursor=pointer]
+        - generic [ref=e250]:
+          - generic [ref=e252]:
+            - generic [ref=e253]:
+              - heading "Delhi Technological University" [level=3] [ref=e254]
+              - button [ref=e255] [cursor=pointer]:
+                - img [ref=e256] [cursor=pointer]
+            - generic [ref=e259]:
+              - img [ref=e260]
+              - generic [ref=e263]: New Delhi, Delhi
+            - generic [ref=e264]:
+              - generic [ref=e265]: Government
+              - generic [ref=e266]:
+                - img [ref=e267]
+                - generic [ref=e269]: "4.4"
+              - generic [ref=e270]:
+                - img [ref=e271]
+                - generic [ref=e273]: Est. 1941
+          - generic [ref=e274]:
+            - generic [ref=e275]:
+              - generic [ref=e276]:
+                - img [ref=e277]
+                - generic [ref=e279]: Annual Fees
+              - paragraph [ref=e280]: "175000"
+            - generic [ref=e281]:
+              - generic [ref=e282]:
+                - img [ref=e283]
+                - generic [ref=e286]: Cutoff
+              - paragraph [ref=e287]: JEE Rank 3000-8000
+          - generic [ref=e288]:
+            - heading "Popular Courses" [level=4] [ref=e289]
+            - generic [ref=e290]:
+              - generic [ref=e291]: Computer Engineering
+              - generic [ref=e292]: Information Technology
+              - generic [ref=e293]: Electronics
+              - generic [ref=e294]: +2 more
+          - generic [ref=e295]:
+            - heading "All Available Courses" [level=4] [ref=e296]
+            - generic [ref=e297]:
+              - generic [ref=e298]: Computer Engineering
+              - generic [ref=e299]: Information Technology
+              - generic [ref=e300]: Electronics
+              - generic [ref=e301]: Mechanical
+              - generic [ref=e302]: Civil
+          - generic [ref=e303]:
+            - button "View Details" [ref=e304] [cursor=pointer]
+            - generic [ref=e305]:
+              - link "Visit" [ref=e306] [cursor=pointer]:
+                - /url: http://www.dtu.ac.in
+                - generic [ref=e307] [cursor=pointer]: Visit
+                - img [ref=e308] [cursor=pointer]
+              - button "Compare" [ref=e312] [cursor=pointer]
+        - generic [ref=e314]:
+          - generic [ref=e316]:
+            - generic [ref=e317]:
+              - heading "Manipal Institute of Technology" [level=3] [ref=e318]
+              - button [ref=e319] [cursor=pointer]:
+                - img [ref=e320] [cursor=pointer]
+            - generic [ref=e323]:
+              - img [ref=e324]
+              - generic [ref=e327]: Manipal, Karnataka
+            - generic [ref=e328]:
+              - generic [ref=e329]: Private
+              - generic [ref=e330]:
+                - img [ref=e331]
+                - generic [ref=e333]: "4.3"
+              - generic [ref=e334]:
+                - img [ref=e335]
+                - generic [ref=e337]: Est. 1957
+          - generic [ref=e338]:
+            - generic [ref=e339]:
+              - generic [ref=e340]:
+                - img [ref=e341]
+                - generic [ref=e343]: Annual Fees
+              - paragraph [ref=e344]: "400000"
+            - generic [ref=e345]:
+              - generic [ref=e346]:
+                - img [ref=e347]
+                - generic [ref=e350]: Cutoff
+              - paragraph [ref=e351]: MET Rank 1-5000
+          - generic [ref=e352]:
+            - heading "Popular Courses" [level=4] [ref=e353]
+            - generic [ref=e354]:
+              - generic [ref=e355]: Computer Science
+              - generic [ref=e356]: Information Technology
+              - generic [ref=e357]: Mechanical
+              - generic [ref=e358]: +2 more
+          - generic [ref=e359]:
+            - heading "All Available Courses" [level=4] [ref=e360]
+            - generic [ref=e361]:
+              - generic [ref=e362]: Computer Science
+              - generic [ref=e363]: Information Technology
+              - generic [ref=e364]: Mechanical
+              - generic [ref=e365]: Aeronautical
+              - generic [ref=e366]: Biomedical
+          - generic [ref=e367]:
+            - button "View Details" [ref=e368] [cursor=pointer]
+            - generic [ref=e369]:
+              - link "Visit" [ref=e370] [cursor=pointer]:
+                - /url: https://manipal.edu
+                - generic [ref=e371] [cursor=pointer]: Visit
+                - img [ref=e372] [cursor=pointer]
+              - button "Compare" [ref=e376] [cursor=pointer]
+        - generic [ref=e378]:
+          - generic [ref=e380]:
+            - generic [ref=e381]:
+              - heading "Vellore Institute of Technology" [level=3] [ref=e382]
+              - button [ref=e383] [cursor=pointer]:
+                - img [ref=e384] [cursor=pointer]
+            - generic [ref=e387]:
+              - img [ref=e388]
+              - generic [ref=e391]: Vellore, Tamil Nadu
+            - generic [ref=e392]:
+              - generic [ref=e393]: Private
+              - generic [ref=e394]:
+                - img [ref=e395]
+                - generic [ref=e397]: "4.2"
+              - generic [ref=e398]:
+                - img [ref=e399]
+                - generic [ref=e401]: Est. 1984
+          - generic [ref=e402]:
+            - generic [ref=e403]:
+              - generic [ref=e404]:
+                - img [ref=e405]
+                - generic [ref=e407]: Annual Fees
+              - paragraph [ref=e408]: "275000"
+            - generic [ref=e409]:
+              - generic [ref=e410]:
+                - img [ref=e411]
+                - generic [ref=e414]: Cutoff
+              - paragraph [ref=e415]: VITEEE Rank 1-10000
+          - generic [ref=e416]:
+            - heading "Popular Courses" [level=4] [ref=e417]
+            - generic [ref=e418]:
+              - generic [ref=e419]: Computer Science
+              - generic [ref=e420]: Electronics
+              - generic [ref=e421]: Biotechnology
+              - generic [ref=e422]: +2 more
+          - generic [ref=e423]:
+            - heading "All Available Courses" [level=4] [ref=e424]
+            - generic [ref=e425]:
+              - generic [ref=e426]: Computer Science
+              - generic [ref=e427]: Electronics
+              - generic [ref=e428]: Biotechnology
+              - generic [ref=e429]: Chemical
+              - generic [ref=e430]: Mechanical
+          - generic [ref=e431]:
+            - button "View Details" [ref=e432] [cursor=pointer]
+            - generic [ref=e433]:
+              - link "Visit" [ref=e434] [cursor=pointer]:
+                - /url: https://vit.ac.in
+                - generic [ref=e435] [cursor=pointer]: Visit
+                - img [ref=e436] [cursor=pointer]
+              - button "Compare" [ref=e440] [cursor=pointer]
+  - contentinfo [ref=e441]:
+    - generic [ref=e443]:
+      - generic [ref=e444]:
+        - generic [ref=e445]:
+          - generic [ref=e446]:
+            - generic [ref=e447]:
+              - img [ref=e448]
+              - generic [ref=e450]:
+                - text: Career
+                - generic [ref=e451]: Guide
+            - paragraph [ref=e452]: Your comprehensive platform for career guidance and college recommendations powered by AI.
+            - generic [ref=e453]:
+              - generic [ref=e454]:
+                - img [ref=e455]
+                - generic [ref=e458]: sudanva7@gmail.com
+              - generic [ref=e459]:
+                - img [ref=e460]
+                - generic [ref=e462]: +91 7204686919
+              - generic [ref=e463]:
+                - img [ref=e464]
+                - generic [ref=e467]: 123 Innovation Drive, Tech City
+          - generic [ref=e468]:
+            - heading "Features" [level=3] [ref=e469]
+            - list [ref=e470]:
+              - listitem [ref=e471]:
+                - button "Features" [ref=e472] [cursor=pointer]:
+                  - generic [ref=e473] [cursor=pointer]: Features
+              - listitem [ref=e474]:
+                - button "Career Quiz" [ref=e475] [cursor=pointer]:
+                  - generic [ref=e476] [cursor=pointer]: Career Quiz
+              - listitem [ref=e477]:
+                - button "3D Career Tree" [ref=e478] [cursor=pointer]:
+                  - generic [ref=e479] [cursor=pointer]: 3D Career Tree
+              - listitem [ref=e480]:
+                - button "College Finder" [ref=e481] [cursor=pointer]:
+                  - generic [ref=e482] [cursor=pointer]: College Finder
+              - listitem [ref=e483]:
+                - button "Timeline Tracker" [ref=e484] [cursor=pointer]:
+                  - generic [ref=e485] [cursor=pointer]: Timeline Tracker
+          - generic [ref=e486]:
+            - heading "Company" [level=3] [ref=e487]
+            - list [ref=e488]:
+              - listitem [ref=e489]:
+                - button "About" [ref=e490] [cursor=pointer]:
+                  - generic [ref=e491] [cursor=pointer]: About
+              - listitem [ref=e492]:
+                - button "Team" [ref=e493] [cursor=pointer]:
+                  - generic [ref=e494] [cursor=pointer]: Team
+              - listitem [ref=e495]:
+                - button "Careers" [ref=e496] [cursor=pointer]:
+                  - generic [ref=e497] [cursor=pointer]: Careers
+              - listitem [ref=e498]:
+                - button "Press" [ref=e499] [cursor=pointer]:
+                  - generic [ref=e500] [cursor=pointer]: Press
+              - listitem [ref=e501]:
+                - button "Contact" [ref=e502] [cursor=pointer]:
+                  - generic [ref=e503] [cursor=pointer]: Contact
+          - generic [ref=e504]:
+            - heading "Support" [level=3] [ref=e505]
+            - list [ref=e506]:
+              - listitem [ref=e507]:
+                - button "Help" [ref=e508] [cursor=pointer]:
+                  - generic [ref=e509] [cursor=pointer]: Help
+              - listitem [ref=e510]:
+                - button "Study Materials" [ref=e511] [cursor=pointer]:
+                  - generic [ref=e512] [cursor=pointer]: Study Materials
+              - listitem [ref=e513]:
+                - button "Career Guides" [ref=e514] [cursor=pointer]:
+                  - generic [ref=e515] [cursor=pointer]: Career Guides
+              - listitem [ref=e516]:
+                - button "Blog" [ref=e517] [cursor=pointer]:
+                  - generic [ref=e518] [cursor=pointer]: Blog
+              - listitem [ref=e519]:
+                - button "API Docs" [ref=e520] [cursor=pointer]:
+                  - generic [ref=e521] [cursor=pointer]: API Docs
+          - generic [ref=e522]:
+            - heading "Legal" [level=3] [ref=e523]
+            - list [ref=e524]:
+              - listitem [ref=e525]:
+                - button "Privacy Policy" [ref=e526] [cursor=pointer]:
+                  - generic [ref=e527] [cursor=pointer]: Privacy Policy
+              - listitem [ref=e528]:
+                - button "Terms of Service" [ref=e529] [cursor=pointer]:
+                  - generic [ref=e530] [cursor=pointer]: Terms of Service
+              - listitem [ref=e531]:
+                - button "Cookie Policy" [ref=e532] [cursor=pointer]:
+                  - generic [ref=e533] [cursor=pointer]: Cookie Policy
+              - listitem [ref=e534]:
+                - button "GDPR" [ref=e535] [cursor=pointer]:
+                  - generic [ref=e536] [cursor=pointer]: GDPR
+        - generic [ref=e538]:
+          - generic [ref=e539]:
+            - link "Facebook" [ref=e540] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e541] [cursor=pointer]
+            - link "Twitter" [ref=e543] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e544] [cursor=pointer]
+            - link "Instagram" [ref=e546] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e547] [cursor=pointer]
+            - link "LinkedIn" [ref=e550] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e551] [cursor=pointer]
+            - link "GitHub" [ref=e555] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e556] [cursor=pointer]
+          - generic [ref=e559]:
+            - generic [ref=e560]: "Stay updated:"
+            - generic [ref=e561]:
+              - textbox "Enter your email" [ref=e562]
+              - button "Subscribe" [ref=e563] [cursor=pointer]
+      - generic [ref=e565]:
+        - paragraph [ref=e566]: © 2025 CareerGuide. All rights reserved. Built with ❤️ for students everywhere.
+        - button "Scroll to top" [ref=e567] [cursor=pointer]:
+          - img [ref=e568] [cursor=pointer]
+  - button "Open AI Career Assistant" [ref=e572] [cursor=pointer]:
+    - img [ref=e574] [cursor=pointer]
+  - alert [ref=e577]
+```

@@ -1,0 +1,177 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link "CA Career Advisor" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e7] [cursor=pointer]: CA
+          - generic [ref=e8] [cursor=pointer]: Career Advisor
+        - button [ref=e10] [cursor=pointer]:
+          - img [ref=e11] [cursor=pointer]
+      - generic [ref=e12]:
+        - link "Home" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - link "Colleges" [ref=e14] [cursor=pointer]:
+          - /url: /colleges
+        - button "Features" [ref=e16] [cursor=pointer]:
+          - generic [ref=e17] [cursor=pointer]: Features
+          - img [ref=e18] [cursor=pointer]
+        - button "Language - English" [ref=e22] [cursor=pointer]:
+          - img [ref=e23] [cursor=pointer]
+          - img [ref=e27] [cursor=pointer]
+        - generic [ref=e29]:
+          - link "Sign In" [ref=e30] [cursor=pointer]:
+            - /url: /auth/signin
+          - link "Sign Up" [ref=e31] [cursor=pointer]:
+            - /url: /auth/signup
+  - main [ref=e32]:
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e45]: CA
+        - heading "Welcome Back" [level=1] [ref=e46]
+        - paragraph [ref=e47]: Sign in to continue your career journey
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]: Email Address
+          - generic [ref=e52]:
+            - img [ref=e53]
+            - textbox "Email Address" [ref=e56]
+        - generic [ref=e57]:
+          - generic [ref=e58]: Password
+          - generic [ref=e59]:
+            - img [ref=e60]
+            - textbox "Password" [ref=e63]
+            - button [ref=e64] [cursor=pointer]:
+              - img [ref=e65] [cursor=pointer]
+        - link "Forgot your password?" [ref=e69] [cursor=pointer]:
+          - /url: /auth/forgot-password
+        - button "Sign In" [ref=e70] [cursor=pointer]:
+          - generic [ref=e71] [cursor=pointer]: Sign In
+          - img [ref=e72] [cursor=pointer]
+      - paragraph [ref=e75]:
+        - text: Don't have an account?
+        - link "Sign up now" [ref=e76] [cursor=pointer]:
+          - /url: /auth/signup
+  - contentinfo [ref=e77]:
+    - generic [ref=e79]:
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - img [ref=e84]
+              - generic [ref=e86]:
+                - text: Career
+                - generic [ref=e87]: Guide
+            - paragraph [ref=e88]: Your comprehensive platform for career guidance and college recommendations powered by AI.
+            - generic [ref=e89]:
+              - generic [ref=e90]:
+                - img [ref=e91]
+                - generic [ref=e94]: sudanva7@gmail.com
+              - generic [ref=e95]:
+                - img [ref=e96]
+                - generic [ref=e98]: +91 7204686919
+              - generic [ref=e99]:
+                - img [ref=e100]
+                - generic [ref=e103]: 123 Innovation Drive, Tech City
+          - generic [ref=e104]:
+            - heading "Features" [level=3] [ref=e105]
+            - list [ref=e106]:
+              - listitem [ref=e107]:
+                - button "Features" [ref=e108] [cursor=pointer]:
+                  - generic [ref=e109] [cursor=pointer]: Features
+              - listitem [ref=e110]:
+                - button "Career Quiz" [ref=e111] [cursor=pointer]:
+                  - generic [ref=e112] [cursor=pointer]: Career Quiz
+              - listitem [ref=e113]:
+                - button "3D Career Tree" [ref=e114] [cursor=pointer]:
+                  - generic [ref=e115] [cursor=pointer]: 3D Career Tree
+              - listitem [ref=e116]:
+                - button "College Finder" [ref=e117] [cursor=pointer]:
+                  - generic [ref=e118] [cursor=pointer]: College Finder
+              - listitem [ref=e119]:
+                - button "Timeline Tracker" [ref=e120] [cursor=pointer]:
+                  - generic [ref=e121] [cursor=pointer]: Timeline Tracker
+          - generic [ref=e122]:
+            - heading "Company" [level=3] [ref=e123]
+            - list [ref=e124]:
+              - listitem [ref=e125]:
+                - button "About" [ref=e126] [cursor=pointer]:
+                  - generic [ref=e127] [cursor=pointer]: About
+              - listitem [ref=e128]:
+                - button "Team" [ref=e129] [cursor=pointer]:
+                  - generic [ref=e130] [cursor=pointer]: Team
+              - listitem [ref=e131]:
+                - button "Careers" [ref=e132] [cursor=pointer]:
+                  - generic [ref=e133] [cursor=pointer]: Careers
+              - listitem [ref=e134]:
+                - button "Press" [ref=e135] [cursor=pointer]:
+                  - generic [ref=e136] [cursor=pointer]: Press
+              - listitem [ref=e137]:
+                - button "Contact" [ref=e138] [cursor=pointer]:
+                  - generic [ref=e139] [cursor=pointer]: Contact
+          - generic [ref=e140]:
+            - heading "Support" [level=3] [ref=e141]
+            - list [ref=e142]:
+              - listitem [ref=e143]:
+                - button "Help" [ref=e144] [cursor=pointer]:
+                  - generic [ref=e145] [cursor=pointer]: Help
+              - listitem [ref=e146]:
+                - button "Study Materials" [ref=e147] [cursor=pointer]:
+                  - generic [ref=e148] [cursor=pointer]: Study Materials
+              - listitem [ref=e149]:
+                - button "Career Guides" [ref=e150] [cursor=pointer]:
+                  - generic [ref=e151] [cursor=pointer]: Career Guides
+              - listitem [ref=e152]:
+                - button "Blog" [ref=e153] [cursor=pointer]:
+                  - generic [ref=e154] [cursor=pointer]: Blog
+              - listitem [ref=e155]:
+                - button "API Docs" [ref=e156] [cursor=pointer]:
+                  - generic [ref=e157] [cursor=pointer]: API Docs
+          - generic [ref=e158]:
+            - heading "Legal" [level=3] [ref=e159]
+            - list [ref=e160]:
+              - listitem [ref=e161]:
+                - button "Privacy Policy" [ref=e162] [cursor=pointer]:
+                  - generic [ref=e163] [cursor=pointer]: Privacy Policy
+              - listitem [ref=e164]:
+                - button "Terms of Service" [ref=e165] [cursor=pointer]:
+                  - generic [ref=e166] [cursor=pointer]: Terms of Service
+              - listitem [ref=e167]:
+                - button "Cookie Policy" [ref=e168] [cursor=pointer]:
+                  - generic [ref=e169] [cursor=pointer]: Cookie Policy
+              - listitem [ref=e170]:
+                - button "GDPR" [ref=e171] [cursor=pointer]:
+                  - generic [ref=e172] [cursor=pointer]: GDPR
+        - generic [ref=e174]:
+          - generic [ref=e175]:
+            - link "Facebook" [ref=e176] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e177] [cursor=pointer]
+            - link "Twitter" [ref=e179] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e180] [cursor=pointer]
+            - link "Instagram" [ref=e182] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e183] [cursor=pointer]
+            - link "LinkedIn" [ref=e186] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e187] [cursor=pointer]
+            - link "GitHub" [ref=e191] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e192] [cursor=pointer]
+          - generic [ref=e195]:
+            - generic [ref=e196]: "Stay updated:"
+            - generic [ref=e197]:
+              - textbox "Enter your email" [ref=e198]
+              - button "Subscribe" [ref=e199] [cursor=pointer]
+      - generic [ref=e201]:
+        - paragraph [ref=e202]: © 2025 CareerGuide. All rights reserved. Built with ❤️ for students everywhere.
+        - button "Scroll to top" [ref=e203] [cursor=pointer]:
+          - img [ref=e204] [cursor=pointer]
+  - button "Open AI Career Assistant" [ref=e208] [cursor=pointer]:
+    - img [ref=e210] [cursor=pointer]
+  - alert [ref=e213]
+```

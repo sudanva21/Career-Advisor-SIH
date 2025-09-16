@@ -1,0 +1,296 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "CA Career Advisor" [ref=e5]:
+        - /url: /
+        - generic [ref=e7]: CA
+        - generic [ref=e8]: Career Advisor
+      - generic [ref=e9]:
+        - link "Home" [ref=e10]:
+          - /url: /
+        - link "Colleges" [ref=e11]:
+          - /url: /colleges
+        - button "Features" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14] [cursor=pointer]: Features
+          - img [ref=e15] [cursor=pointer]
+        - button "Language - English" [ref=e18] [cursor=pointer]:
+          - img [ref=e19] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: English
+          - img [ref=e24] [cursor=pointer]
+  - main [ref=e27]:
+    - generic [ref=e28]:
+      - generic [ref=e33]:
+        - generic [ref=e35]:
+          - img [ref=e36]
+          - generic [ref=e40]: Our Story
+        - heading "About CareerGuide" [level=1] [ref=e41]:
+          - generic [ref=e42]: About CareerGuide
+        - paragraph [ref=e43]: We're on a mission to democratize career guidance by making personalized, AI-powered career counseling accessible to every student, everywhere.
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - img [ref=e48]
+          - generic [ref=e53]: 50K+
+          - generic [ref=e54]: Students Guided
+        - generic [ref=e55]:
+          - img [ref=e56]
+          - generic [ref=e59]: 95%
+          - generic [ref=e60]: Success Rate
+        - generic [ref=e61]:
+          - img [ref=e62]
+          - generic [ref=e65]: 200+
+          - generic [ref=e66]: Career Paths
+        - generic [ref=e67]:
+          - img [ref=e68]
+          - generic [ref=e70]: 4.9★
+          - generic [ref=e71]: User Rating
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - img [ref=e76]
+          - heading "Our Mission" [level=2] [ref=e80]
+          - paragraph [ref=e81]: To empower every student with the tools, insights, and guidance they need to make informed career decisions and build successful professional lives.
+          - paragraph [ref=e82]: We believe that career guidance shouldn't be a luxury available only to a few. Through technology and AI, we're making professional career counseling accessible, affordable, and effective for students worldwide.
+        - generic [ref=e83]:
+          - img [ref=e84]
+          - heading "Our Vision" [level=2] [ref=e86]
+          - paragraph [ref=e87]: A world where every student has access to personalized career guidance, enabling them to pursue fulfilling careers that align with their passions and strengths.
+          - paragraph [ref=e88]: We envision a future where career confusion is eliminated through intelligent, data-driven recommendations that consider individual personalities, market trends, and emerging opportunities in the global job market.
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - heading "Our Values" [level=2] [ref=e92]:
+            - text: Our
+            - generic [ref=e93]: Values
+          - paragraph [ref=e94]: The principles that guide everything we do and build
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - img [ref=e97]
+            - heading "Student-Centric" [level=3] [ref=e99]
+            - paragraph [ref=e100]: Every feature we build puts students first. Your success is our primary goal and driving force.
+          - generic [ref=e101]:
+            - img [ref=e102]
+            - heading "Innovation" [level=3] [ref=e104]
+            - paragraph [ref=e105]: We leverage cutting-edge AI and technology to provide personalized, data-driven career guidance.
+          - generic [ref=e106]:
+            - img [ref=e107]
+            - heading "Trust & Privacy" [level=3] [ref=e109]
+            - paragraph [ref=e110]: Your personal information and career data are protected with enterprise-grade security measures.
+          - generic [ref=e111]:
+            - img [ref=e112]
+            - heading "Accessibility" [level=3] [ref=e115]
+            - paragraph [ref=e116]: Quality career guidance should be accessible to everyone, regardless of background or location.
+          - generic [ref=e117]:
+            - img [ref=e118]
+            - heading "Continuous Growth" [level=3] [ref=e121]
+            - paragraph [ref=e122]: We constantly evolve our platform based on industry trends and user feedback.
+          - generic [ref=e123]:
+            - img [ref=e124]
+            - heading "Community" [level=3] [ref=e129]
+            - paragraph [ref=e130]: Building a supportive community where students can learn, share, and grow together.
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - heading "Our Journey" [level=2] [ref=e134]:
+            - text: Our
+            - generic [ref=e135]: Journey
+          - paragraph [ref=e136]: From vision to reality - the story of CareerGuide
+        - generic [ref=e137]:
+          - generic [ref=e138]:
+            - generic [ref=e140]:
+              - generic [ref=e141]: "2023"
+              - heading "The Vision" [level=3] [ref=e142]
+              - paragraph [ref=e143]: Identified the gap in personalized career guidance for students in the digital age.
+            - img [ref=e145]
+          - generic [ref=e147]:
+            - generic [ref=e149]:
+              - generic [ref=e150]: "2024"
+              - heading "Platform Launch" [level=3] [ref=e151]
+              - paragraph [ref=e152]: Launched CareerGuide with AI-powered assessments and personalized recommendations.
+            - img [ref=e154]
+          - generic [ref=e159]:
+            - generic [ref=e161]:
+              - generic [ref=e162]: "2024"
+              - heading "Community Growth" [level=3] [ref=e163]
+              - paragraph [ref=e164]: Reached 50,000+ students and expanded to cover 200+ career paths.
+            - img [ref=e166]
+          - generic [ref=e171]:
+            - generic [ref=e173]:
+              - generic [ref=e174]: Future
+              - heading "Global Expansion" [level=3] [ref=e175]
+              - paragraph [ref=e176]: Planning to expand internationally and add more advanced AI features.
+            - img [ref=e178]
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - heading "Meet the Team" [level=2] [ref=e184]:
+            - text: Meet the
+            - generic [ref=e185]: Team
+          - paragraph [ref=e186]: The people behind CareerGuide's mission
+        - generic [ref=e188]:
+          - img [ref=e190]
+          - heading "Sudanva" [level=3] [ref=e193]
+          - generic [ref=e194]: Founder & CEO
+          - paragraph [ref=e195]: Full-stack developer passionate about using technology to solve real-world problems. Experienced in AI/ML and career counseling.
+          - generic [ref=e196]:
+            - generic [ref=e197]: AI/ML
+            - generic [ref=e198]: Full-Stack Development
+            - generic [ref=e199]: Product Strategy
+            - generic [ref=e200]: Career Counseling
+          - generic [ref=e201]:
+            - link [ref=e202]:
+              - /url: https://linkedin.com/in/sudanva
+              - img [ref=e203]
+            - link [ref=e207]:
+              - /url: https://github.com/sudanva
+              - img [ref=e208]
+            - link [ref=e211]:
+              - /url: mailto:sudanva7@gmail.com
+              - img [ref=e212]
+      - generic [ref=e216]:
+        - heading "What Makes Us Different" [level=2] [ref=e218]:
+          - text: What Makes Us
+          - generic [ref=e219]: Different
+        - generic [ref=e220]:
+          - generic [ref=e221]:
+            - img [ref=e222]
+            - heading "AI-Powered Assessments" [level=3] [ref=e225]
+            - paragraph [ref=e226]: Advanced machine learning algorithms analyze your skills, interests, and personality
+          - generic [ref=e227]:
+            - img [ref=e228]
+            - heading "Personalized Roadmaps" [level=3] [ref=e231]
+            - paragraph [ref=e232]: Custom career paths tailored to your goals and current skill level
+          - generic [ref=e233]:
+            - img [ref=e234]
+            - heading "Educational Guidance" [level=3] [ref=e237]
+            - paragraph [ref=e238]: Comprehensive college and course recommendations based on your career goals
+          - generic [ref=e239]:
+            - img [ref=e240]
+            - heading "Industry Insights" [level=3] [ref=e243]
+            - paragraph [ref=e244]: Real-time market data and trends to help you make informed decisions
+      - generic [ref=e247]:
+        - img [ref=e248]
+        - heading "Ready to Start Your Journey?" [level=2] [ref=e251]
+        - paragraph [ref=e252]: Join thousands of students who have discovered their ideal career path with CareerGuide. Take the first step towards your dream career today.
+        - generic [ref=e253]:
+          - link "Take Assessment" [ref=e254]:
+            - /url: /assessment
+          - link "Contact Us" [ref=e255]:
+            - /url: /contact
+  - contentinfo [ref=e256]:
+    - generic [ref=e258]:
+      - generic [ref=e259]:
+        - generic [ref=e260]:
+          - generic [ref=e261]:
+            - generic [ref=e262]:
+              - img [ref=e263]
+              - generic [ref=e265]:
+                - text: Career
+                - generic [ref=e266]: Guide
+            - paragraph [ref=e267]: Your comprehensive platform for career guidance and college recommendations powered by AI.
+            - generic [ref=e268]:
+              - generic [ref=e269]:
+                - img [ref=e270]
+                - generic [ref=e273]: sudanva7@gmail.com
+              - generic [ref=e274]:
+                - img [ref=e275]
+                - generic [ref=e277]: +91 7204686919
+              - generic [ref=e278]:
+                - img [ref=e279]
+                - generic [ref=e282]: 123 Innovation Drive, Tech City
+          - generic [ref=e283]:
+            - heading "Features" [level=3] [ref=e284]
+            - list [ref=e285]:
+              - listitem [ref=e286]:
+                - button "Features" [ref=e287] [cursor=pointer]:
+                  - generic [ref=e288] [cursor=pointer]: Features
+              - listitem [ref=e289]:
+                - button "Career Quiz" [ref=e290] [cursor=pointer]:
+                  - generic [ref=e291] [cursor=pointer]: Career Quiz
+              - listitem [ref=e292]:
+                - button "3D Career Tree" [ref=e293] [cursor=pointer]:
+                  - generic [ref=e294] [cursor=pointer]: 3D Career Tree
+              - listitem [ref=e295]:
+                - button "College Finder" [ref=e296] [cursor=pointer]:
+                  - generic [ref=e297] [cursor=pointer]: College Finder
+              - listitem [ref=e298]:
+                - button "Timeline Tracker" [ref=e299] [cursor=pointer]:
+                  - generic [ref=e300] [cursor=pointer]: Timeline Tracker
+          - generic [ref=e301]:
+            - heading "Company" [level=3] [ref=e302]
+            - list [ref=e303]:
+              - listitem [ref=e304]:
+                - button "About" [ref=e305] [cursor=pointer]:
+                  - generic [ref=e306] [cursor=pointer]: About
+              - listitem [ref=e307]:
+                - button "Team" [ref=e308] [cursor=pointer]:
+                  - generic [ref=e309] [cursor=pointer]: Team
+              - listitem [ref=e310]:
+                - button "Careers" [ref=e311] [cursor=pointer]:
+                  - generic [ref=e312] [cursor=pointer]: Careers
+              - listitem [ref=e313]:
+                - button "Press" [ref=e314] [cursor=pointer]:
+                  - generic [ref=e315] [cursor=pointer]: Press
+              - listitem [ref=e316]:
+                - button "Contact" [ref=e317] [cursor=pointer]:
+                  - generic [ref=e318] [cursor=pointer]: Contact
+          - generic [ref=e319]:
+            - heading "Support" [level=3] [ref=e320]
+            - list [ref=e321]:
+              - listitem [ref=e322]:
+                - button "Help" [ref=e323] [cursor=pointer]:
+                  - generic [ref=e324] [cursor=pointer]: Help
+              - listitem [ref=e325]:
+                - button "Study Materials" [ref=e326] [cursor=pointer]:
+                  - generic [ref=e327] [cursor=pointer]: Study Materials
+              - listitem [ref=e328]:
+                - button "Career Guides" [ref=e329] [cursor=pointer]:
+                  - generic [ref=e330] [cursor=pointer]: Career Guides
+              - listitem [ref=e331]:
+                - button "Blog" [ref=e332] [cursor=pointer]:
+                  - generic [ref=e333] [cursor=pointer]: Blog
+              - listitem [ref=e334]:
+                - button "API Docs" [ref=e335] [cursor=pointer]:
+                  - generic [ref=e336] [cursor=pointer]: API Docs
+          - generic [ref=e337]:
+            - heading "Legal" [level=3] [ref=e338]
+            - list [ref=e339]:
+              - listitem [ref=e340]:
+                - button "Privacy Policy" [ref=e341] [cursor=pointer]:
+                  - generic [ref=e342] [cursor=pointer]: Privacy Policy
+              - listitem [ref=e343]:
+                - button "Terms of Service" [ref=e344] [cursor=pointer]:
+                  - generic [ref=e345] [cursor=pointer]: Terms of Service
+              - listitem [ref=e346]:
+                - button "Cookie Policy" [ref=e347] [cursor=pointer]:
+                  - generic [ref=e348] [cursor=pointer]: Cookie Policy
+              - listitem [ref=e349]:
+                - button "GDPR" [ref=e350] [cursor=pointer]:
+                  - generic [ref=e351] [cursor=pointer]: GDPR
+        - generic [ref=e353]:
+          - generic [ref=e354]:
+            - link "Facebook" [ref=e355]:
+              - /url: "#"
+              - img [ref=e356]
+            - link "Twitter" [ref=e358]:
+              - /url: "#"
+              - img [ref=e359]
+            - link "Instagram" [ref=e361]:
+              - /url: "#"
+              - img [ref=e362]
+            - link "LinkedIn" [ref=e365]:
+              - /url: "#"
+              - img [ref=e366]
+            - link "GitHub" [ref=e370]:
+              - /url: "#"
+              - img [ref=e371]
+          - generic [ref=e374]:
+            - generic [ref=e375]: "Stay updated:"
+            - generic [ref=e376]:
+              - textbox "Enter your email" [ref=e377]
+              - button "Subscribe" [ref=e378] [cursor=pointer]
+      - generic [ref=e380]:
+        - paragraph [ref=e381]: © 2025 CareerGuide. All rights reserved. Built with ❤️ for students everywhere.
+        - button "Scroll to top" [ref=e382] [cursor=pointer]:
+          - img [ref=e383] [cursor=pointer]
+  - button "Open AI Career Assistant" [ref=e387] [cursor=pointer]:
+    - img [ref=e389] [cursor=pointer]
+```

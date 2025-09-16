@@ -1,0 +1,309 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "CA Career Advisor" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7] [cursor=pointer]: CA
+        - generic [ref=e8] [cursor=pointer]: Career Advisor
+      - generic [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Colleges" [ref=e11] [cursor=pointer]:
+          - /url: /colleges
+        - button "Features" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14] [cursor=pointer]: Features
+          - img [ref=e15] [cursor=pointer]
+        - button "Language - English" [ref=e18] [cursor=pointer]:
+          - img [ref=e19] [cursor=pointer]
+          - generic [ref=e26] [cursor=pointer]: English
+          - img [ref=e27] [cursor=pointer]
+        - generic [ref=e29]:
+          - link "Sign In" [ref=e30] [cursor=pointer]:
+            - /url: /auth/signin
+          - link "Sign Up" [ref=e31] [cursor=pointer]:
+            - /url: /auth/signup
+  - main [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e38]:
+        - generic [ref=e40]:
+          - img [ref=e41]
+          - generic [ref=e43]: Get in Touch
+        - heading "Contact Us" [level=1] [ref=e44]:
+          - generic [ref=e45]: Contact Us
+        - paragraph [ref=e46]: Have questions about your career path? Need help with our platform? Our expert team is here to support your professional journey every step of the way.
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - img [ref=e51]
+          - generic [ref=e54]: 24/7
+          - generic [ref=e55]: Support Available
+        - generic [ref=e56]:
+          - img [ref=e57]
+          - generic [ref=e59]: <2hrs
+          - generic [ref=e60]: Average Response
+        - generic [ref=e61]:
+          - img [ref=e62]
+          - generic [ref=e64]: 98%
+          - generic [ref=e65]: Satisfaction Rate
+        - generic [ref=e66]:
+          - img [ref=e67]
+          - generic [ref=e69]: 4.9★
+          - generic [ref=e70]: Support Rating
+      - generic [ref=e72]:
+        - heading "Choose Your Contact Method" [level=2] [ref=e74]:
+          - text: Choose Your
+          - generic [ref=e75]: Contact Method
+        - generic [ref=e76]:
+          - generic [ref=e77]:
+            - img [ref=e78]
+            - heading "Email Support" [level=3] [ref=e81]
+            - paragraph [ref=e82]: Get help with your account, technical issues, or general questions
+            - generic [ref=e83]:
+              - generic [ref=e84]: sudanva7@gmail.com
+              - generic [ref=e85]: "Response: Within 24 hours"
+            - link "Contact Now" [ref=e86] [cursor=pointer]:
+              - /url: mailto:sudanva7@gmail.com
+          - generic [ref=e87]:
+            - img [ref=e88]
+            - heading "Live Chat" [level=3] [ref=e90]
+            - paragraph [ref=e91]: Chat with our support team for immediate assistance
+            - generic [ref=e92]:
+              - generic [ref=e93]: Available 9 AM - 6 PM IST
+              - generic [ref=e94]: "Response: Instant"
+            - link "Contact Now" [ref=e95] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=e96]:
+            - img [ref=e97]
+            - heading "Schedule a Call" [level=3] [ref=e102]
+            - paragraph [ref=e103]: Book a consultation with our career experts
+            - generic [ref=e104]:
+              - generic [ref=e105]: Free 30-min consultation
+              - generic [ref=e106]: "Response: Same day"
+            - link "Contact Now" [ref=e107] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=e108]:
+            - img [ref=e109]
+            - heading "Office Location" [level=3] [ref=e112]
+            - paragraph [ref=e113]: Visit our headquarters for in-person meetings
+            - generic [ref=e114]:
+              - generic [ref=e115]: Bangalore, Karnataka, India
+              - generic [ref=e116]: "Response: By appointment"
+            - link "Contact Now" [ref=e117] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - heading "Send Us a Message" [level=2] [ref=e121]:
+            - text: Send Us a
+            - generic [ref=e122]: Message
+          - paragraph [ref=e123]: Fill out the form below and we'll get back to you as soon as possible.
+        - generic [ref=e125]:
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - generic [ref=e128]:
+                - img [ref=e129]
+                - text: Full Name *
+              - textbox "Enter your full name" [ref=e132]
+            - generic [ref=e133]:
+              - generic [ref=e134]:
+                - img [ref=e135]
+                - text: Email Address *
+              - textbox "Enter your email" [ref=e138]
+          - generic [ref=e139]:
+            - generic [ref=e140]:
+              - generic [ref=e141]:
+                - img [ref=e142]
+                - text: Company (Optional)
+              - textbox "Your company name" [ref=e154]
+            - generic [ref=e155]:
+              - generic [ref=e156]: Category
+              - combobox [ref=e157]:
+                - option "General Inquiry" [selected]
+                - option "Technical Support"
+                - option "Billing & Payments"
+                - option "Business Partnership"
+                - option "Career Consultation"
+                - option "Feedback & Suggestions"
+          - generic [ref=e158]:
+            - generic [ref=e159]: Subject *
+            - textbox "Brief description of your inquiry" [ref=e160]
+          - generic [ref=e161]:
+            - generic [ref=e162]: Message *
+            - textbox "Tell us more about how we can help you..." [ref=e163]
+          - button "Send Message" [ref=e164] [cursor=pointer]:
+            - img [ref=e165] [cursor=pointer]
+            - generic [ref=e168] [cursor=pointer]: Send Message
+          - paragraph [ref=e169]: By submitting this form, you agree to our Privacy Policy and Terms of Service.
+      - generic [ref=e172]:
+        - generic [ref=e173]:
+          - heading "Connect With Us" [level=3] [ref=e174]:
+            - text: Connect With
+            - generic [ref=e175]: Us
+          - generic [ref=e176]:
+            - link "LinkedIn Follow us for updates" [ref=e177] [cursor=pointer]:
+              - /url: https://linkedin.com/in/sudanva
+              - img [ref=e178] [cursor=pointer]
+              - generic [ref=e182] [cursor=pointer]:
+                - generic [ref=e183] [cursor=pointer]: LinkedIn
+                - generic [ref=e184] [cursor=pointer]: Follow us for updates
+            - link "GitHub Follow us for updates" [ref=e185] [cursor=pointer]:
+              - /url: https://github.com/sudanva
+              - img [ref=e186] [cursor=pointer]
+              - generic [ref=e189] [cursor=pointer]:
+                - generic [ref=e190] [cursor=pointer]: GitHub
+                - generic [ref=e191] [cursor=pointer]: Follow us for updates
+            - link "Twitter Follow us for updates" [ref=e192] [cursor=pointer]:
+              - /url: https://twitter.com/sudanva
+              - img [ref=e193] [cursor=pointer]
+              - generic [ref=e195] [cursor=pointer]:
+                - generic [ref=e196] [cursor=pointer]: Twitter
+                - generic [ref=e197] [cursor=pointer]: Follow us for updates
+            - link "Website Follow us for updates" [ref=e198] [cursor=pointer]:
+              - /url: https://careerguide.com
+              - img [ref=e199] [cursor=pointer]
+              - generic [ref=e203] [cursor=pointer]:
+                - generic [ref=e204] [cursor=pointer]: Website
+                - generic [ref=e205] [cursor=pointer]: Follow us for updates
+        - generic [ref=e206]:
+          - heading "Support Hours" [level=3] [ref=e207]:
+            - text: Support
+            - generic [ref=e208]: Hours
+          - generic [ref=e210]:
+            - generic [ref=e211]:
+              - generic [ref=e212]: Monday - Friday
+              - generic [ref=e213]: 9:00 AM - 6:00 PM IST
+            - generic [ref=e214]:
+              - generic [ref=e215]: Saturday
+              - generic [ref=e216]: 10:00 AM - 4:00 PM IST
+            - generic [ref=e217]:
+              - generic [ref=e218]: Sunday
+              - generic [ref=e219]: Closed
+            - generic [ref=e221]:
+              - img [ref=e222]
+              - generic [ref=e225]: Emergency support available 24/7
+          - generic [ref=e226]:
+            - heading "Quick Questions?" [level=4] [ref=e227]
+            - paragraph [ref=e228]: Check out our FAQ section for instant answers to common questions about career guidance, platform features, and account management.
+            - link "View FAQ" [ref=e229] [cursor=pointer]:
+              - /url: /faq
+  - contentinfo [ref=e230]:
+    - generic [ref=e232]:
+      - generic [ref=e233]:
+        - generic [ref=e234]:
+          - generic [ref=e235]:
+            - generic [ref=e236]:
+              - img [ref=e237]
+              - generic [ref=e243]:
+                - text: Career
+                - generic [ref=e244]: Guide
+            - paragraph [ref=e245]: Your comprehensive platform for career guidance and college recommendations powered by AI.
+            - generic [ref=e246]:
+              - generic [ref=e247]:
+                - img [ref=e248]
+                - generic [ref=e251]: sudanva7@gmail.com
+              - generic [ref=e252]:
+                - img [ref=e253]
+                - generic [ref=e255]: +91 7204686919
+              - generic [ref=e256]:
+                - img [ref=e257]
+                - generic [ref=e260]: 123 Innovation Drive, Tech City
+          - generic [ref=e261]:
+            - heading "Features" [level=3] [ref=e262]
+            - list [ref=e263]:
+              - listitem [ref=e264]:
+                - button "Features" [ref=e265] [cursor=pointer]:
+                  - generic [ref=e266] [cursor=pointer]: Features
+              - listitem [ref=e267]:
+                - button "Career Quiz" [ref=e268] [cursor=pointer]:
+                  - generic [ref=e269] [cursor=pointer]: Career Quiz
+              - listitem [ref=e270]:
+                - button "3D Career Tree" [ref=e271] [cursor=pointer]:
+                  - generic [ref=e272] [cursor=pointer]: 3D Career Tree
+              - listitem [ref=e273]:
+                - button "College Finder" [ref=e274] [cursor=pointer]:
+                  - generic [ref=e275] [cursor=pointer]: College Finder
+              - listitem [ref=e276]:
+                - button "Timeline Tracker" [ref=e277] [cursor=pointer]:
+                  - generic [ref=e278] [cursor=pointer]: Timeline Tracker
+          - generic [ref=e279]:
+            - heading "Company" [level=3] [ref=e280]
+            - list [ref=e281]:
+              - listitem [ref=e282]:
+                - button "About" [ref=e283] [cursor=pointer]:
+                  - generic [ref=e284] [cursor=pointer]: About
+              - listitem [ref=e285]:
+                - button "Team" [ref=e286] [cursor=pointer]:
+                  - generic [ref=e287] [cursor=pointer]: Team
+              - listitem [ref=e288]:
+                - button "Careers" [ref=e289] [cursor=pointer]:
+                  - generic [ref=e290] [cursor=pointer]: Careers
+              - listitem [ref=e291]:
+                - button "Press" [ref=e292] [cursor=pointer]:
+                  - generic [ref=e293] [cursor=pointer]: Press
+              - listitem [ref=e294]:
+                - button "Contact" [ref=e295] [cursor=pointer]:
+                  - generic [ref=e296] [cursor=pointer]: Contact
+          - generic [ref=e297]:
+            - heading "Support" [level=3] [ref=e298]
+            - list [ref=e299]:
+              - listitem [ref=e300]:
+                - button "Help" [ref=e301] [cursor=pointer]:
+                  - generic [ref=e302] [cursor=pointer]: Help
+              - listitem [ref=e303]:
+                - button "Study Materials" [ref=e304] [cursor=pointer]:
+                  - generic [ref=e305] [cursor=pointer]: Study Materials
+              - listitem [ref=e306]:
+                - button "Career Guides" [ref=e307] [cursor=pointer]:
+                  - generic [ref=e308] [cursor=pointer]: Career Guides
+              - listitem [ref=e309]:
+                - button "Blog" [ref=e310] [cursor=pointer]:
+                  - generic [ref=e311] [cursor=pointer]: Blog
+              - listitem [ref=e312]:
+                - button "API Docs" [ref=e313] [cursor=pointer]:
+                  - generic [ref=e314] [cursor=pointer]: API Docs
+          - generic [ref=e315]:
+            - heading "Legal" [level=3] [ref=e316]
+            - list [ref=e317]:
+              - listitem [ref=e318]:
+                - button "Privacy Policy" [ref=e319] [cursor=pointer]:
+                  - generic [ref=e320] [cursor=pointer]: Privacy Policy
+              - listitem [ref=e321]:
+                - button "Terms of Service" [ref=e322] [cursor=pointer]:
+                  - generic [ref=e323] [cursor=pointer]: Terms of Service
+              - listitem [ref=e324]:
+                - button "Cookie Policy" [ref=e325] [cursor=pointer]:
+                  - generic [ref=e326] [cursor=pointer]: Cookie Policy
+              - listitem [ref=e327]:
+                - button "GDPR" [ref=e328] [cursor=pointer]:
+                  - generic [ref=e329] [cursor=pointer]: GDPR
+        - generic [ref=e331]:
+          - generic [ref=e332]:
+            - link "Facebook" [ref=e333] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e334] [cursor=pointer]
+            - link "Twitter" [ref=e336] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e337] [cursor=pointer]
+            - link "Instagram" [ref=e339] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e340] [cursor=pointer]
+            - link "LinkedIn" [ref=e344] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e345] [cursor=pointer]
+            - link "GitHub" [ref=e349] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e350] [cursor=pointer]
+          - generic [ref=e353]:
+            - generic [ref=e354]: "Stay updated:"
+            - generic [ref=e355]:
+              - textbox "Enter your email" [ref=e356]
+              - button "Subscribe" [ref=e357] [cursor=pointer]
+      - generic [ref=e359]:
+        - paragraph [ref=e360]: © 2025 CareerGuide. All rights reserved. Built with ❤️ for students everywhere.
+        - button "Scroll to top" [ref=e361] [cursor=pointer]:
+          - img [ref=e362] [cursor=pointer]
+  - button "Open AI Career Assistant" [ref=e367] [cursor=pointer]:
+    - img [ref=e369] [cursor=pointer]
+  - alert [ref=e372]
+```

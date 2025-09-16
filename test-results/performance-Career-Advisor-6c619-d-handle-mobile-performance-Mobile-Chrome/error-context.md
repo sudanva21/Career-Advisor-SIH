@@ -1,0 +1,221 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link "CA Career Advisor" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e7] [cursor=pointer]: CA
+          - generic [ref=e8] [cursor=pointer]: Career Advisor
+        - button [active] [ref=e10] [cursor=pointer]:
+          - img [ref=e11] [cursor=pointer]
+      - generic [ref=e15]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+        - link "Colleges" [ref=e17] [cursor=pointer]:
+          - /url: /colleges
+        - button "Features" [ref=e19] [cursor=pointer]:
+          - generic [ref=e20] [cursor=pointer]: Features
+          - img [ref=e21] [cursor=pointer]
+        - button "Language - English" [ref=e25] [cursor=pointer]:
+          - img [ref=e26] [cursor=pointer]
+          - img [ref=e30] [cursor=pointer]
+        - generic [ref=e32]:
+          - link "Sign In" [ref=e33] [cursor=pointer]:
+            - /url: /auth/signin
+          - link "Sign Up" [ref=e34] [cursor=pointer]:
+            - /url: /auth/signup
+  - main [ref=e35]:
+    - main [ref=e36]:
+      - generic [ref=e45]:
+        - heading "Your Personalized Career & College Guide" [level=1] [ref=e46]:
+          - generic [ref=e47]: Your Personalized Career & College Guide
+        - paragraph [ref=e48]:
+          - text: Discover your path with
+          - generic [ref=e49]: AI-powered quizzes
+          - text: ","
+          - generic [ref=e50]: 3D career maps
+          - text: "&"
+          - generic [ref=e51]: nearby government college suggestions
+          - text: .
+        - generic [ref=e52]:
+          - button "Start Your Quiz" [ref=e53] [cursor=pointer]:
+            - generic [ref=e54] [cursor=pointer]: Start Your Quiz
+            - img [ref=e55] [cursor=pointer]
+          - button "Learn How It Works" [ref=e58] [cursor=pointer]:
+            - img [ref=e59] [cursor=pointer]
+            - generic [ref=e61] [cursor=pointer]: Learn How It Works
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]: 10K+
+            - generic [ref=e65]: Students Guided
+          - generic [ref=e66]:
+            - generic [ref=e67]: 500+
+            - generic [ref=e68]: Career Paths
+          - generic [ref=e69]:
+            - generic [ref=e70]: 1000+
+            - generic [ref=e71]: Colleges Listed
+      - generic [ref=e77]:
+        - generic [ref=e78]:
+          - heading "Powerful Features for Your Future" [level=2] [ref=e79]:
+            - text: Powerful Features for
+            - generic [ref=e80]: Your Future
+          - paragraph [ref=e81]: Discover the tools and insights you need to make informed decisions about your career and education path.
+        - generic [ref=e82]:
+          - button "Learn more about 3D Career Visualization" [ref=e83] [cursor=pointer]:
+            - img [ref=e86] [cursor=pointer]
+            - generic [ref=e89] [cursor=pointer]:
+              - heading "3D Career Visualization" [level=3] [ref=e90] [cursor=pointer]
+              - paragraph [ref=e91] [cursor=pointer]: Interactive 3D maps to explore career paths and opportunities
+            - img [ref=e95] [cursor=pointer]
+          - button "Learn more about Smart College Recommendations" [ref=e98] [cursor=pointer]:
+            - img [ref=e101] [cursor=pointer]
+            - generic [ref=e105] [cursor=pointer]:
+              - heading "Smart College Recommendations" [level=3] [ref=e106] [cursor=pointer]
+              - paragraph [ref=e107] [cursor=pointer]: Find the perfect colleges based on your preferences and career goals
+            - img [ref=e111] [cursor=pointer]
+          - button "Learn more about Personalized Career Quiz" [ref=e114] [cursor=pointer]:
+            - img [ref=e117] [cursor=pointer]
+            - generic [ref=e121] [cursor=pointer]:
+              - heading "Personalized Career Quiz" [level=3] [ref=e122] [cursor=pointer]
+              - paragraph [ref=e123] [cursor=pointer]: AI-driven assessment to discover your strengths and ideal career paths
+            - img [ref=e127] [cursor=pointer]
+        - generic [ref=e130]:
+          - button "Navigate to AI-Powered Insights" [ref=e131] [cursor=pointer]:
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]:
+              - heading "AI-Powered Insights" [level=4] [ref=e136] [cursor=pointer]
+              - paragraph [ref=e137] [cursor=pointer]: Get personalized recommendations based on your skills and interests
+          - button "Navigate to Study Materials" [ref=e138] [cursor=pointer]:
+            - img [ref=e140] [cursor=pointer]
+            - generic [ref=e143] [cursor=pointer]:
+              - heading "Study Materials" [level=4] [ref=e144] [cursor=pointer]
+              - paragraph [ref=e145] [cursor=pointer]: Access curated resources for entrance exams and skill development
+          - button "Navigate to Goal Setting" [ref=e146] [cursor=pointer]:
+            - img [ref=e148] [cursor=pointer]
+            - generic [ref=e152] [cursor=pointer]:
+              - heading "Goal Setting" [level=4] [ref=e153] [cursor=pointer]
+              - paragraph [ref=e154] [cursor=pointer]: Set and track academic and career goals with smart reminders
+        - button "Explore all platform features" [ref=e156] [cursor=pointer]: Explore All Features
+  - contentinfo [ref=e159]:
+    - generic [ref=e161]:
+      - generic [ref=e162]:
+        - generic [ref=e163]:
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - img [ref=e166]
+              - generic [ref=e168]:
+                - text: Career
+                - generic [ref=e169]: Guide
+            - paragraph [ref=e170]: Your comprehensive platform for career guidance and college recommendations powered by AI.
+            - generic [ref=e171]:
+              - generic [ref=e172]:
+                - img [ref=e173]
+                - generic [ref=e176]: sudanva7@gmail.com
+              - generic [ref=e177]:
+                - img [ref=e178]
+                - generic [ref=e180]: +91 7204686919
+              - generic [ref=e181]:
+                - img [ref=e182]
+                - generic [ref=e185]: 123 Innovation Drive, Tech City
+          - generic [ref=e186]:
+            - heading "Features" [level=3] [ref=e187]
+            - list [ref=e188]:
+              - listitem [ref=e189]:
+                - button "Features" [ref=e190] [cursor=pointer]:
+                  - generic [ref=e191] [cursor=pointer]: Features
+              - listitem [ref=e192]:
+                - button "Career Quiz" [ref=e193] [cursor=pointer]:
+                  - generic [ref=e194] [cursor=pointer]: Career Quiz
+              - listitem [ref=e195]:
+                - button "3D Career Tree" [ref=e196] [cursor=pointer]:
+                  - generic [ref=e197] [cursor=pointer]: 3D Career Tree
+              - listitem [ref=e198]:
+                - button "College Finder" [ref=e199] [cursor=pointer]:
+                  - generic [ref=e200] [cursor=pointer]: College Finder
+              - listitem [ref=e201]:
+                - button "Timeline Tracker" [ref=e202] [cursor=pointer]:
+                  - generic [ref=e203] [cursor=pointer]: Timeline Tracker
+          - generic [ref=e204]:
+            - heading "Company" [level=3] [ref=e205]
+            - list [ref=e206]:
+              - listitem [ref=e207]:
+                - button "About" [ref=e208] [cursor=pointer]:
+                  - generic [ref=e209] [cursor=pointer]: About
+              - listitem [ref=e210]:
+                - button "Team" [ref=e211] [cursor=pointer]:
+                  - generic [ref=e212] [cursor=pointer]: Team
+              - listitem [ref=e213]:
+                - button "Careers" [ref=e214] [cursor=pointer]:
+                  - generic [ref=e215] [cursor=pointer]: Careers
+              - listitem [ref=e216]:
+                - button "Press" [ref=e217] [cursor=pointer]:
+                  - generic [ref=e218] [cursor=pointer]: Press
+              - listitem [ref=e219]:
+                - button "Contact" [ref=e220] [cursor=pointer]:
+                  - generic [ref=e221] [cursor=pointer]: Contact
+          - generic [ref=e222]:
+            - heading "Support" [level=3] [ref=e223]
+            - list [ref=e224]:
+              - listitem [ref=e225]:
+                - button "Help" [ref=e226] [cursor=pointer]:
+                  - generic [ref=e227] [cursor=pointer]: Help
+              - listitem [ref=e228]:
+                - button "Study Materials" [ref=e229] [cursor=pointer]:
+                  - generic [ref=e230] [cursor=pointer]: Study Materials
+              - listitem [ref=e231]:
+                - button "Career Guides" [ref=e232] [cursor=pointer]:
+                  - generic [ref=e233] [cursor=pointer]: Career Guides
+              - listitem [ref=e234]:
+                - button "Blog" [ref=e235] [cursor=pointer]:
+                  - generic [ref=e236] [cursor=pointer]: Blog
+              - listitem [ref=e237]:
+                - button "API Docs" [ref=e238] [cursor=pointer]:
+                  - generic [ref=e239] [cursor=pointer]: API Docs
+          - generic [ref=e240]:
+            - heading "Legal" [level=3] [ref=e241]
+            - list [ref=e242]:
+              - listitem [ref=e243]:
+                - button "Privacy Policy" [ref=e244] [cursor=pointer]:
+                  - generic [ref=e245] [cursor=pointer]: Privacy Policy
+              - listitem [ref=e246]:
+                - button "Terms of Service" [ref=e247] [cursor=pointer]:
+                  - generic [ref=e248] [cursor=pointer]: Terms of Service
+              - listitem [ref=e249]:
+                - button "Cookie Policy" [ref=e250] [cursor=pointer]:
+                  - generic [ref=e251] [cursor=pointer]: Cookie Policy
+              - listitem [ref=e252]:
+                - button "GDPR" [ref=e253] [cursor=pointer]:
+                  - generic [ref=e254] [cursor=pointer]: GDPR
+        - generic [ref=e256]:
+          - generic [ref=e257]:
+            - link "Facebook" [ref=e258] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e259] [cursor=pointer]
+            - link "Twitter" [ref=e261] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e262] [cursor=pointer]
+            - link "Instagram" [ref=e264] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e265] [cursor=pointer]
+            - link "LinkedIn" [ref=e268] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e269] [cursor=pointer]
+            - link "GitHub" [ref=e273] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e274] [cursor=pointer]
+          - generic [ref=e277]:
+            - generic [ref=e278]: "Stay updated:"
+            - generic [ref=e279]:
+              - textbox "Enter your email" [ref=e280]
+              - button "Subscribe" [ref=e281] [cursor=pointer]
+      - generic [ref=e283]:
+        - paragraph [ref=e284]: © 2025 CareerGuide. All rights reserved. Built with ❤️ for students everywhere.
+        - button "Scroll to top" [ref=e285] [cursor=pointer]:
+          - img [ref=e286] [cursor=pointer]
+  - button "Open AI Career Assistant" [ref=e290] [cursor=pointer]:
+    - img [ref=e292] [cursor=pointer]
+  - alert [ref=e295]
+```

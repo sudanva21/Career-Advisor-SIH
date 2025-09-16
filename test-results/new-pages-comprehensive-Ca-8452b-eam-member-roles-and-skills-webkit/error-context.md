@@ -1,0 +1,306 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "CA Career Advisor" [ref=e5]:
+        - /url: /
+        - generic [ref=e7]: CA
+        - generic [ref=e8]: Career Advisor
+      - generic [ref=e9]:
+        - link "Home" [ref=e10]:
+          - /url: /
+        - link "Colleges" [ref=e11]:
+          - /url: /colleges
+        - button "Features" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14] [cursor=pointer]: Features
+          - img [ref=e15] [cursor=pointer]
+        - button "Language - English" [ref=e18] [cursor=pointer]:
+          - img [ref=e19] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: English
+          - img [ref=e24] [cursor=pointer]
+  - main [ref=e27]:
+    - generic [ref=e28]:
+      - generic [ref=e33]:
+        - generic [ref=e35]:
+          - img [ref=e36]
+          - generic [ref=e41]: Meet Our Team
+        - heading "Our Team" [level=1] [ref=e42]:
+          - generic [ref=e43]: Our Team
+        - paragraph [ref=e44]: Meet the passionate individuals behind CareerGuide who are dedicated to transforming the future of career guidance through innovation and technology.
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - img [ref=e50]
+          - img "Sudanva - Team Leader & Technical Lead" [ref=e55]
+          - heading "Sudanva" [level=3] [ref=e56]
+          - paragraph [ref=e57]: Team Leader & Technical Lead
+          - paragraph [ref=e58]: Leading the CareerGuide vision through technical innovation and strategic guidance. Expert in full-stack development and AI integration.
+          - generic [ref=e59]:
+            - heading "Core Skills" [level=4] [ref=e60]
+            - generic [ref=e61]:
+              - generic [ref=e62]: Technical Leadership
+              - generic [ref=e63]: Full-Stack Development
+              - generic [ref=e64]: AI/ML
+              - generic [ref=e65]: Presentation
+              - generic [ref=e66]: Product Strategy
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - link "Email" [ref=e69]:
+                - /url: mailto:sudanva7@gmail.com
+                - img [ref=e70]
+                - generic [ref=e73]: Email
+              - link "Call" [ref=e74]:
+                - /url: tel:+91 8310491208
+                - img [ref=e75]
+                - generic [ref=e77]: Call
+            - generic [ref=e78]:
+              - link "LinkedIn" [ref=e79]:
+                - /url: https://www.linkedin.com/in/sudanva-shilannavar/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+                - img [ref=e80]
+              - link "X (Twitter)" [ref=e84]:
+                - /url: https://x.com/Sudanva999?t=0TMLL6qBkTfH9MbRdp6Ssg&s=09
+                - img [ref=e85]
+              - link "GitHub" [ref=e87]:
+                - /url: https://github.com/sudanva21
+                - img [ref=e88]
+        - generic [ref=e91]:
+          - img "Rakshita Patil - Quality Assurance & Testing Specialist" [ref=e95]
+          - heading "Rakshita Patil" [level=3] [ref=e96]
+          - paragraph [ref=e97]: Quality Assurance & Testing Specialist
+          - paragraph [ref=e98]: Ensures exceptional user experience through comprehensive testing and quality assurance. Expert in debugging and system optimization.
+          - generic [ref=e99]:
+            - heading "Core Skills" [level=4] [ref=e100]
+            - generic [ref=e101]:
+              - generic [ref=e102]: Quality Assurance
+              - generic [ref=e103]: Testing Strategies
+              - generic [ref=e104]: Debugging
+              - generic [ref=e105]: User Experience
+        - generic [ref=e106]:
+          - img "Sagar Kuligoud - Project Coordinator & Presentation Lead" [ref=e110]
+          - heading "Sagar Kuligoud" [level=3] [ref=e111]
+          - paragraph [ref=e112]: Project Coordinator & Presentation Lead
+          - paragraph [ref=e113]: Drives team coordination and manages project workflows. Specializes in strategic presentations and team management.
+          - generic [ref=e114]:
+            - heading "Core Skills" [level=4] [ref=e115]
+            - generic [ref=e116]:
+              - generic [ref=e117]: Project Coordination
+              - generic [ref=e118]: Team Management
+              - generic [ref=e119]: Presentation
+              - generic [ref=e120]: Strategic Planning
+        - generic [ref=e121]:
+          - img "Laxmikant Talli - Data Analyst & Insights Specialist" [ref=e125]
+          - heading "Laxmikant Talli" [level=3] [ref=e126]
+          - paragraph [ref=e127]: Data Analyst & Insights Specialist
+          - paragraph [ref=e128]: Transforms complex data into actionable insights and compelling visualizations. Expert in statistical analysis and data presentation.
+          - generic [ref=e129]:
+            - heading "Core Skills" [level=4] [ref=e130]
+            - generic [ref=e131]:
+              - generic [ref=e132]: Data Analysis
+              - generic [ref=e133]: Data Visualization
+              - generic [ref=e134]: Statistical Analysis
+              - generic [ref=e135]: Presentation
+        - generic [ref=e136]:
+          - img "Akash Kambar - Innovation & Strategy Contributor" [ref=e140]
+          - heading "Akash Kambar" [level=3] [ref=e141]
+          - paragraph [ref=e142]: Innovation & Strategy Contributor
+          - paragraph [ref=e143]: Brings creative problem-solving and fresh perspectives to complex challenges. Specializes in strategic thinking and innovation.
+          - generic [ref=e144]:
+            - heading "Core Skills" [level=4] [ref=e145]
+            - generic [ref=e146]:
+              - generic [ref=e147]: Creative Problem Solving
+              - generic [ref=e148]: Innovation
+              - generic [ref=e149]: Strategic Thinking
+              - generic [ref=e150]: Research
+        - generic [ref=e151]:
+          - img "Malikarjun Kadagoudr - Strategic Analyst & Developer" [ref=e155]
+          - heading "Malikarjun Kadagoudr" [level=3] [ref=e156]
+          - paragraph [ref=e157]: Strategic Analyst & Developer
+          - paragraph [ref=e158]: Contributes analytical expertise and strategic development insights. Expert in creative solutions and problem-solving approaches.
+          - generic [ref=e159]:
+            - heading "Core Skills" [level=4] [ref=e160]
+            - generic [ref=e161]:
+              - generic [ref=e162]: Strategic Analysis
+              - generic [ref=e163]: Creative Development
+              - generic [ref=e164]: Problem Solving
+              - generic [ref=e165]: Research
+      - generic [ref=e167]:
+        - generic [ref=e168]:
+          - heading "Our Departments" [level=2] [ref=e169]:
+            - text: Our
+            - generic [ref=e170]: Departments
+          - paragraph [ref=e171]: Diverse talents working together to build the future of career guidance.
+        - generic [ref=e172]:
+          - generic [ref=e173]:
+            - img [ref=e174]
+            - heading "Engineering" [level=3] [ref=e177]
+            - generic [ref=e178]: "8"
+            - paragraph [ref=e179]: Building scalable AI-powered career guidance systems
+          - generic [ref=e180]:
+            - img [ref=e181]
+            - heading "AI Research" [level=3] [ref=e184]
+            - generic [ref=e185]: "5"
+            - paragraph [ref=e186]: Developing cutting-edge machine learning models for career matching
+          - generic [ref=e187]:
+            - img [ref=e188]
+            - heading "Design" [level=3] [ref=e194]
+            - generic [ref=e195]: "4"
+            - paragraph [ref=e196]: Creating intuitive and beautiful user experiences
+          - generic [ref=e197]:
+            - img [ref=e198]
+            - heading "Security" [level=3] [ref=e200]
+            - generic [ref=e201]: "3"
+            - paragraph [ref=e202]: Ensuring data privacy and platform security
+      - generic [ref=e204]:
+        - generic [ref=e205]:
+          - heading "Our Culture" [level=2] [ref=e206]:
+            - text: Our
+            - generic [ref=e207]: Culture
+          - paragraph [ref=e208]: The values that guide us in everything we do.
+        - generic [ref=e209]:
+          - generic [ref=e210]:
+            - heading "Student-First Mindset" [level=3] [ref=e211]
+            - paragraph [ref=e212]: Every decision we make is guided by what's best for students and their career success.
+          - generic [ref=e213]:
+            - heading "Innovation & Excellence" [level=3] [ref=e214]
+            - paragraph [ref=e215]: We continuously push the boundaries of what's possible in educational technology.
+          - generic [ref=e216]:
+            - heading "Collaboration" [level=3] [ref=e217]
+            - paragraph [ref=e218]: Great products are built by great teams working together towards a common goal.
+          - generic [ref=e219]:
+            - heading "Lifelong Learning" [level=3] [ref=e220]
+            - paragraph [ref=e221]: We believe in continuous growth and learning, both personally and professionally.
+      - generic [ref=e224]:
+        - img [ref=e225]
+        - heading "Join Our Mission" [level=2] [ref=e229]
+        - paragraph [ref=e230]: We're always looking for talented individuals who share our passion for transforming career guidance through technology.
+        - generic [ref=e231]:
+          - heading "Open Positions" [level=3] [ref=e232]
+          - generic [ref=e233]:
+            - generic [ref=e235]: Senior AI Engineer
+            - generic [ref=e237]: Full-Stack Developer
+            - generic [ref=e239]: UX/UI Designer
+            - generic [ref=e241]: Product Manager
+            - generic [ref=e243]: DevOps Engineer
+            - generic [ref=e245]: Content Strategist
+        - link "View All Openings" [ref=e246]:
+          - /url: /careers
+  - contentinfo [ref=e247]:
+    - generic [ref=e249]:
+      - generic [ref=e250]:
+        - generic [ref=e251]:
+          - generic [ref=e252]:
+            - generic [ref=e253]:
+              - img [ref=e254]
+              - generic [ref=e256]:
+                - text: Career
+                - generic [ref=e257]: Guide
+            - paragraph [ref=e258]: Your comprehensive platform for career guidance and college recommendations powered by AI.
+            - generic [ref=e259]:
+              - generic [ref=e260]:
+                - img [ref=e261]
+                - generic [ref=e264]: sudanva7@gmail.com
+              - generic [ref=e265]:
+                - img [ref=e266]
+                - generic [ref=e268]: +91 7204686919
+              - generic [ref=e269]:
+                - img [ref=e270]
+                - generic [ref=e273]: 123 Innovation Drive, Tech City
+          - generic [ref=e274]:
+            - heading "Features" [level=3] [ref=e275]
+            - list [ref=e276]:
+              - listitem [ref=e277]:
+                - button "Features" [ref=e278] [cursor=pointer]:
+                  - generic [ref=e279] [cursor=pointer]: Features
+              - listitem [ref=e280]:
+                - button "Career Quiz" [ref=e281] [cursor=pointer]:
+                  - generic [ref=e282] [cursor=pointer]: Career Quiz
+              - listitem [ref=e283]:
+                - button "3D Career Tree" [ref=e284] [cursor=pointer]:
+                  - generic [ref=e285] [cursor=pointer]: 3D Career Tree
+              - listitem [ref=e286]:
+                - button "College Finder" [ref=e287] [cursor=pointer]:
+                  - generic [ref=e288] [cursor=pointer]: College Finder
+              - listitem [ref=e289]:
+                - button "Timeline Tracker" [ref=e290] [cursor=pointer]:
+                  - generic [ref=e291] [cursor=pointer]: Timeline Tracker
+          - generic [ref=e292]:
+            - heading "Company" [level=3] [ref=e293]
+            - list [ref=e294]:
+              - listitem [ref=e295]:
+                - button "About" [ref=e296] [cursor=pointer]:
+                  - generic [ref=e297] [cursor=pointer]: About
+              - listitem [ref=e298]:
+                - button "Team" [ref=e299] [cursor=pointer]:
+                  - generic [ref=e300] [cursor=pointer]: Team
+              - listitem [ref=e301]:
+                - button "Careers" [ref=e302] [cursor=pointer]:
+                  - generic [ref=e303] [cursor=pointer]: Careers
+              - listitem [ref=e304]:
+                - button "Press" [ref=e305] [cursor=pointer]:
+                  - generic [ref=e306] [cursor=pointer]: Press
+              - listitem [ref=e307]:
+                - button "Contact" [ref=e308] [cursor=pointer]:
+                  - generic [ref=e309] [cursor=pointer]: Contact
+          - generic [ref=e310]:
+            - heading "Support" [level=3] [ref=e311]
+            - list [ref=e312]:
+              - listitem [ref=e313]:
+                - button "Help" [ref=e314] [cursor=pointer]:
+                  - generic [ref=e315] [cursor=pointer]: Help
+              - listitem [ref=e316]:
+                - button "Study Materials" [ref=e317] [cursor=pointer]:
+                  - generic [ref=e318] [cursor=pointer]: Study Materials
+              - listitem [ref=e319]:
+                - button "Career Guides" [ref=e320] [cursor=pointer]:
+                  - generic [ref=e321] [cursor=pointer]: Career Guides
+              - listitem [ref=e322]:
+                - button "Blog" [ref=e323] [cursor=pointer]:
+                  - generic [ref=e324] [cursor=pointer]: Blog
+              - listitem [ref=e325]:
+                - button "API Docs" [ref=e326] [cursor=pointer]:
+                  - generic [ref=e327] [cursor=pointer]: API Docs
+          - generic [ref=e328]:
+            - heading "Legal" [level=3] [ref=e329]
+            - list [ref=e330]:
+              - listitem [ref=e331]:
+                - button "Privacy Policy" [ref=e332] [cursor=pointer]:
+                  - generic [ref=e333] [cursor=pointer]: Privacy Policy
+              - listitem [ref=e334]:
+                - button "Terms of Service" [ref=e335] [cursor=pointer]:
+                  - generic [ref=e336] [cursor=pointer]: Terms of Service
+              - listitem [ref=e337]:
+                - button "Cookie Policy" [ref=e338] [cursor=pointer]:
+                  - generic [ref=e339] [cursor=pointer]: Cookie Policy
+              - listitem [ref=e340]:
+                - button "GDPR" [ref=e341] [cursor=pointer]:
+                  - generic [ref=e342] [cursor=pointer]: GDPR
+        - generic [ref=e344]:
+          - generic [ref=e345]:
+            - link "Facebook" [ref=e346]:
+              - /url: "#"
+              - img [ref=e347]
+            - link "Twitter" [ref=e349]:
+              - /url: "#"
+              - img [ref=e350]
+            - link "Instagram" [ref=e352]:
+              - /url: "#"
+              - img [ref=e353]
+            - link "LinkedIn" [ref=e356]:
+              - /url: "#"
+              - img [ref=e357]
+            - link "GitHub" [ref=e361]:
+              - /url: "#"
+              - img [ref=e362]
+          - generic [ref=e365]:
+            - generic [ref=e366]: "Stay updated:"
+            - generic [ref=e367]:
+              - textbox "Enter your email" [ref=e368]
+              - button "Subscribe" [ref=e369] [cursor=pointer]
+      - generic [ref=e371]:
+        - paragraph [ref=e372]: © 2025 CareerGuide. All rights reserved. Built with ❤️ for students everywhere.
+        - button "Scroll to top" [ref=e373] [cursor=pointer]:
+          - img [ref=e374] [cursor=pointer]
+  - button "Open AI Career Assistant" [ref=e378] [cursor=pointer]:
+    - img [ref=e380] [cursor=pointer]
+```

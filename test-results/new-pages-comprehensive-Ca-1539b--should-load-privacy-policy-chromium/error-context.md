@@ -1,0 +1,267 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "CA Career Advisor" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7] [cursor=pointer]: CA
+        - generic [ref=e8] [cursor=pointer]: Career Advisor
+      - generic [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Colleges" [ref=e11] [cursor=pointer]:
+          - /url: /colleges
+        - button "Features" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14] [cursor=pointer]: Features
+          - img [ref=e15] [cursor=pointer]
+        - button "Language - English" [ref=e18] [cursor=pointer]:
+          - img [ref=e19] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: English
+          - img [ref=e24] [cursor=pointer]
+        - generic [ref=e26]:
+          - link "Sign In" [ref=e27] [cursor=pointer]:
+            - /url: /auth/signin
+          - link "Sign Up" [ref=e28] [cursor=pointer]:
+            - /url: /auth/signup
+  - main [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e35]:
+        - generic [ref=e37]:
+          - img [ref=e38]
+          - generic [ref=e40]: Privacy & Security
+        - heading "Privacy Policy" [level=1] [ref=e41]:
+          - generic [ref=e42]: Privacy Policy
+        - paragraph [ref=e43]: Your privacy is important to us. This policy explains how we collect, use, and protect your personal information when you use CareerGuide.
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - img [ref=e46]
+            - generic [ref=e49]: "Last Updated: January 20, 2024"
+          - generic [ref=e50]:
+            - img [ref=e51]
+            - generic [ref=e53]: Version 2.0
+      - generic [ref=e55]:
+        - heading "Privacy Overview" [level=2] [ref=e57]:
+          - text: Privacy
+          - generic [ref=e58]: Overview
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - img [ref=e61]
+            - heading "Data Protection" [level=3] [ref=e63]
+            - paragraph [ref=e64]: Industry-leading security measures to protect your personal information
+          - generic [ref=e65]:
+            - img [ref=e66]
+            - heading "Transparency" [level=3] [ref=e69]
+            - paragraph [ref=e70]: Clear information about what data we collect and how we use it
+          - generic [ref=e71]:
+            - img [ref=e72]
+            - heading "Your Control" [level=3] [ref=e76]
+            - paragraph [ref=e77]: Full control over your data with easy access, update, and deletion options
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - img [ref=e83]
+            - heading "Information We Collect" [level=2] [ref=e87]
+          - generic [ref=e89]: "We collect information you provide directly to us, such as when you create an account, take career assessments, or contact us for support. This includes: • Personal information (name, email address, phone number) • Profile information (education, skills, career interests) • Assessment responses and career preferences • Usage data and interaction patterns • Device and browser information • Location data (with your consent)"
+        - generic [ref=e90]:
+          - generic [ref=e91]:
+            - img [ref=e92]
+            - heading "How We Use Your Information" [level=2] [ref=e96]
+          - generic [ref=e98]: "We use the information we collect to provide, maintain, and improve our services: • Provide personalized career guidance and recommendations • Generate AI-powered career assessments and roadmaps • Send you relevant educational content and career opportunities • Improve our AI algorithms and recommendation systems • Communicate with you about your account and our services • Ensure platform security and prevent fraudulent activity • Comply with legal obligations and enforce our terms"
+        - generic [ref=e99]:
+          - generic [ref=e100]:
+            - img [ref=e101]
+            - heading "Information Sharing and Disclosure" [level=2] [ref=e104]
+          - generic [ref=e106]: "We do not sell, trade, or rent your personal information to third parties. We may share your information only in these limited circumstances: • With your explicit consent • With service providers who help us operate our platform • With educational institutions (with your permission) • To comply with legal requirements or protect rights and safety • In connection with a business transaction (merger, acquisition) • Aggregated, anonymized data for research and improvement purposes"
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - img [ref=e109]
+            - heading "Data Security" [level=2] [ref=e112]
+          - generic [ref=e114]: "We implement industry-standard security measures to protect your information: • End-to-end encryption for sensitive data transmission • Secure cloud storage with regular security audits • Multi-factor authentication options • Regular security monitoring and vulnerability assessments • Employee training on data protection practices • Compliance with SOC 2 and ISO 27001 standards • Incident response procedures and breach notifications"
+        - generic [ref=e115]:
+          - generic [ref=e116]:
+            - img [ref=e117]
+            - heading "Your Rights and Choices" [level=2] [ref=e120]
+          - generic [ref=e122]: "You have several rights regarding your personal information: • Access: Request a copy of your personal data • Correction: Update or correct inaccurate information • Deletion: Request deletion of your personal data • Portability: Export your data in a structured format • Restriction: Limit how we process your information • Objection: Object to certain types of processing • Opt-out: Unsubscribe from marketing communications • Account deactivation: Permanently delete your account"
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - img [ref=e125]
+            - heading "Cookies and Tracking" [level=2] [ref=e128]
+          - generic [ref=e130]: "We use cookies and similar technologies to improve your experience: • Essential cookies for basic platform functionality • Analytics cookies to understand usage patterns • Performance cookies to optimize platform speed • Preference cookies to remember your settings • Marketing cookies for personalized content You can control cookie preferences through your browser settings or our cookie preference center."
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - img [ref=e133]
+            - heading "International Data Transfers" [level=2] [ref=e136]
+          - generic [ref=e138]: "Your information may be transferred to and processed in countries other than your own: • We use approved transfer mechanisms (Standard Contractual Clauses) • Adequate protection measures are implemented • Data processing agreements with all service providers • Compliance with applicable data protection laws • Regular reviews of international data handling practices"
+        - generic [ref=e139]:
+          - generic [ref=e140]:
+            - img [ref=e141]
+            - heading "Children's Privacy" [level=2] [ref=e145]
+          - generic [ref=e147]: "We are committed to protecting children's privacy: • Our services are designed for users 13 years and older • Parental consent required for users under 18 in some jurisdictions • Limited data collection from minors • Special protections for educational use cases • Clear privacy notices for younger users • Regular review of child safety measures"
+      - generic [ref=e150]:
+        - img [ref=e151]
+        - heading "Your Data Rights" [level=2] [ref=e153]
+        - paragraph [ref=e154]: You have full control over your personal data. Access, update, download, or delete your information at any time through your account settings or by contacting our privacy team.
+        - generic [ref=e155]:
+          - generic [ref=e156]:
+            - heading "Quick Actions" [level=3] [ref=e157]
+            - list [ref=e158]:
+              - listitem [ref=e159]:
+                - generic [ref=e161]: Update profile information in Settings
+              - listitem [ref=e162]:
+                - generic [ref=e164]: Download your data from Account page
+              - listitem [ref=e165]:
+                - generic [ref=e167]: Delete account permanently
+              - listitem [ref=e168]:
+                - generic [ref=e170]: Manage cookie preferences
+          - generic [ref=e171]:
+            - heading "Legal Rights" [level=3] [ref=e172]
+            - list [ref=e173]:
+              - listitem [ref=e174]:
+                - generic [ref=e176]: Right to access your data
+              - listitem [ref=e177]:
+                - generic [ref=e179]: Right to rectification
+              - listitem [ref=e180]:
+                - generic [ref=e182]: Right to erasure
+              - listitem [ref=e183]:
+                - generic [ref=e185]: Right to data portability
+      - generic [ref=e187]:
+        - generic [ref=e188]:
+          - heading "Privacy Questions?" [level=2] [ref=e189]:
+            - text: Privacy
+            - generic [ref=e190]: Questions?
+          - paragraph [ref=e191]: If you have any questions about this privacy policy or our data practices, please don't hesitate to contact us.
+        - generic [ref=e192]:
+          - generic [ref=e193]:
+            - img [ref=e194]
+            - heading "Email" [level=3] [ref=e197]
+            - paragraph [ref=e198]: sudanva7@gmail.com
+            - paragraph [ref=e199]: For privacy-related inquiries
+          - generic [ref=e200]:
+            - img [ref=e201]
+            - heading "Subject Line" [level=3] [ref=e204]
+            - paragraph [ref=e205]: Privacy Policy Question
+            - paragraph [ref=e206]: Please use this subject for faster processing
+        - link "Contact Privacy Team" [ref=e208] [cursor=pointer]:
+          - /url: mailto:sudanva7@gmail.com?subject=Privacy Policy Question
+  - contentinfo [ref=e209]:
+    - generic [ref=e211]:
+      - generic [ref=e212]:
+        - generic [ref=e213]:
+          - generic [ref=e214]:
+            - generic [ref=e215]:
+              - img [ref=e216]
+              - generic [ref=e218]:
+                - text: Career
+                - generic [ref=e219]: Guide
+            - paragraph [ref=e220]: Your comprehensive platform for career guidance and college recommendations powered by AI.
+            - generic [ref=e221]:
+              - generic [ref=e222]:
+                - img [ref=e223]
+                - generic [ref=e226]: sudanva7@gmail.com
+              - generic [ref=e227]:
+                - img [ref=e228]
+                - generic [ref=e230]: +91 7204686919
+              - generic [ref=e231]:
+                - img [ref=e232]
+                - generic [ref=e235]: 123 Innovation Drive, Tech City
+          - generic [ref=e236]:
+            - heading "Features" [level=3] [ref=e237]
+            - list [ref=e238]:
+              - listitem [ref=e239]:
+                - button "Features" [ref=e240] [cursor=pointer]:
+                  - generic [ref=e241] [cursor=pointer]: Features
+              - listitem [ref=e242]:
+                - button "Career Quiz" [ref=e243] [cursor=pointer]:
+                  - generic [ref=e244] [cursor=pointer]: Career Quiz
+              - listitem [ref=e245]:
+                - button "3D Career Tree" [ref=e246] [cursor=pointer]:
+                  - generic [ref=e247] [cursor=pointer]: 3D Career Tree
+              - listitem [ref=e248]:
+                - button "College Finder" [ref=e249] [cursor=pointer]:
+                  - generic [ref=e250] [cursor=pointer]: College Finder
+              - listitem [ref=e251]:
+                - button "Timeline Tracker" [ref=e252] [cursor=pointer]:
+                  - generic [ref=e253] [cursor=pointer]: Timeline Tracker
+          - generic [ref=e254]:
+            - heading "Company" [level=3] [ref=e255]
+            - list [ref=e256]:
+              - listitem [ref=e257]:
+                - button "About" [ref=e258] [cursor=pointer]:
+                  - generic [ref=e259] [cursor=pointer]: About
+              - listitem [ref=e260]:
+                - button "Team" [ref=e261] [cursor=pointer]:
+                  - generic [ref=e262] [cursor=pointer]: Team
+              - listitem [ref=e263]:
+                - button "Careers" [ref=e264] [cursor=pointer]:
+                  - generic [ref=e265] [cursor=pointer]: Careers
+              - listitem [ref=e266]:
+                - button "Press" [ref=e267] [cursor=pointer]:
+                  - generic [ref=e268] [cursor=pointer]: Press
+              - listitem [ref=e269]:
+                - button "Contact" [ref=e270] [cursor=pointer]:
+                  - generic [ref=e271] [cursor=pointer]: Contact
+          - generic [ref=e272]:
+            - heading "Support" [level=3] [ref=e273]
+            - list [ref=e274]:
+              - listitem [ref=e275]:
+                - button "Help" [ref=e276] [cursor=pointer]:
+                  - generic [ref=e277] [cursor=pointer]: Help
+              - listitem [ref=e278]:
+                - button "Study Materials" [ref=e279] [cursor=pointer]:
+                  - generic [ref=e280] [cursor=pointer]: Study Materials
+              - listitem [ref=e281]:
+                - button "Career Guides" [ref=e282] [cursor=pointer]:
+                  - generic [ref=e283] [cursor=pointer]: Career Guides
+              - listitem [ref=e284]:
+                - button "Blog" [ref=e285] [cursor=pointer]:
+                  - generic [ref=e286] [cursor=pointer]: Blog
+              - listitem [ref=e287]:
+                - button "API Docs" [ref=e288] [cursor=pointer]:
+                  - generic [ref=e289] [cursor=pointer]: API Docs
+          - generic [ref=e290]:
+            - heading "Legal" [level=3] [ref=e291]
+            - list [ref=e292]:
+              - listitem [ref=e293]:
+                - button "Privacy Policy" [ref=e294] [cursor=pointer]:
+                  - generic [ref=e295] [cursor=pointer]: Privacy Policy
+              - listitem [ref=e296]:
+                - button "Terms of Service" [ref=e297] [cursor=pointer]:
+                  - generic [ref=e298] [cursor=pointer]: Terms of Service
+              - listitem [ref=e299]:
+                - button "Cookie Policy" [ref=e300] [cursor=pointer]:
+                  - generic [ref=e301] [cursor=pointer]: Cookie Policy
+              - listitem [ref=e302]:
+                - button "GDPR" [ref=e303] [cursor=pointer]:
+                  - generic [ref=e304] [cursor=pointer]: GDPR
+        - generic [ref=e306]:
+          - generic [ref=e307]:
+            - link "Facebook" [ref=e308] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e309] [cursor=pointer]
+            - link "Twitter" [ref=e311] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e312] [cursor=pointer]
+            - link "Instagram" [ref=e314] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e315] [cursor=pointer]
+            - link "LinkedIn" [ref=e318] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e319] [cursor=pointer]
+            - link "GitHub" [ref=e323] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e324] [cursor=pointer]
+          - generic [ref=e327]:
+            - generic [ref=e328]: "Stay updated:"
+            - generic [ref=e329]:
+              - textbox "Enter your email" [ref=e330]
+              - button "Subscribe" [ref=e331] [cursor=pointer]
+      - generic [ref=e333]:
+        - paragraph [ref=e334]: © 2025 CareerGuide. All rights reserved. Built with ❤️ for students everywhere.
+        - button "Scroll to top" [ref=e335] [cursor=pointer]:
+          - img [ref=e336] [cursor=pointer]
+  - button "Open AI Career Assistant" [ref=e340] [cursor=pointer]:
+    - img [ref=e342] [cursor=pointer]
+  - alert [ref=e345]
+```
