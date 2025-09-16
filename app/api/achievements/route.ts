@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
 import { logDatabasePermissionOnce, getDemoUserId } from '@/lib/database/demo-mode'
-import { supabaseAdmin } from '@/lib/supabase-admin'
+import { getSupabaseAdmin } from '@/lib/supabase-admin'
 
 export async function GET(request: NextRequest) {
   try {
@@ -13,6 +13,7 @@ export async function GET(request: NextRequest) {
     const userId = session?.user?.id || getDemoUserId()
     
     // Use admin client in development to bypass RLS (server-side only) if available
+    const supabaseAdmin = getSupabaseAdmin()
     const db = (process.env.NODE_ENV === 'development' && supabaseAdmin) ? supabaseAdmin : supabase
 
     // Fetch user's achievements
@@ -131,6 +132,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Invalid achievement ID' }, { status: 400 })
     }
 
+    const supabaseAdmin = getSupabaseAdmin()
     const db = (process.env.NODE_ENV === 'development' && supabaseAdmin) ? supabaseAdmin : supabase
 
     const { data, error } = await db

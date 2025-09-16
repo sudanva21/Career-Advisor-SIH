@@ -1,30 +1,53 @@
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+let _supabaseAdmin: any = null
+let _initialized = false
 
-if (!supabaseUrl) {
-  console.error('Missing NEXT_PUBLIC_SUPABASE_URL environment variable')
-}
+// Lazy initialization function for Supabase admin client
+function initializeSupabaseAdmin() {
+  if (_initialized) {
+    return _supabaseAdmin
+  }
+  
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
 
-if (!supabaseServiceKey) {
-  console.error('Missing SUPABASE_SERVICE_ROLE_KEY environment variable')
-}
-
-// Create a Supabase client with service role key for admin operations
-export const supabaseAdmin = supabaseUrl && supabaseServiceKey 
-  ? createClient(supabaseUrl, supabaseServiceKey, {
+  if (!supabaseUrl) {
+    console.error('Missing NEXT_PUBLIC_SUPABASE_URL environment variable')
+    _supabaseAdmin = null
+  } else if (!supabaseServiceKey) {
+    console.error('Missing SUPABASE_SERVICE_ROLE_KEY environment variable')
+    _supabaseAdmin = null
+  } else {
+    // Create a Supabase client with service role key for admin operations
+    _supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {
       auth: {
         autoRefreshToken: false,
         persistSession: false
       }
     })
-  : null
+  }
+  
+  _initialized = true
+  return _supabaseAdmin
+}
+
+// Export a getter function instead of direct client
+export const getSupabaseAdmin = () => initializeSupabaseAdmin()
+
+// For backward compatibility, export as supabaseAdmin
+export const supabaseAdmin = new Proxy({}, {
+  get(target, prop) {
+    const client = initializeSupabaseAdmin()
+    return client ? client[prop] : undefined
+  }
+})
 
 // Database table operations with proper error handling
 export const dbOperations = {
   // Users
   async createUser(userData: any) {
+    const supabaseAdmin = getSupabaseAdmin()
     if (!supabaseAdmin) {
       throw new Error('Supabase admin client not available - missing environment variables')
     }

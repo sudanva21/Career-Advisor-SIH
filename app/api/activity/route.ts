@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
 import { logDatabasePermissionOnce, getDemoUserId } from '@/lib/database/demo-mode'
-import { supabaseAdmin } from '@/lib/supabase-admin'
+import { getSupabaseAdmin } from '@/lib/supabase-admin'
 
 export async function GET(request: NextRequest) {
   try {
@@ -19,6 +19,7 @@ export async function GET(request: NextRequest) {
 
     try {
       // Use admin client in development to bypass RLS (server-side only) if available
+      const supabaseAdmin = getSupabaseAdmin()
       const db = (process.env.NODE_ENV === 'development' && supabaseAdmin) ? supabaseAdmin : supabase
 
       // Build query for user activities
@@ -184,6 +185,7 @@ export async function POST(request: NextRequest) {
 
     try {
       // Use admin client in development to bypass RLS (server-side only) if available
+      const supabaseAdmin = getSupabaseAdmin()
       const db = (process.env.NODE_ENV === 'development' && supabaseAdmin) ? supabaseAdmin : supabase
 
       // Save activity to database
