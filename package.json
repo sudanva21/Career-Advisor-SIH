@@ -4,18 +4,20 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/check-env.js && next build",
     "start": "next start",
     "lint": "next lint",
     "test": "playwright test",
     "test:simple": "playwright test --config=playwright-simple.config.ts",
     "test:ai": "npx tsx scripts/test-free-ai.ts",
     "setup:ai": "node scripts/setup-free-ai.js",
+    "setup:vercel": "node scripts/setup-vercel-env.js",
+    "check:env": "node scripts/check-env.js",
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate dev",
     "db:studio": "prisma studio",
-    "vercel-build": "prisma generate && next build",
+    "vercel-build": "node scripts/check-env.js && prisma generate && next build",
     "postinstall": "prisma generate"
   },
   "dependencies": {

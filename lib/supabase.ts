@@ -1,8 +1,26 @@
 import { createClient } from '@supabase/supabase-js'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+// Environment variables with proper validation
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+// Validate environment variables
+if (!supabaseUrl) {
+  console.error('❌ NEXT_PUBLIC_SUPABASE_URL is not set')
+  throw new Error('Missing NEXT_PUBLIC_SUPABASE_URL environment variable')
+}
+
+if (!supabaseAnonKey) {
+  console.error('❌ NEXT_PUBLIC_SUPABASE_ANON_KEY is not set')
+  throw new Error('Missing NEXT_PUBLIC_SUPABASE_ANON_KEY environment variable')
+}
+
+// Validate URL format
+if (!supabaseUrl.startsWith('https://')) {
+  console.error('❌ NEXT_PUBLIC_SUPABASE_URL must be a valid HTTPS URL')
+  throw new Error('NEXT_PUBLIC_SUPABASE_URL must be a valid HTTPS URL')
+}
 
 // Singleton pattern to prevent multiple instances
 let supabaseInstance: ReturnType<typeof createClient> | null = null
@@ -10,7 +28,19 @@ let supabaseInstance: ReturnType<typeof createClient> | null = null
 // Client-side Supabase client (singleton)
 export const supabase = (() => {
   if (!supabaseInstance) {
-    supabaseInstance = createClient(supabaseUrl, supabaseAnonKey)
+    try {
+      supabaseInstance = createClient(supabaseUrl, supabaseAnonKey, {
+        auth: {
+          persistSession: true,
+          autoRefreshToken: true,
+          detectSessionInUrl: true
+        }
+      })
+      console.log('✅ Supabase client initialized successfully')
+    } catch (error) {
+      console.error('❌ Failed to initialize Supabase client:', error)
+      throw error
+    }
   }
   return supabaseInstance
 })()

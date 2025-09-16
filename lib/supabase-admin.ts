@@ -13,19 +13,28 @@ function initializeSupabaseAdmin() {
   const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
 
   if (!supabaseUrl) {
-    console.error('Missing NEXT_PUBLIC_SUPABASE_URL environment variable')
+    console.error('❌ Missing NEXT_PUBLIC_SUPABASE_URL environment variable for admin client')
     _supabaseAdmin = null
   } else if (!supabaseServiceKey) {
-    console.error('Missing SUPABASE_SERVICE_ROLE_KEY environment variable')
+    console.error('❌ Missing SUPABASE_SERVICE_ROLE_KEY environment variable for admin client')
+    _supabaseAdmin = null
+  } else if (!supabaseUrl.startsWith('https://')) {
+    console.error('❌ NEXT_PUBLIC_SUPABASE_URL must be a valid HTTPS URL for admin client')
     _supabaseAdmin = null
   } else {
-    // Create a Supabase client with service role key for admin operations
-    _supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {
-      auth: {
-        autoRefreshToken: false,
-        persistSession: false
-      }
-    })
+    try {
+      // Create a Supabase client with service role key for admin operations
+      _supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {
+        auth: {
+          autoRefreshToken: false,
+          persistSession: false
+        }
+      })
+      console.log('✅ Supabase admin client initialized successfully')
+    } catch (error) {
+      console.error('❌ Failed to initialize Supabase admin client:', error)
+      _supabaseAdmin = null
+    }
   }
   
   _initialized = true

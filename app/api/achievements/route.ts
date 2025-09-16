@@ -6,6 +6,23 @@ import { getSupabaseAdmin } from '@/lib/supabase-admin'
 
 export async function GET(request: NextRequest) {
   try {
+    // Validate Supabase configuration first
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+      console.error('❌ Supabase configuration missing in achievements API')
+      return NextResponse.json({
+        completed: [],
+        inProgress: [],
+        available: [],
+        stats: {
+          totalCompleted: 0,
+          totalAvailable: 0,
+          completionRate: 0,
+          pointsEarned: 0
+        },
+        error: 'Supabase configuration error - missing environment variables'
+      })
+    }
+
     const supabase = createRouteHandlerClient({ cookies })
     const { data: { session } } = await supabase.auth.getSession()
     
@@ -103,6 +120,15 @@ export async function GET(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   try {
+    // Validate Supabase configuration first
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+      console.error('❌ Supabase configuration missing in achievements API POST')
+      return NextResponse.json({ 
+        error: 'Supabase configuration error - missing environment variables',
+        details: 'NEXT_PUBLIC_SUPABASE_URL or NEXT_PUBLIC_SUPABASE_ANON_KEY not set'
+      }, { status: 500 })
+    }
+
     const supabase = createRouteHandlerClient({ cookies })
     const { data: { session } } = await supabase.auth.getSession()
     
