@@ -286,66 +286,102 @@ function RoadmapScene3D({ roadmap }: { roadmap: Enhanced3DRoadmapProps['roadmap'
     const nodes: RoadmapNode[] = []
     let nodeIndex = 0
 
+    // Ensure we have phases data
+    if (!roadmap.roadmap_data?.phases || !Array.isArray(roadmap.roadmap_data.phases)) {
+      console.warn('No phases data found in roadmap')
+      return nodes
+    }
+
+    console.log('🎮 Generating 3D nodes from roadmap phases:', roadmap.roadmap_data.phases.length)
+
     roadmap.roadmap_data.phases.forEach((phase, phaseIndex) => {
       // Add phase node
       const phaseNode: RoadmapNode = {
-        id: `phase-${phaseIndex}`,
+        id: phase.id || `phase-${phaseIndex}`,
         type: 'phase',
         position: [phaseIndex * 8 - 8, 4, 0],
-        title: phase.title,
-        description: phase.description,
+        title: phase.title || `Phase ${phaseIndex + 1}`,
+        description: phase.description || 'No description available',
         completed: phase.completed || false,
         progress: phase.progress || 0
       }
       nodes.push(phaseNode)
 
       // Add milestone nodes for this phase
-      phase.milestones?.forEach((milestone: any, milestoneIndex: number) => {
-        const angle = (milestoneIndex / (phase.milestones.length || 1)) * Math.PI * 2
-        const radius = 4
-        
-        const milestoneNode: RoadmapNode = {
-          id: milestone.id || `milestone-${phaseIndex}-${milestoneIndex}`,
-          type: 'milestone',
-          position: [
-            phaseIndex * 8 - 8 + Math.cos(angle) * radius,
-            Math.sin(angle) * 2,
-            Math.sin(angle) * radius
-          ],
-          title: milestone.title,
-          description: milestone.description,
-          completed: milestone.completed || false,
-          progress: milestone.progress || (milestone.completed ? 100 : Math.random() * 50),
-          connections: [phaseNode.id],
-          skills: milestone.skills || [],
-          resources: milestone.resources || []
-        }
-        nodes.push(milestoneNode)
+      if (phase.milestones && Array.isArray(phase.milestones)) {
+        phase.milestones.forEach((milestone: any, milestoneIndex: number) => {
+          const angle = (milestoneIndex / (phase.milestones.length || 1)) * Math.PI * 2
+          const radius = 4
+          
+          const milestoneNode: RoadmapNode = {
+            id: milestone.id || `milestone-${phaseIndex}-${milestoneIndex}`,
+            type: 'milestone',
+            position: [
+              phaseIndex * 8 - 8 + Math.cos(angle) * radius,
+              Math.sin(angle) * 2,
+              Math.sin(angle) * radius
+            ],
+            title: milestone.title || `Milestone ${milestoneIndex + 1}`,
+            description: milestone.description || 'No description available',
+            completed: milestone.completed || false,
+            progress: milestone.progress || (milestone.completed ? 100 : 0),
+            connections: [phaseNode.id],
+            skills: milestone.skills || [],
+            resources: milestone.resources || []
+          }
+          nodes.push(milestoneNode)
 
-        // Add skill nodes for this milestone
-        milestone.skills?.forEach((skill: string, skillIndex: number) => {
-          if (skillIndex < 3) { // Limit to 3 skills per milestone to avoid clutter
-            const skillAngle = angle + (skillIndex - 1) * 0.5
-            const skillRadius = radius + 2
-            
-            const skillNode: RoadmapNode = {
-              id: `skill-${nodeIndex++}`,
-              type: 'skill',
-              position: [
-                phaseIndex * 8 - 8 + Math.cos(skillAngle) * skillRadius,
-                Math.sin(skillAngle) * 1.5,
-                Math.sin(skillAngle) * skillRadius
-              ],
-              title: skill,
-              completed: Math.random() > 0.7,
-              connections: [milestoneNode.id]
-            }
-            nodes.push(skillNode)
+          // Add skill nodes for this milestone (limit to 3 per milestone to avoid clutter)
+          if (milestone.skills && Array.isArray(milestone.skills)) {
+            milestone.skills.slice(0, 3).forEach((skill: string, skillIndex: number) => {
+              const skillAngle = angle + (skillIndex - 1) * 0.5
+              const skillRadius = radius + 2
+              
+              const skillNode: RoadmapNode = {
+                id: `skill-${nodeIndex++}`,
+                type: 'skill',
+                position: [
+                  phaseIndex * 8 - 8 + Math.cos(skillAngle) * skillRadius,
+                  Math.sin(skillAngle) * 1.5,
+                  Math.sin(skillAngle) * skillRadius
+                ],
+                title: skill,
+                description: `Skill required for ${milestone.title}`,
+                completed: milestone.completed || false, // Inherit from milestone
+                connections: [milestoneNode.id]
+              }
+              nodes.push(skillNode)
+            })
+          }
+
+          // Add resource nodes for key resources (limit to 2 per milestone)
+          if (milestone.resources && Array.isArray(milestone.resources)) {
+            milestone.resources.slice(0, 2).forEach((resource: any, resourceIndex: number) => {
+              const resourceAngle = angle + Math.PI + (resourceIndex - 0.5) * 0.8
+              const resourceRadius = radius + 3
+              
+              const resourceNode: RoadmapNode = {
+                id: `resource-${nodeIndex++}`,
+                type: 'resource',
+                position: [
+                  phaseIndex * 8 - 8 + Math.cos(resourceAngle) * resourceRadius,
+                  Math.sin(resourceAngle) * 1.2,
+                  Math.sin(resourceAngle) * resourceRadius
+                ],
+                title: typeof resource === 'string' ? resource : resource.name || 'Resource',
+                description: typeof resource === 'string' ? 'Learning resource' : 
+                  `${resource.type || 'Resource'} - ${resource.duration || 'Variable duration'}`,
+                completed: false,
+                connections: [milestoneNode.id]
+              }
+              nodes.push(resourceNode)
+            })
           }
         })
-      })
+      }
     })
 
+    console.log(`✅ Generated ${nodes.length} 3D nodes from roadmap data`)
     return nodes
   }, [roadmap])
 

@@ -43,6 +43,15 @@ export async function POST(request: NextRequest) {
     console.log('✅ Free AI service initialized successfully')
 
     console.log('🤖 Generating AI roadmap content...')
+    console.log('📋 Request parameters:', {
+      careerGoal,
+      currentLevel,
+      timeframe: parseInt(timeframe),
+      interests: interests || [],
+      skills: skillsArray || [],
+      learningStyle,
+      budget
+    })
 
     let roadmapData
     try {
@@ -56,6 +65,12 @@ export async function POST(request: NextRequest) {
       })
       
       console.log('✅ AI roadmap generation successful')
+      console.log('📊 Generated roadmap structure:', {
+        title: roadmapData.title,
+        phases: roadmapData.phases?.length || 0,
+        hasRecommendations: !!roadmapData.recommendations,
+        hasTimeline: !!roadmapData.timeline
+      })
     } catch (aiError: any) {
       console.error('❌ AI generation error:', {
         error: aiError?.message || 'Unknown AI error',
