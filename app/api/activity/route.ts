@@ -18,8 +18,8 @@ export async function GET(request: NextRequest) {
     const userId = session?.user?.id || getDemoUserId()
 
     try {
-      // Use admin client in development to bypass RLS (server-side only)
-      const db = process.env.NODE_ENV === 'development' ? supabaseAdmin : supabase
+      // Use admin client in development to bypass RLS (server-side only) if available
+      const db = (process.env.NODE_ENV === 'development' && supabaseAdmin) ? supabaseAdmin : supabase
 
       // Build query for user activities
       let query = db
@@ -183,8 +183,8 @@ export async function POST(request: NextRequest) {
     console.log('Logging new activity:', { type, title, description, metadata })
 
     try {
-      // Use admin client in development to bypass RLS (server-side only)
-      const db = process.env.NODE_ENV === 'development' ? supabaseAdmin : supabase
+      // Use admin client in development to bypass RLS (server-side only) if available
+      const db = (process.env.NODE_ENV === 'development' && supabaseAdmin) ? supabaseAdmin : supabase
 
       // Save activity to database
       const { data: newActivity, error } = await db

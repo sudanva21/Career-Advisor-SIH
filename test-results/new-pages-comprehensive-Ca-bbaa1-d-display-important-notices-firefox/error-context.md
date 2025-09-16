@@ -20,244 +20,250 @@
           - img [ref=e19] [cursor=pointer]
           - generic [ref=e26] [cursor=pointer]: English
           - img [ref=e27] [cursor=pointer]
-  - main [ref=e30]:
-    - generic [ref=e31]:
-      - generic [ref=e36]:
-        - generic [ref=e38]:
-          - img [ref=e39]
-          - generic [ref=e45]: Legal Terms
-        - heading "Terms of Service" [level=1] [ref=e46]:
-          - generic [ref=e47]: Terms of Service
-        - paragraph [ref=e48]: These terms and conditions outline the rules and regulations for the use of CareerGuide's platform and services.
-        - generic [ref=e49]:
-          - generic [ref=e50]:
-            - img [ref=e51]
-            - generic [ref=e54]: "Last Updated: January 20, 2024"
-          - generic [ref=e55]:
-            - img [ref=e56]
-            - generic [ref=e62]: Version 2.0
-      - generic [ref=e64]:
-        - heading "Quick Facts" [level=2] [ref=e66]:
+        - generic [ref=e29]:
+          - link "Sign In" [ref=e30] [cursor=pointer]:
+            - /url: /auth/signin
+          - link "Sign Up" [ref=e31] [cursor=pointer]:
+            - /url: /auth/signup
+  - main [ref=e32]:
+    - generic [ref=e34]:
+      - generic [ref=e39]:
+        - generic [ref=e41]:
+          - img [ref=e42]
+          - generic [ref=e48]: Legal Terms
+        - heading "Terms of Service" [level=1] [ref=e49]:
+          - generic [ref=e50]: Terms of Service
+        - paragraph [ref=e51]: These terms and conditions outline the rules and regulations for the use of CareerGuide's platform and services.
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - img [ref=e54]
+            - generic [ref=e57]: "Last Updated: January 20, 2024"
+          - generic [ref=e58]:
+            - img [ref=e59]
+            - generic [ref=e65]: Version 2.0
+      - generic [ref=e67]:
+        - heading "Quick Facts" [level=2] [ref=e69]:
           - text: Quick
-          - generic [ref=e67]: Facts
-        - generic [ref=e68]:
-          - generic [ref=e69]:
-            - img [ref=e71]
-            - heading "Free Account" [level=3] [ref=e74]
-            - paragraph [ref=e75]: Basic career assessments and guidance
-          - generic [ref=e76]:
-            - img [ref=e78]
-            - heading "Premium Features" [level=3] [ref=e82]
-            - paragraph [ref=e83]: Advanced roadmaps and expert consultations
-          - generic [ref=e84]:
-            - img [ref=e86]
-            - heading "Data Privacy" [level=3] [ref=e89]
-            - paragraph [ref=e90]: Your personal information is protected
-          - generic [ref=e91]:
-            - img [ref=e93]
-            - heading "Age Requirement" [level=3] [ref=e96]
-            - paragraph [ref=e97]: Must be 13+ to create an account
-      - generic [ref=e100]:
-        - generic [ref=e101]:
-          - generic [ref=e102]:
-            - img [ref=e103]
-            - heading "Acceptance of Terms" [level=2] [ref=e106]
-          - generic [ref=e108]: By accessing and using CareerGuide ("the Service"), you accept and agree to be bound by the terms and provision of this agreement. • These terms apply to all visitors, users, and others who access the Service • If you do not agree to all the terms and conditions, you may not use the Service • We may revise these terms at any time by updating this posting • You should visit this page periodically to review the terms
-        - generic [ref=e109]:
-          - generic [ref=e110]:
-            - img [ref=e111]
-            - heading "Service Description" [level=2] [ref=e117]
-          - generic [ref=e119]: "CareerGuide is an AI-powered career guidance platform that provides: • Personalized career assessments and recommendations • Educational pathway guidance and college information • Career roadmap generation and tracking tools • Industry insights and professional development resources • Community features and expert guidance • Premium features for enhanced career planning The Service is provided \"as is\" and we make no warranties about its reliability, accuracy, or fitness for any particular purpose."
-        - generic [ref=e120]:
-          - generic [ref=e121]:
-            - img [ref=e122]
-            - heading "User Accounts and Registration" [level=2] [ref=e126]
-          - generic [ref=e128]: "To access certain features, you must register for an account: • You must provide accurate and complete information during registration • You are responsible for maintaining the confidentiality of your account • You are responsible for all activities that occur under your account • You must immediately notify us of any unauthorized use of your account • You must be at least 13 years old to create an account • Parental consent may be required for users under 18 in some jurisdictions"
-        - generic [ref=e129]:
-          - generic [ref=e130]:
-            - img [ref=e131]
-            - heading "Acceptable Use Policy" [level=2] [ref=e133]
-          - generic [ref=e135]: "You agree to use the Service only for lawful purposes and in accordance with these terms: Prohibited Activities: • Violating any applicable laws or regulations • Impersonating any person or entity • Transmitting spam, viruses, or malicious code • Attempting to gain unauthorized access to the Service • Interfering with or disrupting the Service • Collecting user information without consent • Using the Service for commercial purposes without permission • Creating multiple accounts to circumvent restrictions"
-        - generic [ref=e136]:
-          - generic [ref=e137]:
-            - img [ref=e138]
-            - heading "Intellectual Property Rights" [level=2] [ref=e144]
-          - generic [ref=e146]: "The Service and its original content, features, and functionality are owned by CareerGuide: • All text, graphics, logos, images, and software are our property • You may not copy, modify, distribute, or create derivative works • User-generated content remains your property, but you grant us rights to use it • You may not use our trademarks without prior written consent • We respect intellectual property rights and expect users to do the same • We will respond to valid DMCA takedown notices"
-        - generic [ref=e147]:
-          - generic [ref=e148]:
-            - img [ref=e149]
-            - heading "Privacy and Data Protection" [level=2] [ref=e151]
-          - generic [ref=e153]: "Your privacy is important to us: • Our Privacy Policy governs the collection and use of your information • We implement appropriate security measures to protect your data • You have rights regarding your personal information • We may use aggregated, anonymized data for research and improvement • We do not sell your personal information to third parties • Data retention policies are outlined in our Privacy Policy"
-        - generic [ref=e154]:
-          - generic [ref=e155]:
-            - img [ref=e156]
-            - heading "Payment Terms" [level=2] [ref=e162]
-          - generic [ref=e164]: "For premium features and services: • Subscription fees are billed in advance on a recurring basis • All fees are non-refundable except as required by law • We may change subscription fees with 30 days' notice • Taxes may apply to your subscription • You can cancel your subscription at any time • Free trial periods may be offered at our discretion • Payment disputes should be reported immediately"
-        - generic [ref=e165]:
-          - generic [ref=e166]:
-            - img [ref=e167]
-            - heading "Termination" [level=2] [ref=e171]
-          - generic [ref=e173]: "Either party may terminate this agreement: • You may delete your account at any time • We may suspend or terminate your account for violations of these terms • We may discontinue the Service at any time with notice • Upon termination, your right to use the Service ceases immediately • We may retain certain information as required by law or for legitimate business purposes • Termination does not relieve you of any payment obligations"
-        - generic [ref=e174]:
-          - generic [ref=e175]:
-            - img [ref=e176]
-            - heading "Disclaimers and Limitations" [level=2] [ref=e180]
-          - generic [ref=e182]: "The Service is provided \"as is\" without warranties of any kind: • We do not guarantee the accuracy of career advice or recommendations • We are not responsible for decisions made based on our recommendations • The Service may contain inaccuracies or errors • We do not guarantee uninterrupted or secure access • Third-party links and content are not under our control • Career outcomes are not guaranteed • Educational information is for guidance purposes only"
-        - generic [ref=e183]:
-          - generic [ref=e184]:
-            - img [ref=e185]
-            - heading "Limitation of Liability" [level=2] [ref=e191]
-          - generic [ref=e193]: "Our liability to you is limited: • We are not liable for indirect, incidental, or consequential damages • Our total liability shall not exceed the amount paid by you for the Service • Some jurisdictions do not allow limitation of liability • We are not liable for third-party actions or content • You assume all risks associated with using the Service • This limitation applies to the fullest extent permitted by law"
-        - generic [ref=e194]:
-          - generic [ref=e195]:
-            - img [ref=e196]
-            - heading "Governing Law and Disputes" [level=2] [ref=e202]
-          - generic [ref=e204]: "These terms are governed by applicable law: • Any disputes will be resolved through binding arbitration • Class action lawsuits are waived • Small claims court actions are permitted • Indian law governs these terms • Disputes must be filed within one year of the claim arising • We both consent to the jurisdiction of Indian courts • Injunctive relief may be sought in court"
-        - generic [ref=e205]:
-          - generic [ref=e206]:
-            - img [ref=e207]
-            - heading "Changes to Terms" [level=2] [ref=e210]
-          - generic [ref=e212]: "We may modify these terms at any time: • Changes will be posted on this page • Material changes will be communicated to users • Continued use after changes constitutes acceptance • You should review these terms periodically • We will indicate when terms were last updated • Previous versions may be available upon request"
-      - generic [ref=e215]:
-        - generic [ref=e216]:
-          - img [ref=e217]
-          - heading "Important Notice" [level=2] [ref=e221]
-        - generic [ref=e222]:
-          - paragraph [ref=e223]: By using CareerGuide, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. These terms constitute a legal agreement between you and CareerGuide.
-          - paragraph [ref=e224]: Career guidance is provided for informational purposes only and should not be considered as professional career counseling. We recommend consulting with qualified career professionals for personalized advice.
-          - paragraph [ref=e225]: If you have any questions about these terms, please contact us before using the Service. Continued use of the platform indicates your acceptance of any updated terms.
-      - generic [ref=e228]:
-        - img [ref=e229]
-        - heading "Questions About Terms?" [level=2] [ref=e232]
-        - paragraph [ref=e233]: If you have any questions about these Terms of Service, please contact us. We're here to help clarify any aspects of our agreement.
-        - generic [ref=e234]:
-          - generic [ref=e235]:
-            - strong [ref=e236]: "Email:"
-            - generic [ref=e237]: sudanva7@gmail.com
+          - generic [ref=e70]: Facts
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - img [ref=e74]
+            - heading "Free Account" [level=3] [ref=e77]
+            - paragraph [ref=e78]: Basic career assessments and guidance
+          - generic [ref=e79]:
+            - img [ref=e81]
+            - heading "Premium Features" [level=3] [ref=e85]
+            - paragraph [ref=e86]: Advanced roadmaps and expert consultations
+          - generic [ref=e87]:
+            - img [ref=e89]
+            - heading "Data Privacy" [level=3] [ref=e92]
+            - paragraph [ref=e93]: Your personal information is protected
+          - generic [ref=e94]:
+            - img [ref=e96]
+            - heading "Age Requirement" [level=3] [ref=e99]
+            - paragraph [ref=e100]: Must be 13+ to create an account
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - img [ref=e106]
+            - heading "Acceptance of Terms" [level=2] [ref=e109]
+          - generic [ref=e111]: By accessing and using CareerGuide ("the Service"), you accept and agree to be bound by the terms and provision of this agreement. • These terms apply to all visitors, users, and others who access the Service • If you do not agree to all the terms and conditions, you may not use the Service • We may revise these terms at any time by updating this posting • You should visit this page periodically to review the terms
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - img [ref=e114]
+            - heading "Service Description" [level=2] [ref=e120]
+          - generic [ref=e122]: "CareerGuide is an AI-powered career guidance platform that provides: • Personalized career assessments and recommendations • Educational pathway guidance and college information • Career roadmap generation and tracking tools • Industry insights and professional development resources • Community features and expert guidance • Premium features for enhanced career planning The Service is provided \"as is\" and we make no warranties about its reliability, accuracy, or fitness for any particular purpose."
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - img [ref=e125]
+            - heading "User Accounts and Registration" [level=2] [ref=e129]
+          - generic [ref=e131]: "To access certain features, you must register for an account: • You must provide accurate and complete information during registration • You are responsible for maintaining the confidentiality of your account • You are responsible for all activities that occur under your account • You must immediately notify us of any unauthorized use of your account • You must be at least 13 years old to create an account • Parental consent may be required for users under 18 in some jurisdictions"
+        - generic [ref=e132]:
+          - generic [ref=e133]:
+            - img [ref=e134]
+            - heading "Acceptable Use Policy" [level=2] [ref=e136]
+          - generic [ref=e138]: "You agree to use the Service only for lawful purposes and in accordance with these terms: Prohibited Activities: • Violating any applicable laws or regulations • Impersonating any person or entity • Transmitting spam, viruses, or malicious code • Attempting to gain unauthorized access to the Service • Interfering with or disrupting the Service • Collecting user information without consent • Using the Service for commercial purposes without permission • Creating multiple accounts to circumvent restrictions"
+        - generic [ref=e139]:
+          - generic [ref=e140]:
+            - img [ref=e141]
+            - heading "Intellectual Property Rights" [level=2] [ref=e147]
+          - generic [ref=e149]: "The Service and its original content, features, and functionality are owned by CareerGuide: • All text, graphics, logos, images, and software are our property • You may not copy, modify, distribute, or create derivative works • User-generated content remains your property, but you grant us rights to use it • You may not use our trademarks without prior written consent • We respect intellectual property rights and expect users to do the same • We will respond to valid DMCA takedown notices"
+        - generic [ref=e150]:
+          - generic [ref=e151]:
+            - img [ref=e152]
+            - heading "Privacy and Data Protection" [level=2] [ref=e154]
+          - generic [ref=e156]: "Your privacy is important to us: • Our Privacy Policy governs the collection and use of your information • We implement appropriate security measures to protect your data • You have rights regarding your personal information • We may use aggregated, anonymized data for research and improvement • We do not sell your personal information to third parties • Data retention policies are outlined in our Privacy Policy"
+        - generic [ref=e157]:
+          - generic [ref=e158]:
+            - img [ref=e159]
+            - heading "Payment Terms" [level=2] [ref=e165]
+          - generic [ref=e167]: "For premium features and services: • Subscription fees are billed in advance on a recurring basis • All fees are non-refundable except as required by law • We may change subscription fees with 30 days' notice • Taxes may apply to your subscription • You can cancel your subscription at any time • Free trial periods may be offered at our discretion • Payment disputes should be reported immediately"
+        - generic [ref=e168]:
+          - generic [ref=e169]:
+            - img [ref=e170]
+            - heading "Termination" [level=2] [ref=e174]
+          - generic [ref=e176]: "Either party may terminate this agreement: • You may delete your account at any time • We may suspend or terminate your account for violations of these terms • We may discontinue the Service at any time with notice • Upon termination, your right to use the Service ceases immediately • We may retain certain information as required by law or for legitimate business purposes • Termination does not relieve you of any payment obligations"
+        - generic [ref=e177]:
+          - generic [ref=e178]:
+            - img [ref=e179]
+            - heading "Disclaimers and Limitations" [level=2] [ref=e183]
+          - generic [ref=e185]: "The Service is provided \"as is\" without warranties of any kind: • We do not guarantee the accuracy of career advice or recommendations • We are not responsible for decisions made based on our recommendations • The Service may contain inaccuracies or errors • We do not guarantee uninterrupted or secure access • Third-party links and content are not under our control • Career outcomes are not guaranteed • Educational information is for guidance purposes only"
+        - generic [ref=e186]:
+          - generic [ref=e187]:
+            - img [ref=e188]
+            - heading "Limitation of Liability" [level=2] [ref=e194]
+          - generic [ref=e196]: "Our liability to you is limited: • We are not liable for indirect, incidental, or consequential damages • Our total liability shall not exceed the amount paid by you for the Service • Some jurisdictions do not allow limitation of liability • We are not liable for third-party actions or content • You assume all risks associated with using the Service • This limitation applies to the fullest extent permitted by law"
+        - generic [ref=e197]:
+          - generic [ref=e198]:
+            - img [ref=e199]
+            - heading "Governing Law and Disputes" [level=2] [ref=e205]
+          - generic [ref=e207]: "These terms are governed by applicable law: • Any disputes will be resolved through binding arbitration • Class action lawsuits are waived • Small claims court actions are permitted • Indian law governs these terms • Disputes must be filed within one year of the claim arising • We both consent to the jurisdiction of Indian courts • Injunctive relief may be sought in court"
+        - generic [ref=e208]:
+          - generic [ref=e209]:
+            - img [ref=e210]
+            - heading "Changes to Terms" [level=2] [ref=e213]
+          - generic [ref=e215]: "We may modify these terms at any time: • Changes will be posted on this page • Material changes will be communicated to users • Continued use after changes constitutes acceptance • You should review these terms periodically • We will indicate when terms were last updated • Previous versions may be available upon request"
+      - generic [ref=e218]:
+        - generic [ref=e219]:
+          - img [ref=e220]
+          - heading "Important Notice" [level=2] [ref=e224]
+        - generic [ref=e225]:
+          - paragraph [ref=e226]: By using CareerGuide, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. These terms constitute a legal agreement between you and CareerGuide.
+          - paragraph [ref=e227]: Career guidance is provided for informational purposes only and should not be considered as professional career counseling. We recommend consulting with qualified career professionals for personalized advice.
+          - paragraph [ref=e228]: If you have any questions about these terms, please contact us before using the Service. Continued use of the platform indicates your acceptance of any updated terms.
+      - generic [ref=e231]:
+        - img [ref=e232]
+        - heading "Questions About Terms?" [level=2] [ref=e235]
+        - paragraph [ref=e236]: If you have any questions about these Terms of Service, please contact us. We're here to help clarify any aspects of our agreement.
+        - generic [ref=e237]:
           - generic [ref=e238]:
-            - strong [ref=e239]: "Subject:"
+            - strong [ref=e239]: "Email:"
+            - generic [ref=e240]: sudanva7@gmail.com
+          - generic [ref=e241]:
+            - strong [ref=e242]: "Subject:"
             - text: Terms of Service Question
-          - generic [ref=e240]:
-            - strong [ref=e241]: "Response Time:"
+          - generic [ref=e243]:
+            - strong [ref=e244]: "Response Time:"
             - text: Within 24 hours
-        - link "Contact Legal Team" [ref=e242] [cursor=pointer]:
+        - link "Contact Legal Team" [ref=e245] [cursor=pointer]:
           - /url: mailto:sudanva7@gmail.com?subject=Terms of Service Question
-  - contentinfo [ref=e243]:
-    - generic [ref=e245]:
-      - generic [ref=e246]:
-        - generic [ref=e247]:
-          - generic [ref=e248]:
-            - generic [ref=e249]:
-              - img [ref=e250]
-              - generic [ref=e256]:
+  - contentinfo [ref=e246]:
+    - generic [ref=e248]:
+      - generic [ref=e249]:
+        - generic [ref=e250]:
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - generic [ref=e259]:
                 - text: Career
-                - generic [ref=e257]: Guide
-            - paragraph [ref=e258]: Your comprehensive platform for career guidance and college recommendations powered by AI.
-            - generic [ref=e259]:
-              - generic [ref=e260]:
-                - img [ref=e261]
-                - generic [ref=e264]: sudanva7@gmail.com
-              - generic [ref=e265]:
-                - img [ref=e266]
-                - generic [ref=e268]: +91 7204686919
-              - generic [ref=e269]:
-                - img [ref=e270]
-                - generic [ref=e273]: 123 Innovation Drive, Tech City
-          - generic [ref=e274]:
-            - heading "Features" [level=3] [ref=e275]
-            - list [ref=e276]:
-              - listitem [ref=e277]:
-                - button "Features" [ref=e278] [cursor=pointer]:
-                  - generic [ref=e279] [cursor=pointer]: Features
+                - generic [ref=e260]: Guide
+            - paragraph [ref=e261]: Your comprehensive platform for career guidance and college recommendations powered by AI.
+            - generic [ref=e262]:
+              - generic [ref=e263]:
+                - img [ref=e264]
+                - generic [ref=e267]: sudanva7@gmail.com
+              - generic [ref=e268]:
+                - img [ref=e269]
+                - generic [ref=e271]: +91 7204686919
+              - generic [ref=e272]:
+                - img [ref=e273]
+                - generic [ref=e276]: 123 Innovation Drive, Tech City
+          - generic [ref=e277]:
+            - heading "Features" [level=3] [ref=e278]
+            - list [ref=e279]:
               - listitem [ref=e280]:
-                - button "Career Quiz" [ref=e281] [cursor=pointer]:
-                  - generic [ref=e282] [cursor=pointer]: Career Quiz
+                - button "Features" [ref=e281] [cursor=pointer]:
+                  - generic [ref=e282] [cursor=pointer]: Features
               - listitem [ref=e283]:
-                - button "3D Career Tree" [ref=e284] [cursor=pointer]:
-                  - generic [ref=e285] [cursor=pointer]: 3D Career Tree
+                - button "Career Quiz" [ref=e284] [cursor=pointer]:
+                  - generic [ref=e285] [cursor=pointer]: Career Quiz
               - listitem [ref=e286]:
-                - button "College Finder" [ref=e287] [cursor=pointer]:
-                  - generic [ref=e288] [cursor=pointer]: College Finder
+                - button "3D Career Tree" [ref=e287] [cursor=pointer]:
+                  - generic [ref=e288] [cursor=pointer]: 3D Career Tree
               - listitem [ref=e289]:
-                - button "Timeline Tracker" [ref=e290] [cursor=pointer]:
-                  - generic [ref=e291] [cursor=pointer]: Timeline Tracker
-          - generic [ref=e292]:
-            - heading "Company" [level=3] [ref=e293]
-            - list [ref=e294]:
-              - listitem [ref=e295]:
-                - button "About" [ref=e296] [cursor=pointer]:
-                  - generic [ref=e297] [cursor=pointer]: About
+                - button "College Finder" [ref=e290] [cursor=pointer]:
+                  - generic [ref=e291] [cursor=pointer]: College Finder
+              - listitem [ref=e292]:
+                - button "Timeline Tracker" [ref=e293] [cursor=pointer]:
+                  - generic [ref=e294] [cursor=pointer]: Timeline Tracker
+          - generic [ref=e295]:
+            - heading "Company" [level=3] [ref=e296]
+            - list [ref=e297]:
               - listitem [ref=e298]:
-                - button "Team" [ref=e299] [cursor=pointer]:
-                  - generic [ref=e300] [cursor=pointer]: Team
+                - button "About" [ref=e299] [cursor=pointer]:
+                  - generic [ref=e300] [cursor=pointer]: About
               - listitem [ref=e301]:
-                - button "Careers" [ref=e302] [cursor=pointer]:
-                  - generic [ref=e303] [cursor=pointer]: Careers
+                - button "Team" [ref=e302] [cursor=pointer]:
+                  - generic [ref=e303] [cursor=pointer]: Team
               - listitem [ref=e304]:
-                - button "Press" [ref=e305] [cursor=pointer]:
-                  - generic [ref=e306] [cursor=pointer]: Press
+                - button "Careers" [ref=e305] [cursor=pointer]:
+                  - generic [ref=e306] [cursor=pointer]: Careers
               - listitem [ref=e307]:
-                - button "Contact" [ref=e308] [cursor=pointer]:
-                  - generic [ref=e309] [cursor=pointer]: Contact
-          - generic [ref=e310]:
-            - heading "Support" [level=3] [ref=e311]
-            - list [ref=e312]:
-              - listitem [ref=e313]:
-                - button "Help" [ref=e314] [cursor=pointer]:
-                  - generic [ref=e315] [cursor=pointer]: Help
+                - button "Press" [ref=e308] [cursor=pointer]:
+                  - generic [ref=e309] [cursor=pointer]: Press
+              - listitem [ref=e310]:
+                - button "Contact" [ref=e311] [cursor=pointer]:
+                  - generic [ref=e312] [cursor=pointer]: Contact
+          - generic [ref=e313]:
+            - heading "Support" [level=3] [ref=e314]
+            - list [ref=e315]:
               - listitem [ref=e316]:
-                - button "Study Materials" [ref=e317] [cursor=pointer]:
-                  - generic [ref=e318] [cursor=pointer]: Study Materials
+                - button "Help" [ref=e317] [cursor=pointer]:
+                  - generic [ref=e318] [cursor=pointer]: Help
               - listitem [ref=e319]:
-                - button "Career Guides" [ref=e320] [cursor=pointer]:
-                  - generic [ref=e321] [cursor=pointer]: Career Guides
+                - button "Study Materials" [ref=e320] [cursor=pointer]:
+                  - generic [ref=e321] [cursor=pointer]: Study Materials
               - listitem [ref=e322]:
-                - button "Blog" [ref=e323] [cursor=pointer]:
-                  - generic [ref=e324] [cursor=pointer]: Blog
+                - button "Career Guides" [ref=e323] [cursor=pointer]:
+                  - generic [ref=e324] [cursor=pointer]: Career Guides
               - listitem [ref=e325]:
-                - button "API Docs" [ref=e326] [cursor=pointer]:
-                  - generic [ref=e327] [cursor=pointer]: API Docs
-          - generic [ref=e328]:
-            - heading "Legal" [level=3] [ref=e329]
-            - list [ref=e330]:
-              - listitem [ref=e331]:
-                - button "Privacy Policy" [ref=e332] [cursor=pointer]:
-                  - generic [ref=e333] [cursor=pointer]: Privacy Policy
+                - button "Blog" [ref=e326] [cursor=pointer]:
+                  - generic [ref=e327] [cursor=pointer]: Blog
+              - listitem [ref=e328]:
+                - button "API Docs" [ref=e329] [cursor=pointer]:
+                  - generic [ref=e330] [cursor=pointer]: API Docs
+          - generic [ref=e331]:
+            - heading "Legal" [level=3] [ref=e332]
+            - list [ref=e333]:
               - listitem [ref=e334]:
-                - button "Terms of Service" [ref=e335] [cursor=pointer]:
-                  - generic [ref=e336] [cursor=pointer]: Terms of Service
+                - button "Privacy Policy" [ref=e335] [cursor=pointer]:
+                  - generic [ref=e336] [cursor=pointer]: Privacy Policy
               - listitem [ref=e337]:
-                - button "Cookie Policy" [ref=e338] [cursor=pointer]:
-                  - generic [ref=e339] [cursor=pointer]: Cookie Policy
+                - button "Terms of Service" [ref=e338] [cursor=pointer]:
+                  - generic [ref=e339] [cursor=pointer]: Terms of Service
               - listitem [ref=e340]:
-                - button "GDPR" [ref=e341] [cursor=pointer]:
-                  - generic [ref=e342] [cursor=pointer]: GDPR
-        - generic [ref=e344]:
-          - generic [ref=e345]:
-            - link "Facebook" [ref=e346] [cursor=pointer]:
-              - /url: "#"
-              - img [ref=e347] [cursor=pointer]
-            - link "Twitter" [ref=e349] [cursor=pointer]:
+                - button "Cookie Policy" [ref=e341] [cursor=pointer]:
+                  - generic [ref=e342] [cursor=pointer]: Cookie Policy
+              - listitem [ref=e343]:
+                - button "GDPR" [ref=e344] [cursor=pointer]:
+                  - generic [ref=e345] [cursor=pointer]: GDPR
+        - generic [ref=e347]:
+          - generic [ref=e348]:
+            - link "Facebook" [ref=e349] [cursor=pointer]:
               - /url: "#"
               - img [ref=e350] [cursor=pointer]
-            - link "Instagram" [ref=e352] [cursor=pointer]:
+            - link "Twitter" [ref=e352] [cursor=pointer]:
               - /url: "#"
               - img [ref=e353] [cursor=pointer]
-            - link "LinkedIn" [ref=e357] [cursor=pointer]:
+            - link "Instagram" [ref=e355] [cursor=pointer]:
               - /url: "#"
-              - img [ref=e358] [cursor=pointer]
-            - link "GitHub" [ref=e362] [cursor=pointer]:
+              - img [ref=e356] [cursor=pointer]
+            - link "LinkedIn" [ref=e360] [cursor=pointer]:
               - /url: "#"
-              - img [ref=e363] [cursor=pointer]
-          - generic [ref=e366]:
-            - generic [ref=e367]: "Stay updated:"
-            - generic [ref=e368]:
-              - textbox "Enter your email" [ref=e369]
-              - button "Subscribe" [ref=e370] [cursor=pointer]
-      - generic [ref=e372]:
-        - paragraph [ref=e373]: © 2025 CareerGuide. All rights reserved. Built with ❤️ for students everywhere.
-        - button "Scroll to top" [ref=e374] [cursor=pointer]:
-          - img [ref=e375] [cursor=pointer]
-  - button "Open AI Career Assistant" [ref=e380] [cursor=pointer]:
-    - img [ref=e382] [cursor=pointer]
+              - img [ref=e361] [cursor=pointer]
+            - link "GitHub" [ref=e365] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e366] [cursor=pointer]
+          - generic [ref=e369]:
+            - generic [ref=e370]: "Stay updated:"
+            - generic [ref=e371]:
+              - textbox "Enter your email" [ref=e372]
+              - button "Subscribe" [ref=e373] [cursor=pointer]
+      - generic [ref=e375]:
+        - paragraph [ref=e376]: © 2025 CareerGuide. All rights reserved. Built with ❤️ for students everywhere.
+        - button "Scroll to top" [ref=e377] [cursor=pointer]:
+          - img [ref=e378] [cursor=pointer]
+  - button "Open AI Career Assistant" [ref=e383] [cursor=pointer]:
+    - img [ref=e385] [cursor=pointer]
+  - alert [ref=e388]
 ```

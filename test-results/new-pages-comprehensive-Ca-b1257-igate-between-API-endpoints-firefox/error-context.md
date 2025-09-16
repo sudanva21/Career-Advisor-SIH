@@ -1,7 +1,7 @@
 # Page snapshot
 
 ```yaml
-- generic [ref=e1]:
+- generic [active] [ref=e1]:
   - navigation [ref=e2]:
     - generic [ref=e4]:
       - link "CA Career Advisor" [ref=e5] [cursor=pointer]:
@@ -26,242 +26,242 @@
           - link "Sign Up" [ref=e31] [cursor=pointer]:
             - /url: /auth/signup
   - main [ref=e32]:
-    - generic [ref=e33]:
-      - generic [ref=e38]:
-        - generic [ref=e40]:
-          - img [ref=e41]
-          - generic [ref=e44]: Developer API
-        - heading "API Documentation" [level=1] [ref=e45]:
-          - generic [ref=e46]: API Documentation
-        - paragraph [ref=e47]: Integrate CareerGuide's powerful AI-driven career guidance into your applications. Access our comprehensive API for career assessments, college data, and personalized recommendations.
-      - generic [ref=e50]:
-        - generic [ref=e51]:
-          - img [ref=e52]
-          - generic [ref=e57]: 50+
-          - generic [ref=e58]: API Endpoints
-        - generic [ref=e59]:
-          - img [ref=e60]
-          - generic [ref=e62]: 1M+
-          - generic [ref=e63]: API Calls/Month
-        - generic [ref=e64]:
-          - img [ref=e65]
-          - generic [ref=e67]: 99.9%
-          - generic [ref=e68]: Uptime
-        - generic [ref=e69]:
-          - img [ref=e70]
-          - generic [ref=e74]: 200ms
-          - generic [ref=e75]: Avg Response Time
-      - generic [ref=e77]:
-        - generic [ref=e78]:
-          - heading "Why Choose Our API?" [level=2] [ref=e79]:
+    - generic [ref=e34]:
+      - generic [ref=e39]:
+        - generic [ref=e41]:
+          - img [ref=e42]
+          - generic [ref=e45]: Developer API
+        - heading "API Documentation" [level=1] [ref=e46]:
+          - generic [ref=e47]: API Documentation
+        - paragraph [ref=e48]: Integrate CareerGuide's powerful AI-driven career guidance into your applications. Access our comprehensive API for career assessments, college data, and personalized recommendations.
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - img [ref=e53]
+          - generic [ref=e58]: 50+
+          - generic [ref=e59]: API Endpoints
+        - generic [ref=e60]:
+          - img [ref=e61]
+          - generic [ref=e63]: 1M+
+          - generic [ref=e64]: API Calls/Month
+        - generic [ref=e65]:
+          - img [ref=e66]
+          - generic [ref=e68]: 99.9%
+          - generic [ref=e69]: Uptime
+        - generic [ref=e70]:
+          - img [ref=e71]
+          - generic [ref=e75]: 200ms
+          - generic [ref=e76]: Avg Response Time
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - heading "Why Choose Our API?" [level=2] [ref=e80]:
             - text: Why Choose Our
-            - generic [ref=e80]: API
+            - generic [ref=e81]: API
             - text: "?"
-          - paragraph [ref=e81]: Built for developers who need reliable, scalable, and intelligent career guidance solutions.
-        - generic [ref=e82]:
-          - generic [ref=e83]:
-            - img [ref=e84]
-            - heading "Fast & Reliable" [level=3] [ref=e86]
-            - paragraph [ref=e87]: 99.9% uptime with response times under 200ms globally
-          - generic [ref=e88]:
-            - img [ref=e89]
-            - heading "Secure by Design" [level=3] [ref=e91]
-            - paragraph [ref=e92]: OAuth 2.0, API keys, and rate limiting for enterprise security
-          - generic [ref=e93]:
-            - img [ref=e94]
-            - heading "Global CDN" [level=3] [ref=e98]
-            - paragraph [ref=e99]: Distributed worldwide with edge caching for optimal performance
-          - generic [ref=e100]:
-            - img [ref=e101]
-            - heading "Comprehensive Docs" [level=3] [ref=e103]
-            - paragraph [ref=e104]: Detailed documentation with interactive examples and SDKs
-      - generic [ref=e106]:
-        - generic [ref=e107]:
-          - heading "API Endpoints" [level=2] [ref=e108]:
+          - paragraph [ref=e82]: Built for developers who need reliable, scalable, and intelligent career guidance solutions.
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - img [ref=e85]
+            - heading "Fast & Reliable" [level=3] [ref=e87]
+            - paragraph [ref=e88]: 99.9% uptime with response times under 200ms globally
+          - generic [ref=e89]:
+            - img [ref=e90]
+            - heading "Secure by Design" [level=3] [ref=e92]
+            - paragraph [ref=e93]: OAuth 2.0, API keys, and rate limiting for enterprise security
+          - generic [ref=e94]:
+            - img [ref=e95]
+            - heading "Global CDN" [level=3] [ref=e99]
+            - paragraph [ref=e100]: Distributed worldwide with edge caching for optimal performance
+          - generic [ref=e101]:
+            - img [ref=e102]
+            - heading "Comprehensive Docs" [level=3] [ref=e104]
+            - paragraph [ref=e105]: Detailed documentation with interactive examples and SDKs
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - heading "API Endpoints" [level=2] [ref=e109]:
             - text: API
-            - generic [ref=e109]: Endpoints
-          - paragraph [ref=e110]: Explore our comprehensive API endpoints with interactive examples.
-        - generic [ref=e111]:
-          - generic [ref=e113]:
-            - heading "Endpoints" [level=3] [ref=e114]
-            - navigation [ref=e115]:
-              - button "Authentication" [ref=e116] [cursor=pointer]:
-                - img [ref=e117] [cursor=pointer]
-                - generic [ref=e120] [cursor=pointer]: Authentication
-              - button "Users" [active] [ref=e121] [cursor=pointer]:
-                - img [ref=e122] [cursor=pointer]
-                - generic [ref=e124] [cursor=pointer]: Users
-              - button "Career Assessment" [ref=e125] [cursor=pointer]:
-                - img [ref=e126] [cursor=pointer]
-                - generic [ref=e129] [cursor=pointer]: Career Assessment
-              - button "Colleges" [ref=e130] [cursor=pointer]:
-                - img [ref=e131] [cursor=pointer]
-                - generic [ref=e135] [cursor=pointer]: Colleges
-              - button "Roadmap Generator" [ref=e136] [cursor=pointer]:
-                - img [ref=e137] [cursor=pointer]
-                - generic [ref=e142] [cursor=pointer]: Roadmap Generator
-          - generic [ref=e144]:
-            - generic [ref=e145]:
-              - heading "User Management" [level=3] [ref=e146]
-              - paragraph [ref=e147]: Manage user profiles, preferences, and account information.
-            - generic [ref=e148]:
-              - generic [ref=e149]:
-                - generic [ref=e150]:
-                  - generic [ref=e151]:
-                    - generic [ref=e152]: GET
-                    - generic [ref=e153]: /api/users/profile
-                  - button "Copy" [ref=e154] [cursor=pointer]:
-                    - img [ref=e155] [cursor=pointer]
-                    - generic [ref=e158] [cursor=pointer]: Copy
-                - generic [ref=e159]:
-                  - heading "Get User Profile" [level=4] [ref=e160]
-                  - code [ref=e163]: "curl -X GET https://api.careerguide.com/users/profile \\ -H \"Authorization: Bearer your_access_token\" // Response { \"success\": true, \"user\": { \"id\": \"user_123\", \"email\": \"user@example.com\", \"profile\": { \"first_name\": \"John\", \"last_name\": \"Doe\", \"career_interests\": [\"Technology\", \"Data Science\"], \"education_level\": \"Bachelor's Degree\", \"experience_years\": 5 } } }"
-              - generic [ref=e164]:
-                - generic [ref=e165]:
-                  - generic [ref=e166]:
-                    - generic [ref=e167]: PUT
-                    - generic [ref=e168]: /api/users/profile
-                  - button "Copy" [ref=e169] [cursor=pointer]:
-                    - img [ref=e170] [cursor=pointer]
-                    - generic [ref=e173] [cursor=pointer]: Copy
-                - generic [ref=e174]:
-                  - heading "Update User Profile" [level=4] [ref=e175]
-                  - code [ref=e178]: "curl -X PUT https://api.careerguide.com/users/profile \\ -H \"Authorization: Bearer your_access_token\" \\ -H \"Content-Type: application/json\" \\ -d '{ \"first_name\": \"Jane\", \"career_interests\": [\"AI/ML\", \"Software Engineering\"], \"education_level\": \"Master's Degree\" }' // Response { \"success\": true, \"message\": \"Profile updated successfully\", \"user\": { \"id\": \"user_123\", \"email\": \"user@example.com\", \"profile\": { \"first_name\": \"Jane\", \"career_interests\": [\"AI/ML\", \"Software Engineering\"], \"education_level\": \"Master's Degree\" } } }"
-      - generic [ref=e181]:
-        - img [ref=e182]
-        - heading "Ready to Get Started?" [level=2] [ref=e185]
-        - paragraph [ref=e186]: Join thousands of developers who are building the future of career guidance with our comprehensive API and development tools.
-        - generic [ref=e187]:
-          - button "Get API Key" [ref=e188] [cursor=pointer]
-          - button "View on GitHub" [ref=e189] [cursor=pointer]:
-            - img [ref=e190] [cursor=pointer]
-            - generic [ref=e194] [cursor=pointer]: View on GitHub
-        - generic [ref=e195]:
-          - heading "Available SDKs" [level=3] [ref=e196]
-          - generic [ref=e197]:
-            - generic [ref=e199]: JavaScript
-            - generic [ref=e201]: Python
-            - generic [ref=e203]: PHP
-            - generic [ref=e205]: Ruby
-            - generic [ref=e207]: Go
-            - generic [ref=e209]: Java
-  - contentinfo [ref=e210]:
-    - generic [ref=e212]:
-      - generic [ref=e213]:
-        - generic [ref=e214]:
-          - generic [ref=e215]:
-            - generic [ref=e216]:
-              - img [ref=e217]
-              - generic [ref=e223]:
+            - generic [ref=e110]: Endpoints
+          - paragraph [ref=e111]: Explore our comprehensive API endpoints with interactive examples.
+        - generic [ref=e112]:
+          - generic [ref=e114]:
+            - heading "Endpoints" [level=3] [ref=e115]
+            - navigation [ref=e116]:
+              - button "Authentication" [ref=e117] [cursor=pointer]:
+                - img [ref=e118] [cursor=pointer]
+                - generic [ref=e121] [cursor=pointer]: Authentication
+              - button "Users" [ref=e122] [cursor=pointer]:
+                - img [ref=e123] [cursor=pointer]
+                - generic [ref=e125] [cursor=pointer]: Users
+              - button "Career Assessment" [ref=e126] [cursor=pointer]:
+                - img [ref=e127] [cursor=pointer]
+                - generic [ref=e130] [cursor=pointer]: Career Assessment
+              - button "Colleges" [ref=e131] [cursor=pointer]:
+                - img [ref=e132] [cursor=pointer]
+                - generic [ref=e136] [cursor=pointer]: Colleges
+              - button "Roadmap Generator" [ref=e137] [cursor=pointer]:
+                - img [ref=e138] [cursor=pointer]
+                - generic [ref=e143] [cursor=pointer]: Roadmap Generator
+          - generic [ref=e145]:
+            - generic [ref=e146]:
+              - heading "User Management" [level=3] [ref=e147]
+              - paragraph [ref=e148]: Manage user profiles, preferences, and account information.
+            - generic [ref=e149]:
+              - generic [ref=e150]:
+                - generic [ref=e151]:
+                  - generic [ref=e152]:
+                    - generic [ref=e153]: GET
+                    - generic [ref=e154]: /api/users/profile
+                  - button "Copy" [ref=e155] [cursor=pointer]:
+                    - img [ref=e156] [cursor=pointer]
+                    - generic [ref=e159] [cursor=pointer]: Copy
+                - generic [ref=e160]:
+                  - heading "Get User Profile" [level=4] [ref=e161]
+                  - code [ref=e164]: "curl -X GET https://api.careerguide.com/users/profile \\ -H \"Authorization: Bearer your_access_token\" // Response { \"success\": true, \"user\": { \"id\": \"user_123\", \"email\": \"user@example.com\", \"profile\": { \"first_name\": \"John\", \"last_name\": \"Doe\", \"career_interests\": [\"Technology\", \"Data Science\"], \"education_level\": \"Bachelor's Degree\", \"experience_years\": 5 } } }"
+              - generic [ref=e165]:
+                - generic [ref=e166]:
+                  - generic [ref=e167]:
+                    - generic [ref=e168]: PUT
+                    - generic [ref=e169]: /api/users/profile
+                  - button "Copy" [ref=e170] [cursor=pointer]:
+                    - img [ref=e171] [cursor=pointer]
+                    - generic [ref=e174] [cursor=pointer]: Copy
+                - generic [ref=e175]:
+                  - heading "Update User Profile" [level=4] [ref=e176]
+                  - code [ref=e179]: "curl -X PUT https://api.careerguide.com/users/profile \\ -H \"Authorization: Bearer your_access_token\" \\ -H \"Content-Type: application/json\" \\ -d '{ \"first_name\": \"Jane\", \"career_interests\": [\"AI/ML\", \"Software Engineering\"], \"education_level\": \"Master's Degree\" }' // Response { \"success\": true, \"message\": \"Profile updated successfully\", \"user\": { \"id\": \"user_123\", \"email\": \"user@example.com\", \"profile\": { \"first_name\": \"Jane\", \"career_interests\": [\"AI/ML\", \"Software Engineering\"], \"education_level\": \"Master's Degree\" } } }"
+      - generic [ref=e182]:
+        - img [ref=e183]
+        - heading "Ready to Get Started?" [level=2] [ref=e186]
+        - paragraph [ref=e187]: Join thousands of developers who are building the future of career guidance with our comprehensive API and development tools.
+        - generic [ref=e188]:
+          - button "Get API Key" [ref=e189] [cursor=pointer]
+          - button "View on GitHub" [ref=e190] [cursor=pointer]:
+            - img [ref=e191] [cursor=pointer]
+            - generic [ref=e195] [cursor=pointer]: View on GitHub
+        - generic [ref=e196]:
+          - heading "Available SDKs" [level=3] [ref=e197]
+          - generic [ref=e198]:
+            - generic [ref=e200]: JavaScript
+            - generic [ref=e202]: Python
+            - generic [ref=e204]: PHP
+            - generic [ref=e206]: Ruby
+            - generic [ref=e208]: Go
+            - generic [ref=e210]: Java
+  - contentinfo [ref=e211]:
+    - generic [ref=e213]:
+      - generic [ref=e214]:
+        - generic [ref=e215]:
+          - generic [ref=e216]:
+            - generic [ref=e217]:
+              - img [ref=e218]
+              - generic [ref=e224]:
                 - text: Career
-                - generic [ref=e224]: Guide
-            - paragraph [ref=e225]: Your comprehensive platform for career guidance and college recommendations powered by AI.
-            - generic [ref=e226]:
-              - generic [ref=e227]:
-                - img [ref=e228]
-                - generic [ref=e231]: sudanva7@gmail.com
-              - generic [ref=e232]:
-                - img [ref=e233]
-                - generic [ref=e235]: +91 7204686919
-              - generic [ref=e236]:
-                - img [ref=e237]
-                - generic [ref=e240]: 123 Innovation Drive, Tech City
-          - generic [ref=e241]:
-            - heading "Features" [level=3] [ref=e242]
-            - list [ref=e243]:
-              - listitem [ref=e244]:
-                - button "Features" [ref=e245] [cursor=pointer]:
-                  - generic [ref=e246] [cursor=pointer]: Features
-              - listitem [ref=e247]:
-                - button "Career Quiz" [ref=e248] [cursor=pointer]:
-                  - generic [ref=e249] [cursor=pointer]: Career Quiz
-              - listitem [ref=e250]:
-                - button "3D Career Tree" [ref=e251] [cursor=pointer]:
-                  - generic [ref=e252] [cursor=pointer]: 3D Career Tree
-              - listitem [ref=e253]:
-                - button "College Finder" [ref=e254] [cursor=pointer]:
-                  - generic [ref=e255] [cursor=pointer]: College Finder
-              - listitem [ref=e256]:
-                - button "Timeline Tracker" [ref=e257] [cursor=pointer]:
-                  - generic [ref=e258] [cursor=pointer]: Timeline Tracker
-          - generic [ref=e259]:
-            - heading "Company" [level=3] [ref=e260]
-            - list [ref=e261]:
-              - listitem [ref=e262]:
-                - button "About" [ref=e263] [cursor=pointer]:
-                  - generic [ref=e264] [cursor=pointer]: About
-              - listitem [ref=e265]:
-                - button "Team" [ref=e266] [cursor=pointer]:
-                  - generic [ref=e267] [cursor=pointer]: Team
-              - listitem [ref=e268]:
-                - button "Careers" [ref=e269] [cursor=pointer]:
-                  - generic [ref=e270] [cursor=pointer]: Careers
-              - listitem [ref=e271]:
-                - button "Press" [ref=e272] [cursor=pointer]:
-                  - generic [ref=e273] [cursor=pointer]: Press
-              - listitem [ref=e274]:
-                - button "Contact" [ref=e275] [cursor=pointer]:
-                  - generic [ref=e276] [cursor=pointer]: Contact
-          - generic [ref=e277]:
-            - heading "Support" [level=3] [ref=e278]
-            - list [ref=e279]:
-              - listitem [ref=e280]:
-                - button "Help" [ref=e281] [cursor=pointer]:
-                  - generic [ref=e282] [cursor=pointer]: Help
-              - listitem [ref=e283]:
-                - button "Study Materials" [ref=e284] [cursor=pointer]:
-                  - generic [ref=e285] [cursor=pointer]: Study Materials
-              - listitem [ref=e286]:
-                - button "Career Guides" [ref=e287] [cursor=pointer]:
-                  - generic [ref=e288] [cursor=pointer]: Career Guides
-              - listitem [ref=e289]:
-                - button "Blog" [ref=e290] [cursor=pointer]:
-                  - generic [ref=e291] [cursor=pointer]: Blog
-              - listitem [ref=e292]:
-                - button "API Docs" [ref=e293] [cursor=pointer]:
-                  - generic [ref=e294] [cursor=pointer]: API Docs
-          - generic [ref=e295]:
-            - heading "Legal" [level=3] [ref=e296]
-            - list [ref=e297]:
-              - listitem [ref=e298]:
-                - button "Privacy Policy" [ref=e299] [cursor=pointer]:
-                  - generic [ref=e300] [cursor=pointer]: Privacy Policy
-              - listitem [ref=e301]:
-                - button "Terms of Service" [ref=e302] [cursor=pointer]:
-                  - generic [ref=e303] [cursor=pointer]: Terms of Service
-              - listitem [ref=e304]:
-                - button "Cookie Policy" [ref=e305] [cursor=pointer]:
-                  - generic [ref=e306] [cursor=pointer]: Cookie Policy
-              - listitem [ref=e307]:
-                - button "GDPR" [ref=e308] [cursor=pointer]:
-                  - generic [ref=e309] [cursor=pointer]: GDPR
-        - generic [ref=e311]:
-          - generic [ref=e312]:
-            - link "Facebook" [ref=e313] [cursor=pointer]:
+                - generic [ref=e225]: Guide
+            - paragraph [ref=e226]: Your comprehensive platform for career guidance and college recommendations powered by AI.
+            - generic [ref=e227]:
+              - generic [ref=e228]:
+                - img [ref=e229]
+                - generic [ref=e232]: sudanva7@gmail.com
+              - generic [ref=e233]:
+                - img [ref=e234]
+                - generic [ref=e236]: +91 7204686919
+              - generic [ref=e237]:
+                - img [ref=e238]
+                - generic [ref=e241]: 123 Innovation Drive, Tech City
+          - generic [ref=e242]:
+            - heading "Features" [level=3] [ref=e243]
+            - list [ref=e244]:
+              - listitem [ref=e245]:
+                - button "Features" [ref=e246] [cursor=pointer]:
+                  - generic [ref=e247] [cursor=pointer]: Features
+              - listitem [ref=e248]:
+                - button "Career Quiz" [ref=e249] [cursor=pointer]:
+                  - generic [ref=e250] [cursor=pointer]: Career Quiz
+              - listitem [ref=e251]:
+                - button "3D Career Tree" [ref=e252] [cursor=pointer]:
+                  - generic [ref=e253] [cursor=pointer]: 3D Career Tree
+              - listitem [ref=e254]:
+                - button "College Finder" [ref=e255] [cursor=pointer]:
+                  - generic [ref=e256] [cursor=pointer]: College Finder
+              - listitem [ref=e257]:
+                - button "Timeline Tracker" [ref=e258] [cursor=pointer]:
+                  - generic [ref=e259] [cursor=pointer]: Timeline Tracker
+          - generic [ref=e260]:
+            - heading "Company" [level=3] [ref=e261]
+            - list [ref=e262]:
+              - listitem [ref=e263]:
+                - button "About" [ref=e264] [cursor=pointer]:
+                  - generic [ref=e265] [cursor=pointer]: About
+              - listitem [ref=e266]:
+                - button "Team" [ref=e267] [cursor=pointer]:
+                  - generic [ref=e268] [cursor=pointer]: Team
+              - listitem [ref=e269]:
+                - button "Careers" [ref=e270] [cursor=pointer]:
+                  - generic [ref=e271] [cursor=pointer]: Careers
+              - listitem [ref=e272]:
+                - button "Press" [ref=e273] [cursor=pointer]:
+                  - generic [ref=e274] [cursor=pointer]: Press
+              - listitem [ref=e275]:
+                - button "Contact" [ref=e276] [cursor=pointer]:
+                  - generic [ref=e277] [cursor=pointer]: Contact
+          - generic [ref=e278]:
+            - heading "Support" [level=3] [ref=e279]
+            - list [ref=e280]:
+              - listitem [ref=e281]:
+                - button "Help" [ref=e282] [cursor=pointer]:
+                  - generic [ref=e283] [cursor=pointer]: Help
+              - listitem [ref=e284]:
+                - button "Study Materials" [ref=e285] [cursor=pointer]:
+                  - generic [ref=e286] [cursor=pointer]: Study Materials
+              - listitem [ref=e287]:
+                - button "Career Guides" [ref=e288] [cursor=pointer]:
+                  - generic [ref=e289] [cursor=pointer]: Career Guides
+              - listitem [ref=e290]:
+                - button "Blog" [ref=e291] [cursor=pointer]:
+                  - generic [ref=e292] [cursor=pointer]: Blog
+              - listitem [ref=e293]:
+                - button "API Docs" [ref=e294] [cursor=pointer]:
+                  - generic [ref=e295] [cursor=pointer]: API Docs
+          - generic [ref=e296]:
+            - heading "Legal" [level=3] [ref=e297]
+            - list [ref=e298]:
+              - listitem [ref=e299]:
+                - button "Privacy Policy" [ref=e300] [cursor=pointer]:
+                  - generic [ref=e301] [cursor=pointer]: Privacy Policy
+              - listitem [ref=e302]:
+                - button "Terms of Service" [ref=e303] [cursor=pointer]:
+                  - generic [ref=e304] [cursor=pointer]: Terms of Service
+              - listitem [ref=e305]:
+                - button "Cookie Policy" [ref=e306] [cursor=pointer]:
+                  - generic [ref=e307] [cursor=pointer]: Cookie Policy
+              - listitem [ref=e308]:
+                - button "GDPR" [ref=e309] [cursor=pointer]:
+                  - generic [ref=e310] [cursor=pointer]: GDPR
+        - generic [ref=e312]:
+          - generic [ref=e313]:
+            - link "Facebook" [ref=e314] [cursor=pointer]:
               - /url: "#"
-              - img [ref=e314] [cursor=pointer]
-            - link "Twitter" [ref=e316] [cursor=pointer]:
+              - img [ref=e315] [cursor=pointer]
+            - link "Twitter" [ref=e317] [cursor=pointer]:
               - /url: "#"
-              - img [ref=e317] [cursor=pointer]
-            - link "Instagram" [ref=e319] [cursor=pointer]:
+              - img [ref=e318] [cursor=pointer]
+            - link "Instagram" [ref=e320] [cursor=pointer]:
               - /url: "#"
-              - img [ref=e320] [cursor=pointer]
-            - link "LinkedIn" [ref=e324] [cursor=pointer]:
+              - img [ref=e321] [cursor=pointer]
+            - link "LinkedIn" [ref=e325] [cursor=pointer]:
               - /url: "#"
-              - img [ref=e325] [cursor=pointer]
-            - link "GitHub" [ref=e329] [cursor=pointer]:
+              - img [ref=e326] [cursor=pointer]
+            - link "GitHub" [ref=e330] [cursor=pointer]:
               - /url: "#"
-              - img [ref=e330] [cursor=pointer]
-          - generic [ref=e333]:
-            - generic [ref=e334]: "Stay updated:"
-            - generic [ref=e335]:
-              - textbox "Enter your email" [ref=e336]
-              - button "Subscribe" [ref=e337] [cursor=pointer]
-      - generic [ref=e339]:
-        - paragraph [ref=e340]: © 2025 CareerGuide. All rights reserved. Built with ❤️ for students everywhere.
-        - button "Scroll to top" [ref=e341] [cursor=pointer]:
-          - img [ref=e342] [cursor=pointer]
-  - button "Open AI Career Assistant" [ref=e347] [cursor=pointer]:
-    - img [ref=e349] [cursor=pointer]
-  - alert [ref=e352]
+              - img [ref=e331] [cursor=pointer]
+          - generic [ref=e334]:
+            - generic [ref=e335]: "Stay updated:"
+            - generic [ref=e336]:
+              - textbox "Enter your email" [ref=e337]
+              - button "Subscribe" [ref=e338] [cursor=pointer]
+      - generic [ref=e340]:
+        - paragraph [ref=e341]: © 2025 CareerGuide. All rights reserved. Built with ❤️ for students everywhere.
+        - button "Scroll to top" [ref=e342] [cursor=pointer]:
+          - img [ref=e343] [cursor=pointer]
+  - button "Open AI Career Assistant" [ref=e348] [cursor=pointer]:
+    - img [ref=e350] [cursor=pointer]
+  - alert [ref=e353]
 ```

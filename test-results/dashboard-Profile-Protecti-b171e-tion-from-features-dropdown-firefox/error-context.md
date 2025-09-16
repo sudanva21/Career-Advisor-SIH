@@ -20,19 +20,17 @@
           - img [ref=e19] [cursor=pointer]
           - generic [ref=e26] [cursor=pointer]: English
           - img [ref=e27] [cursor=pointer]
-  - main [ref=e30]:
-    - main [ref=e31]:
-      - generic [ref=e35]:
-        - heading "Your Personalized Career & College Guide" [level=1] [ref=e36]:
-          - generic [ref=e37]: Your Personalized Career & College Guide
-        - paragraph [ref=e38]:
-          - text: Discover your path with
-          - generic [ref=e39]: AI-powered quizzes
-          - text: ","
-          - generic [ref=e40]: 3D career maps
-          - text: "&"
-          - generic [ref=e41]: nearby government college suggestions
-          - text: .
+        - generic [ref=e29]:
+          - link "Sign In" [ref=e30] [cursor=pointer]:
+            - /url: /auth/signin
+          - link "Sign Up" [ref=e31] [cursor=pointer]:
+            - /url: /auth/signup
+  - main [ref=e32]:
+    - main [ref=e34]:
+      - generic [ref=e38]:
+        - heading "Your Personalized Career & College Guide" [level=1] [ref=e39]:
+          - generic [ref=e40]: Your Personalized Career & College Guide
+        - paragraph [ref=e41]: Discover your path with AI-powered quizzes, 3D career maps & nearby government college suggestions.
         - generic [ref=e42]:
           - button "Start Your Quiz" [ref=e43] [cursor=pointer]:
             - generic [ref=e44] [cursor=pointer]: Start Your Quiz
@@ -53,8 +51,7 @@
       - generic [ref=e68]:
         - generic [ref=e69]:
           - heading "Powerful Features for Your Future" [level=2] [ref=e70]:
-            - text: Powerful Features for
-            - generic [ref=e71]: Your Future
+            - generic [ref=e71]: Powerful Features for Your Future
           - paragraph [ref=e72]: Discover the tools and insights you need to make informed decisions about your career and education path.
         - generic [ref=e73]:
           - button "Learn more about 3D Career Visualization" [ref=e74] [cursor=pointer]:
@@ -210,4 +207,5 @@
           - img [ref=e286] [cursor=pointer]
   - button "Open AI Career Assistant" [ref=e291] [cursor=pointer]:
     - img [ref=e293] [cursor=pointer]
+  - alert [ref=e296]
 ```

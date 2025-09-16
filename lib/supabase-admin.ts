@@ -1,20 +1,34 @@
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+
+if (!supabaseUrl) {
+  console.error('Missing NEXT_PUBLIC_SUPABASE_URL environment variable')
+}
+
+if (!supabaseServiceKey) {
+  console.error('Missing SUPABASE_SERVICE_ROLE_KEY environment variable')
+}
 
 // Create a Supabase client with service role key for admin operations
-export const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {
-  auth: {
-    autoRefreshToken: false,
-    persistSession: false
-  }
-})
+export const supabaseAdmin = supabaseUrl && supabaseServiceKey 
+  ? createClient(supabaseUrl, supabaseServiceKey, {
+      auth: {
+        autoRefreshToken: false,
+        persistSession: false
+      }
+    })
+  : null
 
 // Database table operations with proper error handling
 export const dbOperations = {
   // Users
   async createUser(userData: any) {
+    if (!supabaseAdmin) {
+      throw new Error('Supabase admin client not available - missing environment variables')
+    }
+    
     const { data, error } = await supabaseAdmin
       .from('users')
       .insert(userData)

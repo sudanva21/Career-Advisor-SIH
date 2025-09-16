@@ -12,8 +12,8 @@ export async function GET(request: NextRequest) {
     // Allow demo mode in development
     const userId = session?.user?.id || getDemoUserId()
     
-    // Use admin client in development to bypass RLS (server-side only)
-    const db = process.env.NODE_ENV === 'development' ? supabaseAdmin : supabase
+    // Use admin client in development to bypass RLS (server-side only) if available
+    const db = (process.env.NODE_ENV === 'development' && supabaseAdmin) ? supabaseAdmin : supabase
 
     // Fetch user's achievements
     const { data: userAchievements, error: achievementsError } = await db
@@ -131,7 +131,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Invalid achievement ID' }, { status: 400 })
     }
 
-    const db = process.env.NODE_ENV === 'development' ? supabaseAdmin : supabase
+    const db = (process.env.NODE_ENV === 'development' && supabaseAdmin) ? supabaseAdmin : supabase
 
     const { data, error } = await db
       .from('user_achievements')

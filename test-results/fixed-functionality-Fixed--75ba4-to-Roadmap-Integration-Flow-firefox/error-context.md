@@ -1,14 +1,99 @@
 # Page snapshot
 
 ```yaml
-- generic [ref=e2]:
-  - generic [ref=e3]:
-    - heading "Unable to connect" [level=1] [ref=e5]
-    - paragraph [ref=e6]: Firefox can’t establish a connection to the server at localhost:3001.
-    - paragraph
-    - list [ref=e8]:
-      - listitem [ref=e9]: The site could be temporarily unavailable or too busy. Try again in a few moments.
-      - listitem [ref=e10]: If you are unable to load any pages, check your computer’s network connection.
-      - listitem [ref=e11]: If your computer or network is protected by a firewall or proxy, make sure that Nightly is permitted to access the web.
-  - button "Try Again" [active] [ref=e13]
+- generic [active]:
+  - alert [ref=e1]
+  - dialog "Server Error" [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - navigation [ref=e8]:
+          - button "previous" [disabled] [ref=e9]:
+            - img "previous" [ref=e10]
+          - button "next" [disabled] [ref=e12]:
+            - img "next" [ref=e13]
+          - generic [ref=e15]:
+            - generic [ref=e16]: "1"
+            - text: of
+            - generic [ref=e17]: "1"
+            - text: unhandled error
+        - heading "Server Error" [level=1] [ref=e18]
+        - paragraph [ref=e19]: "TypeError: __webpack_modules__[moduleId] is not a function"
+        - generic [ref=e21]: This error happened while generating the page. Any console logs will be displayed in the terminal window.
+      - generic [ref=e22]:
+        - heading "Call Stack" [level=2] [ref=e23]
+        - generic [ref=e24]:
+          - heading "__webpack_require__" [level=3] [ref=e25]
+          - generic [ref=e27]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/.next/server/webpack-runtime.js (33:42)
+        - generic [ref=e28]:
+          - heading "require" [level=3] [ref=e29]
+          - generic [ref=e31]: node_modules\next\dist\server\app-render\entry-base.js (99:46)
+        - generic [ref=e32]:
+          - heading "(rsc)/./node_modules/next/dist/server/app-render/entry-base.js" [level=3] [ref=e33]
+          - generic [ref=e35]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/.next/server/vendor-chunks/next.js (2300:1)
+        - generic [ref=e36]:
+          - heading "__webpack_require__" [level=3] [ref=e37]
+          - generic [ref=e39]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/.next/server/webpack-runtime.js (33:42)
+        - generic [ref=e40]:
+          - heading "eval" [level=3] [ref=e41]
+          - generic [ref=e43]: webpack-internal:/(rsc)/node_modules/next/dist/build/webpack/loaders/next-app-loader.js (15:96)
+        - generic [ref=e44]:
+          - heading "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fauth%2Fsignin%2Fpage&page=%2Fauth%2Fsignin%2Fpage&appPaths=%2Fauth%2Fsignin%2Fpage&pagePath=private-next-app-dir%2Fauth%2Fsignin%2Fpage.tsx&appDir=C%3A%5CUsers%5CAkash%20K%5COneDrive%5CDesktop%5Cfinal%20project%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5CAkash%20K%5COneDrive%5CDesktop%5Cfinal%20project&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!" [level=3] [ref=e45]
+          - generic [ref=e47]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/.next/server/app/auth/signin/page.js (187:1)
+        - generic [ref=e48]:
+          - heading "__webpack_require__" [level=3] [ref=e49]
+          - generic [ref=e51]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/.next/server/webpack-runtime.js (33:42)
+        - generic [ref=e52]:
+          - heading "__webpack_exec__" [level=3] [ref=e53]
+          - generic [ref=e55]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/.next/server/app/auth/signin/page.js (689:39)
+        - generic [ref=e56]:
+          - heading "<unknown>" [level=3] [ref=e57]
+          - generic [ref=e59]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/.next/server/app/auth/signin/page.js (690:382)
+        - generic [ref=e60]:
+          - heading "__webpack_require__.X" [level=3] [ref=e61]
+          - generic [ref=e63]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/.next/server/webpack-runtime.js (163:21)
+        - generic [ref=e64]:
+          - heading "<unknown>" [level=3] [ref=e65]
+          - generic [ref=e67]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/.next/server/app/auth/signin/page.js (690:47)
+        - generic [ref=e68]:
+          - heading "Object.<anonymous>" [level=3] [ref=e69]
+          - generic [ref=e71]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/.next/server/app/auth/signin/page.js (693:3)
+        - generic [ref=e72]:
+          - heading "Module._compile" [level=3] [ref=e73]
+          - generic [ref=e75]: node:internal/modules/cjs/loader (1706:14)
+        - generic [ref=e76]:
+          - heading "Object..js" [level=3] [ref=e77]
+          - generic [ref=e79]: node:internal/modules/cjs/loader (1839:10)
+        - generic [ref=e80]:
+          - heading "Module.load" [level=3] [ref=e81]
+          - generic [ref=e83]: node:internal/modules/cjs/loader (1441:32)
+        - generic [ref=e84]:
+          - heading "Function._load" [level=3] [ref=e85]
+          - generic [ref=e87]: node:internal/modules/cjs/loader (1263:12)
+        - generic [ref=e88]:
+          - heading "TracingChannel.traceSync" [level=3] [ref=e89]
+          - generic [ref=e91]: node:diagnostics_channel (322:14)
+        - generic [ref=e92]:
+          - heading "wrapModuleLoad" [level=3] [ref=e93]
+          - generic [ref=e95]: node:internal/modules/cjs/loader (237:24)
+        - generic [ref=e96]:
+          - heading "Module.<anonymous>" [level=3] [ref=e97]
+          - generic [ref=e99]: node:internal/modules/cjs/loader (1463:12)
+        - generic [ref=e100]:
+          - heading "mod.require" [level=3] [ref=e101]
+          - generic [ref=e103]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/node_modules/next/dist/server/require-hook.js (65:28)
+        - generic [ref=e104]:
+          - heading "require" [level=3] [ref=e105]
+          - generic [ref=e107]: node:internal/modules/helpers (147:16)
+        - generic [ref=e108]:
+          - heading "requirePage" [level=3] [ref=e109]
+          - generic [ref=e111]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/node_modules/next/dist/server/require.js (109:84)
+        - generic [ref=e112]:
+          - heading "<unknown>" [level=3] [ref=e113]
+          - generic [ref=e115]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/node_modules/next/dist/server/load-components.js (74:84)
+        - generic [ref=e116]:
+          - heading "async loadComponentsImpl" [level=3] [ref=e117]
+          - generic [ref=e119]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/node_modules/next/dist/server/load-components.js (74:26)
+        - generic [ref=e120]:
+          - heading "async DevServer.findPageComponentsImpl" [level=3] [ref=e121]
+          - generic [ref=e123]: file:/C:/Users/Akash%20K/OneDrive/Desktop/final%20project/node_modules/next/dist/server/next-server.js (675:36)
 ```
