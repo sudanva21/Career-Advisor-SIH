@@ -28,6 +28,15 @@ export interface AIOptions {
   model?: string
 }
 
+export interface JobMatchResult {
+  matchScore: number
+  matchingSkills: string[]
+  missingSkills: string[]
+  recommendations: string[]
+  improvementAreas: string[]
+  coverLetterSuggestions: string[]
+}
+
 /**
  * Free AI Service using Hugging Face, Cohere, and Ollama
  */
@@ -222,11 +231,11 @@ export class FreeAIService {
     const response = await this.cohereClient.generate({
       model,
       prompt,
-      max_tokens: options.maxTokens || 1000,
+      maxTokens: options.maxTokens || 1000,
       temperature: options.temperature || 0.7,
       k: 0,
-      stop_sequences: [],
-      return_likelihoods: 'NONE'
+      stopSequences: [],
+      returnLikelihoods: 'NONE'
     })
 
     if (!response.generations || response.generations.length === 0) {
@@ -960,14 +969,7 @@ Return ONLY valid JSON, no additional text or markdown.`
   /**
    * Match resume against job description using semantic similarity
    */
-  async matchResumeToJob(resumeText: string, jobDescription: string, options: AIOptions = {}): Promise<{
-    matchScore: number
-    matchingSkills: string[]
-    missingSkills: string[]
-    recommendations: string[]
-    improvementAreas: string[]
-    coverLetterSuggestions: string[]
-  }> {
+  async matchResumeToJob(resumeText: string, jobDescription: string, options: AIOptions = {}): Promise<JobMatchResult> {
     const prompt = `Compare this resume against the job description and provide a detailed match analysis:
 
 RESUME:

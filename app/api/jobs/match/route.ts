@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
 import { supabaseAdmin } from '@/lib/supabase-admin'
-import { FreeAIService } from '@/lib/free-ai-services'
+import { FreeAIService, type JobMatchResult } from '@/lib/free-ai-services'
 
 export async function POST(request: NextRequest) {
   try {
@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
 
     try {
       // Analyze job match using AI
-      const matchResult = await aiService.matchResumeToJob(resumeText, jobDescription)
+      const matchResult: JobMatchResult = await aiService.matchResumeToJob(resumeText, jobDescription)
 
       // Save match result if user is authenticated
       if (session?.user?.id) {
@@ -67,7 +67,7 @@ export async function POST(request: NextRequest) {
       console.error('❌ AI job matching error:', aiError)
       
       // Provide fallback matching logic
-      const fallbackMatch = {
+      const fallbackMatch: JobMatchResult = {
         matchScore: calculateSimpleMatch(resumeText, jobDescription),
         matchingSkills: findCommonSkills(resumeText, jobDescription),
         missingSkills: findMissingSkills(resumeText, jobDescription),
