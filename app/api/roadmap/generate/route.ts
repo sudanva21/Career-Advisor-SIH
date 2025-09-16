@@ -92,13 +92,13 @@ export async function POST(request: NextRequest) {
     }
 
     // Transform the roadmap data into the database format
-    const nodes = []
-    const connections = []
+    const nodes: any[] = []
+    const connections: any[] = []
     let nodeIndex = 0
 
     // Create nodes from phases and milestones
     if (roadmapData.phases && Array.isArray(roadmapData.phases)) {
-      roadmapData.phases.forEach((phase, phaseIndex) => {
+      roadmapData.phases.forEach((phase: any, phaseIndex: number) => {
         // Add phase node
         const phaseNode = {
           id: `phase-${phaseIndex}`,
@@ -114,7 +114,7 @@ export async function POST(request: NextRequest) {
 
         // Add milestone nodes
         if (phase.milestones && Array.isArray(phase.milestones)) {
-          phase.milestones.forEach((milestone, milestoneIndex) => {
+          phase.milestones.forEach((milestone: any, milestoneIndex: number) => {
             const milestoneNode = {
               id: `milestone-${phaseIndex}-${milestoneIndex}`,
               type: 'milestone',

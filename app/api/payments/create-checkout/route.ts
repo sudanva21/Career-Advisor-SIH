@@ -3,7 +3,7 @@ import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
 import { z } from 'zod'
 import { StripeService } from '@/lib/stripe'
-import { RazorpayService } from '@/lib/razorpay'
+// import { RazorpayService } from '@/lib/razorpay'
 import { prisma } from '@/lib/prisma'
 
 const checkoutSchema = z.object({
@@ -97,46 +97,10 @@ export async function POST(request: NextRequest) {
         })
 
       } else if (provider === 'razorpay') {
-        // Create Razorpay customer if needed
-        let customerId = user.customerId
-        if (!customerId) {
-          const customer = await RazorpayService.createCustomer(
-            user.email,
-            `${user.firstName} ${user.lastName}`.trim(),
-            session.user.phone || undefined
-          )
-          customerId = customer.id
-          
-          await prisma.user.update({
-            where: { id: user.id },
-            data: { customerId }
-          })
-        }
-
-        // Create subscription
-        let planId = ''
-        switch (tier) {
-          case 'basic':
-            planId = 'plan_basic_monthly'
-            break
-          case 'premium':
-            planId = 'plan_premium_monthly'
-            break
-          case 'elite':
-            planId = 'plan_elite_quarterly'
-            break
-        }
-
-        const subscription = await RazorpayService.createSubscription(customerId, planId)
-
-        return NextResponse.json({
-          provider: 'razorpay',
-          subscriptionId: (subscription as any).id,
-          key: process.env.RAZORPAY_KEY_ID,
-          amount: (subscription as any).amount,
-          currency: 'INR',
-          subscription
-        })
+        // Razorpay integration temporarily disabled for deployment
+        return NextResponse.json({ 
+          error: 'Razorpay payments are temporarily unavailable. Please use Stripe.' 
+        }, { status: 503 })
       }
 
     } catch (paymentError) {

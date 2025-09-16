@@ -3,7 +3,8 @@
 
 import { TranslationData, defaultTranslations } from './translations'
 import { offlineTranslations, OfflineLanguage } from './offline-translations'
-import { SUPPORTED_LANGUAGES, SupportedLanguage, translationService } from './translation-service'
+import { SUPPORTED_LANGUAGES, translationService } from './translation-service'
+import type { SupportedLanguage } from './translation-service'
 
 class EfficientTranslationService {
   private loadingStates: Map<SupportedLanguage, boolean> = new Map()
@@ -136,4 +137,5 @@ class EfficientTranslationService {
 export const efficientTranslationService = new EfficientTranslationService()
 
 // Language information
-export { SUPPORTED_LANGUAGES, SupportedLanguage }
+export { SUPPORTED_LANGUAGES }
+export type { SupportedLanguage }

@@ -28,7 +28,8 @@ export async function POST(request: NextRequest) {
 
     try {
       // Extract text from PDF
-      const resumeText = await PDFParser.extractTextFromFile(file)
+      const pdfResult = await PDFParser.extractTextFromFile(file)
+      const resumeText = pdfResult.text
       
       if (!resumeText || resumeText.trim().length < 100) {
         return NextResponse.json({ 

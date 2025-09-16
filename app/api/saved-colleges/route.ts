@@ -64,8 +64,8 @@ export async function GET(request: NextRequest) {
       }
 
       // Transform the data to match frontend expectations
-      const transformedColleges = savedColleges?.map(saved => {
-        const college = saved.colleges
+      const transformedColleges = savedColleges?.map((saved: any) => {
+        const college = Array.isArray(saved.colleges) ? saved.colleges[0] : saved.colleges
         return {
           id: saved.id,
           savedId: saved.id,
@@ -74,7 +74,7 @@ export async function GET(request: NextRequest) {
           
           // College details
           name: college?.name || saved.college_name,
-          shortName: (college?.name || saved.college_name).split(' ').map(word => word[0]).join(''),
+          shortName: (college?.name || saved.college_name).split(' ').map((word: string) => word[0]).join(''),
           location: college?.location || saved.college_location,
           state: college?.state || '',
           city: college?.city || '',
@@ -97,7 +97,7 @@ export async function GET(request: NextRequest) {
           averageGPA: (Math.random() * 0.5 + 3.5).toFixed(2),
           averageSAT: Math.floor(Math.random() * 300) + 1200,
           description: `${college?.name || saved.college_name} is a ${(college?.type || saved.college_type).toLowerCase()} institution known for excellence in education.`,
-          highlights: (college?.courses || []).slice(0, 3).map(course => `Strong ${course} program`),
+          highlights: (college?.courses || []).slice(0, 3).map((course: any) => `Strong ${course} program`),
           campusSize: (college?.type || saved.college_type) === 'Government' ? 'Large' : 'Medium',
           studentPopulation: Math.floor(Math.random() * 30000) + 5000,
           isPublic: (college?.type || saved.college_type) === 'Government',

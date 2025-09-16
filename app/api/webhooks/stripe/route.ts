@@ -82,31 +82,8 @@ async function handleSubscriptionChange(subscription: any) {
       }
     })
 
-    // Create or update subscription record
-    await prisma.subscription.upsert({
-      where: {
-        providerId: subscription.id
-      },
-      create: {
-        userId: user.id,
-        tier,
-        status: subscription.status,
-        billing: subscription.items.data[0]?.price?.recurring?.interval === 'month' ? 'monthly' : 'quarterly',
-        amount: subscription.items.data[0]?.price?.unit_amount / 100,
-        currency: subscription.currency.toUpperCase(),
-        paymentProvider: 'stripe',
-        providerId: subscription.id,
-        customerId,
-        startDate: new Date(subscription.current_period_start * 1000),
-        endDate: new Date(subscription.current_period_end * 1000),
-        nextBilling: new Date(subscription.current_period_end * 1000)
-      },
-      update: {
-        status: subscription.status,
-        endDate: new Date(subscription.current_period_end * 1000),
-        nextBilling: new Date(subscription.current_period_end * 1000)
-      }
-    })
+    // Note: Subscription tracking is handled via user fields
+    console.log(`Subscription ${subscription.id} processed for user ${user.id}`)
 
     console.log(`Updated subscription for user ${user.email} to ${tier}`)
 

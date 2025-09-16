@@ -12,7 +12,7 @@ import TranslationWrapper from '@/components/TranslationWrapper'
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'),
   title: 'Career Advisor Platform | Your Personalized Career & College Guide',
   description: 'Discover your path with AI-powered quizzes, 3D career maps & nearby government college suggestions.',
   keywords: 'career guidance, college finder, education advisor, career quiz, college recommendations',

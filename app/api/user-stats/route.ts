@@ -55,7 +55,6 @@ export async function GET(request: NextRequest) {
         roadmapProgress: userSkills.length > 0 
           ? Math.round(userSkills.reduce((sum, skill) => sum + (skill.current_level || 0), 0) / userSkills.length)
           : 0,
-        weeklyProgress: calculateWeeklyProgress(activities),
         
         // Additional stats
         skillsTracked: userSkills.length,
