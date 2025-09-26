@@ -13,10 +13,6 @@ yarn-error.log*
 # misc
 .DS_Store
 playwright-report
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 test-16
 results
