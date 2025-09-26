@@ -3,7 +3,8 @@
  * Uses pdf-parse library for text extraction
  */
 
-import pdf from 'pdf-parse'
+// Dynamic import to prevent build-time issues with pdf-parse
+let pdfParse: any = null
 
 export interface PDFParseResult {
   text: string
@@ -14,10 +15,21 @@ export interface PDFParseResult {
 
 export class PDFParser {
   /**
+   * Lazy load pdf-parse to prevent build-time issues
+   */
+  private static async getPdfParser() {
+    if (!pdfParse) {
+      pdfParse = (await import('pdf-parse')).default
+    }
+    return pdfParse
+  }
+
+  /**
    * Extract text from PDF buffer
    */
   static async extractText(pdfBuffer: Buffer): Promise<PDFParseResult> {
     try {
+      const pdf = await this.getPdfParser()
       const data = await pdf(pdfBuffer)
       
       return {
