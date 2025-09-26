@@ -18,5 +18,6 @@ playwright-report
 .env.test.local
 .env.production.local
 
-test-results
+test-16
+results
 test 
