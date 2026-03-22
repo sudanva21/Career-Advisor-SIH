@@ -10,6 +10,7 @@ interface EnvironmentConfig {
     serviceRoleKey: string
   }
   ai: {
+    groqKey?: string
     huggingfaceKey?: string
     cohereKey?: string
     ollamaBaseUrl?: string
@@ -49,17 +50,18 @@ export function validateEnvironment(): EnvironmentConfig {
   }
 
   // Free AI Configuration (At least one is required)
+  const groqKey = process.env.GROQ_API_KEY
   const huggingfaceKey = process.env.HUGGINGFACE_API_KEY
   const cohereKey = process.env.COHERE_API_KEY
   const ollamaBaseUrl = process.env.OLLAMA_BASE_URL
-  const defaultProvider = process.env.DEFAULT_AI_PROVIDER || 'huggingface'
+  const defaultProvider = process.env.DEFAULT_AI_PROVIDER || 'groq'
 
-  if (!huggingfaceKey && !cohereKey && !ollamaBaseUrl) {
-    errors.push('At least one free AI provider is required: HUGGINGFACE_API_KEY, COHERE_API_KEY, or OLLAMA_BASE_URL')
+  if (!groqKey && !huggingfaceKey && !cohereKey && !ollamaBaseUrl) {
+    errors.push('At least one free AI provider is required: GROQ_API_KEY, HUGGINGFACE_API_KEY, COHERE_API_KEY, or OLLAMA_BASE_URL')
   }
 
-  if (!['huggingface', 'cohere', 'ollama'].includes(defaultProvider)) {
-    errors.push('DEFAULT_AI_PROVIDER must be one of: huggingface, cohere, ollama')
+  if (!['groq', 'huggingface', 'cohere', 'ollama'].includes(defaultProvider)) {
+    errors.push('DEFAULT_AI_PROVIDER must be one of: groq, huggingface, cohere, ollama')
   }
 
   // App Configuration
@@ -83,6 +85,7 @@ export function validateEnvironment(): EnvironmentConfig {
       serviceRoleKey: supabaseServiceRoleKey!
     },
     ai: {
+      groqKey,
       huggingfaceKey,
       cohereKey,
       ollamaBaseUrl,

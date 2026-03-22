@@ -43,8 +43,13 @@ interface RoadmapVisualizationProps {
     id: string
     title: string
     description: string
-    nodes: RoadmapNode[]
-    connections: RoadmapConnection[]
+    nodes?: RoadmapNode[]
+    connections?: RoadmapConnection[]
+    roadmap_data?: {
+      nodes?: RoadmapNode[]
+      connections?: RoadmapConnection[]
+      phases?: any[]
+    }
     progress?: number
   }
   editable?: boolean
@@ -85,11 +90,15 @@ export default function RoadmapVisualization({
   const svgRef = useRef<SVGSVGElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
 
+  // Safe extraction of roadmap data arrays
+  const displayNodes = roadmap.roadmap_data?.nodes || roadmap.nodes || []
+  const displayConnections = roadmap.roadmap_data?.connections || roadmap.connections || []
+
   // Calculate node positions in a hierarchical layout
   const positionedNodes = useMemo(() => {
-    const nodes = roadmap.nodes.map((node, index) => {
+    const nodes = displayNodes.map((node, index) => {
       // Simple grid layout - could be enhanced with proper graph layout algorithm
-      const nodesPerRow = Math.ceil(Math.sqrt(roadmap.nodes.length))
+      const nodesPerRow = Math.ceil(Math.sqrt(displayNodes.length))
       const row = Math.floor(index / nodesPerRow)
       const col = index % nodesPerRow
       
@@ -103,13 +112,14 @@ export default function RoadmapVisualization({
     })
     
     return nodes
-  }, [roadmap.nodes])
+  }, [displayNodes])
 
   useEffect(() => {
     // Initialize completed nodes from roadmap data
     const completed = new Set<string>()
-    roadmap.nodes.forEach(node => {
+    displayNodes.forEach(node => {
       if (node.completed) {
+
         completed.add(node.id)
       }
     })
@@ -206,7 +216,7 @@ export default function RoadmapVisualization({
     return `M ${startX},${startY} C ${controlX1},${controlY1} ${controlX2},${controlY2} ${endX},${endY}`
   }
 
-  const completionPercentage = (completedNodes.size / roadmap.nodes.length) * 100
+  const completionPercentage = (completedNodes.size / displayNodes.length) * 100
 
   return (
     <div className="w-full h-full relative bg-space-dark/50 rounded-xl border border-gray-800 overflow-hidden">
@@ -215,14 +225,14 @@ export default function RoadmapVisualization({
         <div className="flex items-center justify-between mb-2">
           <h3 className="text-lg font-semibold text-white">{roadmap.title}</h3>
           <span className="text-sm text-gray-400">
-            {completedNodes.size}/{roadmap.nodes.length} completed
+            {completedNodes.size}/{displayNodes.length} completed
           </span>
         </div>
         <div className="w-full bg-gray-700 rounded-full h-2">
           <motion.div
             className="bg-gradient-to-r from-neon-cyan to-neon-pink h-2 rounded-full"
             initial={{ width: 0 }}
-            animate={{ width: `${completionPercentage}%` }}
+            animate={{ width: `${displayNodes.length > 0 ? (completedNodes.size / displayNodes.length) * 100 : 0}%` }}
             transition={{ duration: 0.5 }}
           />
         </div>
@@ -250,7 +260,7 @@ export default function RoadmapVisualization({
         >
           {/* Connections */}
           <g className="connections">
-            {roadmap.connections.map((connection, index) => {
+            {displayConnections.map((connection, index) => {
               const fromNode = positionedNodes.find(n => n.id === connection.from)
               const toNode = positionedNodes.find(n => n.id === connection.to)
               

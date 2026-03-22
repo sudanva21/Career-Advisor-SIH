@@ -57,8 +57,13 @@ interface CareerRoadmap {
   title: string
   description: string
   careerGoal: string
-  nodes: RoadmapNode[]
-  connections: any[]
+  nodes?: RoadmapNode[]
+  connections?: any[]
+  roadmap_data?: {
+    phases?: Phase[]
+    nodes?: RoadmapNode[]
+    connections?: any[]
+  }
   progress: number
   phases?: Phase[]
   ai_recommendations?: {
@@ -90,8 +95,12 @@ export default function RoadmapVisualization({ roadmap }: RoadmapVisualizationPr
   const [isAnimating, setIsAnimating] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
 
+  // Extract data safely accommodating both old and new schema
+  const displayNodes = roadmap.roadmap_data?.nodes || roadmap.nodes || []
+  const displayConnections = roadmap.roadmap_data?.connections || roadmap.connections || []
+
   // Extract phases from roadmap data or create from nodes
-  const phases = roadmap.phases || extractPhasesFromNodes(roadmap.nodes)
+  const phases = roadmap.phases || roadmap.roadmap_data?.phases || extractPhasesFromNodes(displayNodes)
   const totalMilestones = phases.reduce((acc, phase) => acc + (phase.milestones?.length || 0), 0)
   const completedMilestones = phases.reduce((acc, phase) => 
     acc + (phase.milestones?.filter(m => m.completed).length || 0), 0
@@ -204,9 +213,9 @@ export default function RoadmapVisualization({ roadmap }: RoadmapVisualizationPr
     <div className="relative w-full h-full min-h-96 bg-black/20 rounded-lg p-4 overflow-hidden">
       <svg width="100%" height="100%" className="absolute inset-0">
         {/* Render connections */}
-        {roadmap.connections?.map((connection, index) => {
-          const sourceNode = roadmap.nodes.find(n => n.id === connection.source)
-          const targetNode = roadmap.nodes.find(n => n.id === connection.target)
+        {displayConnections.map((connection, index) => {
+          const sourceNode = displayNodes.find(n => n.id === connection.source)
+          const targetNode = displayNodes.find(n => n.id === connection.target)
           
           if (!sourceNode || !targetNode) return null
           
@@ -225,7 +234,7 @@ export default function RoadmapVisualization({ roadmap }: RoadmapVisualizationPr
       </svg>
 
       {/* Render nodes */}
-      {roadmap.nodes?.map((node, index) => (
+      {displayNodes.map((node, index) => (
         <motion.div
           key={node.id}
           initial={{ opacity: 0, scale: 0 }}

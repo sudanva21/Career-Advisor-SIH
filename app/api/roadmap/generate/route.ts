@@ -77,16 +77,7 @@ export async function POST(request: NextRequest) {
         provider: aiError?.provider || 'unknown'
       })
       
-      let errorMessage = 'AI generation failed: '
-      if (aiError?.message?.includes('rate limit') || aiError?.message?.includes('quota')) {
-        errorMessage += 'API quota exceeded. Please try again later.'
-      } else if (aiError?.message?.includes('API key')) {
-        errorMessage += 'AI service authentication failed. Please check configuration.'
-      } else if (aiError?.message?.includes('model not found')) {
-        errorMessage += 'AI model not available. Please try again later.'
-      } else {
-        errorMessage += 'Unable to connect to AI services. Please check your connection and try again.'
-      }
+      const errorMessage = aiError?.message || 'Unable to connect to AI services. Please check your connection and try again.'
       
       return NextResponse.json({ error: errorMessage }, { status: 500 })
     }

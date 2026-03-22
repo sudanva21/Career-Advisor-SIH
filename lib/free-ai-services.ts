@@ -7,7 +7,23 @@ import { getValidatedConfig } from './env-validation'
 import { CohereClient } from 'cohere-ai'
 import { HfInference } from '@huggingface/inference'
 
-export type AIProvider = 'huggingface' | 'cohere' | 'ollama'
+function extractJSON(text: string): any {
+  try {
+    return JSON.parse(text);
+  } catch (e) {
+    const match = text.match(/\{[\s\S]*\}|\[[\s\S]*\]/);
+    if (match) {
+      try {
+        return JSON.parse(match[0]);
+      } catch (innerError) {
+        throw new Error('Failed to parse extracted JSON');
+      }
+    }
+    throw new Error('No valid JSON found in response');
+  }
+}
+
+export type AIProvider = 'groq' | 'huggingface' | 'cohere' | 'ollama'
 
 export interface AIResponse {
   content: string
@@ -68,54 +84,71 @@ export class FreeAIService {
   }
 
   /**
-   * Generate AI response with automatic fallback between free providers
+   * Generate AI response using the Grok API
    */
   async generateResponse(
     prompt: string,
     options: AIOptions = {}
   ): Promise<AIResponse> {
     const {
-      provider = this.config.ai.defaultProvider as AIProvider,
-      maxTokens = 1000,
+      maxTokens = 2000,
       temperature = 0.7,
-      model
+      model = 'llama-3.1-8b-instant' // Using Groq's fast Llama model
     } = options
 
+    const groqApiKey = this.config.ai.groqKey
+
+    if (!groqApiKey) {
+      throw new Error('GROQ_API_KEY is not configured in the environment variables')
+    }
+
     try {
-      // Try the specified provider first
-      if (provider === 'huggingface' && this.config.ai.huggingfaceKey) {
-        return await this.generateWithHuggingFace(prompt, { maxTokens, temperature, model })
-      } else if (provider === 'cohere' && this.cohereClient) {
-        return await this.generateWithCohere(prompt, { maxTokens, temperature, model })
-      } else if (provider === 'ollama' && this.config.ai.ollamaBaseUrl) {
-        return await this.generateWithOllama(prompt, { maxTokens, temperature, model })
-      }
-
-      // Fallback chain: try other available providers
-      const availableProviders = this.getAvailableProviders()
+      console.log(`🤖 Sending request to Groq API using model: ${model}`)
       
-      for (const fallbackProvider of availableProviders) {
-        if (fallbackProvider === provider) continue // Skip the one we already tried
-        
-        try {
-          console.log(`🔄 Trying fallback provider: ${fallbackProvider}`)
-          if (fallbackProvider === 'huggingface') {
-            return await this.generateWithHuggingFace(prompt, { maxTokens, temperature, model })
-          } else if (fallbackProvider === 'cohere') {
-            return await this.generateWithCohere(prompt, { maxTokens, temperature, model })
-          } else if (fallbackProvider === 'ollama') {
-            return await this.generateWithOllama(prompt, { maxTokens, temperature, model })
-          }
-        } catch (fallbackError) {
-          console.warn(`⚠️ Fallback provider ${fallbackProvider} failed:`, fallbackError)
-          continue
-        }
+      const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${groqApiKey}`
+        },
+        body: JSON.stringify({
+          messages: [
+            {
+              role: 'system',
+              content: 'You are an expert career counselor and technical advisor. Provide detailed, incredibly accurate JSON responses. If a specific format is requested, strictly adhere to it without any markdown conversational padding outside of the JSON block.'
+            },
+            {
+              role: 'user',
+              content: prompt
+            }
+          ],
+          model: model,
+          temperature: temperature,
+          max_tokens: maxTokens,
+          stream: false
+        })
+      });
+
+      if (!response.ok) {
+        const errorData = await response.text();
+        throw new Error(`Groq API Error (${response.status}): ${errorData}`);
       }
 
-      throw new Error('All AI providers failed')
+      const data = await response.json();
+      const content = data.choices[0].message.content;
 
-    } catch (error) {
-      console.error('❌ AI generation error:', error)
+      return {
+        content,
+        provider: 'groq',
+        usage: data.usage || {
+          input_tokens: 0,
+          output_tokens: 0,
+          total_tokens: 0
+        }
+      };
+
+    } catch (error: any) {
+      console.error('❌ Groq API generation error:', error)
       return this.generateFallbackResponse(prompt)
     }
   }
@@ -391,69 +424,14 @@ Please provide analysis in this exact JSON structure:
 
 Provide detailed, accurate analysis. Return ONLY valid JSON, no additional text.`
 
-    try {
-      // Use deepset/roberta-base-squad2 for Q&A-based resume parsing
-      const response = await this.generateResponse(prompt, {
-        ...options,
-        provider: 'huggingface',
-        model: 'deepset/roberta-base-squad2',
-        maxTokens: 2000
-      })
+    // Use Grok for resume parsing (highly capable of structuring JSON)
+    const response = await this.generateResponse(prompt, {
+      ...options,
+      maxTokens: 3000
+    })
 
-      const analysisData = JSON.parse(response.content)
-      return analysisData
-    } catch (error) {
-      console.error('❌ Resume parsing error:', error)
-      // Return fallback structure
-      return {
-        personalInfo: {
-          name: "Resume Owner",
-          email: "Not specified",
-          phone: "Not specified", 
-          linkedin: "Not specified",
-          location: "Not specified"
-        },
-        experience: [
-          {
-            title: "Software Engineer",
-            company: "Previous Company",
-            duration: "2+ years",
-            description: "Software development experience",
-            achievements: ["Developed applications", "Worked in team environment"],
-            technologies: ["JavaScript", "React", "Node.js"]
-          }
-        ],
-        education: [
-          {
-            degree: "Bachelor's Degree",
-            institution: "University",
-            year: "Recent graduate",
-            details: "Computer Science or related field"
-          }
-        ],
-        skills: {
-          technical: ["JavaScript", "React", "Node.js", "Python"],
-          soft: ["Problem Solving", "Team Collaboration", "Communication"],
-          tools: ["Git", "VS Code", "Docker"],
-          languages: ["JavaScript", "Python"]
-        },
-        projects: [],
-        summary: {
-          totalExperience: "2-3 years",
-          seniorityLevel: "mid",
-          primaryRole: "Software Engineer",
-          keyStrengths: ["Full Stack Development", "Problem Solving", "Team Collaboration"],
-          careerFocus: "Software Development", 
-          salaryRange: "$60,000 - $90,000"
-        },
-        recommendations: {
-          improvementAreas: ["Cloud technologies", "System design"],
-          missingSkills: ["DevOps", "Microservices"],
-          careerAdvice: ["Build portfolio projects", "Contribute to open source"],
-          jobSearchTips: ["Highlight impact in previous roles", "Showcase technical projects"]
-        }
-      }
-    }
+    const analysisData = extractJSON(response.content)
+    return analysisData
   }
 
   /**
@@ -499,51 +477,29 @@ Provide a comprehensive analysis in the following JSON format:
 Base recommendations on actual market trends, salary data, and career prospects.
 Be specific and actionable. Return ONLY valid JSON, no additional text or markdown.`
 
-    try {
-      // Use bert-base-uncased for classification/scoring (quiz analysis)
-      const response = await this.generateResponse(prompt, {
-        ...options,
-        provider: 'huggingface',
-        model: 'bert-base-uncased',
-        maxTokens: 1500
-      })
+    // Use Grok for detailed career path analysis
+    const response = await this.generateResponse(prompt, {
+      ...options,
+      maxTokens: 2500
+    })
 
-      const analysis = JSON.parse(response.content)
+    const analysis = extractJSON(response.content)
 
-      return {
-        careerPath: analysis.careerPath || 'General Career Path',
-        score: Math.min(100, Math.max(0, analysis.score || 75)),
-        interests: Array.isArray(analysis.interests) ? analysis.interests : [],
-        skills: Array.isArray(analysis.skills) ? analysis.skills : [],
-        description: analysis.description || 'Career path analysis completed.',
-        relatedCareers: Array.isArray(analysis.relatedCareers) ? analysis.relatedCareers : [],
-        averageSalary: analysis.averageSalary || 'Varies by location and experience',
-        growthProspect: analysis.growthProspect || 'Medium growth potential',
-        personalityMatch: analysis.personalityMatch || 'Good personality match',
-        recommendedSkills: Array.isArray(analysis.recommendedSkills) ? analysis.recommendedSkills : [],
-        industryInsights: analysis.industryInsights || 'Growing industry with opportunities',
-        nextSteps: Array.isArray(analysis.nextSteps) ? analysis.nextSteps : [],
-        analyzed_at: new Date().toISOString(),
-        ai_generated: true
-      }
-    } catch (error) {
-      console.error('❌ Quiz analysis error:', error)
-      return {
-        careerPath: 'Technology',
-        score: 75,
-        interests: ['Technology', 'Problem Solving'],
-        skills: ['Analytical Thinking', 'Communication'],
-        description: 'Based on your responses, you show strong analytical and problem-solving abilities.',
-        relatedCareers: ['Software Developer', 'Data Analyst', 'Product Manager'],
-        averageSalary: '$50,000 - $100,000',
-        growthProspect: 'High growth potential in technology sector',
-        personalityMatch: 'Good match for technical roles requiring analytical thinking',
-        recommendedSkills: ['Programming', 'Data Analysis', 'Project Management'],
-        industryInsights: 'Technology sector continues to grow with high demand for skilled professionals',
-        nextSteps: ['Learn programming basics', 'Build portfolio projects', 'Network with professionals'],
-        analyzed_at: new Date().toISOString(),
-        ai_generated: true
-      }
+    return {
+      careerPath: analysis.careerPath || 'General Career Path',
+      score: Math.min(100, Math.max(0, analysis.score || 75)),
+      interests: Array.isArray(analysis.interests) ? analysis.interests : [],
+      skills: Array.isArray(analysis.skills) ? analysis.skills : [],
+      description: analysis.description || 'Career path analysis completed.',
+      relatedCareers: Array.isArray(analysis.relatedCareers) ? analysis.relatedCareers : [],
+      averageSalary: analysis.averageSalary || 'Varies by location and experience',
+      growthProspect: analysis.growthProspect || 'Medium growth potential',
+      personalityMatch: analysis.personalityMatch || 'Good personality match',
+      recommendedSkills: Array.isArray(analysis.recommendedSkills) ? analysis.recommendedSkills : [],
+      industryInsights: analysis.industryInsights || 'Growing industry with opportunities',
+      nextSteps: Array.isArray(analysis.nextSteps) ? analysis.nextSteps : [],
+      analyzed_at: new Date().toISOString(),
+      ai_generated: true
     }
   }
 
@@ -638,284 +594,14 @@ Return ONLY valid JSON, no additional text or markdown.`
       // Use facebook/bart-large-cnn for text generation (roadmaps)
       const response = await this.generateResponse(prompt, {
         ...options,
-        provider: 'huggingface',
-        model: 'facebook/bart-large-cnn',
-        maxTokens: 2500
+        maxTokens: 3000
       })
 
-      const roadmapData = JSON.parse(response.content)
+      const roadmapData = extractJSON(response.content)
       return roadmapData
     } catch (error) {
       console.error('❌ Roadmap generation error:', error)
-      // Return comprehensive fallback roadmap structure
-      return {
-        title: `Complete ${careerGoal} Career Roadmap`,
-        description: `Comprehensive step-by-step path to become a professional ${careerGoal}`,
-        phases: [
-          {
-            id: "phase-1",
-            title: "Foundation Building",
-            duration: "3 months",
-            description: "Build fundamental skills and knowledge base",
-            completed: false,
-            progress: 0,
-            milestones: [
-              {
-                id: "milestone-1-1",
-                title: "Core Fundamentals",
-                description: "Master basic concepts and terminology in the field",
-                completed: false,
-                progress: 0,
-                skills: ["Critical Thinking", "Problem Solving", "Research Skills", "Basic Communication", "Time Management"],
-                resources: [
-                  {
-                    type: "course",
-                    name: "Introduction to the Field - Online Course",
-                    url: "https://coursera.org",
-                    cost: "Free",
-                    duration: "4 weeks"
-                  },
-                  {
-                    type: "book",
-                    name: "Fundamentals of the Industry",
-                    url: "https://amazon.com",
-                    cost: "$25",
-                    duration: "2 weeks"
-                  },
-                  {
-                    type: "tutorial",
-                    name: "Getting Started Video Series",
-                    url: "https://youtube.com",
-                    cost: "Free",
-                    duration: "1 week"
-                  }
-                ],
-                deliverables: ["Complete foundation course", "Build basic glossary", "Create learning journal"]
-              },
-              {
-                id: "milestone-1-2",
-                title: "Essential Tools & Technologies",
-                description: "Learn and practice with industry-standard tools",
-                completed: false,
-                progress: 0,
-                skills: ["Tool Proficiency", "Technical Setup", "Workflow Management", "Digital Literacy"],
-                resources: [
-                  {
-                    type: "tutorial",
-                    name: "Tool Mastery Workshop",
-                    url: "Self-study",
-                    cost: "Free",
-                    duration: "3 weeks"
-                  },
-                  {
-                    type: "project",
-                    name: "Hands-on Practice Project",
-                    url: "Self-initiated",
-                    cost: "Free",
-                    duration: "2 weeks"
-                  }
-                ],
-                deliverables: ["Tool proficiency portfolio", "Practice project completion"]
-              }
-            ]
-          },
-          {
-            id: "phase-2", 
-            title: "Skill Development",
-            duration: `${Math.max(4, Math.floor(userProfile.timeframe * 0.4))} months`,
-            description: "Develop intermediate skills and gain practical experience",
-            completed: false,
-            progress: 0,
-            milestones: [
-              {
-                id: "milestone-2-1",
-                title: "Intermediate Skills",
-                description: "Build more advanced capabilities and knowledge",
-                completed: false,
-                progress: 0,
-                skills: ["Advanced Technical Skills", "Project Management", "Quality Assurance", "Collaboration", "Documentation"],
-                resources: [
-                  {
-                    type: "course",
-                    name: "Intermediate Skills Course",
-                    url: "https://udemy.com",
-                    cost: "$49",
-                    duration: "6 weeks"
-                  },
-                  {
-                    type: "workshop",
-                    name: "Hands-on Workshop",
-                    url: "Local training center",
-                    cost: "$150",
-                    duration: "2 days"
-                  },
-                  {
-                    type: "certification",
-                    name: "Industry Certification Prep",
-                    url: "Professional body",
-                    cost: "$200",
-                    duration: "4 weeks"
-                  }
-                ],
-                deliverables: ["Intermediate project portfolio", "Certification earned", "Skill demonstration video"]
-              },
-              {
-                id: "milestone-2-2",
-                title: "Real-world Application",
-                description: "Apply skills in realistic scenarios and projects",
-                completed: false,
-                progress: 0,
-                skills: ["Practical Application", "Problem Solving", "Client Communication", "Deadline Management"],
-                resources: [
-                  {
-                    type: "project",
-                    name: "Capstone Project",
-                    url: "Self-designed",
-                    cost: "Free",
-                    duration: "8 weeks"
-                  },
-                  {
-                    type: "mentorship",
-                    name: "Industry Mentor Program",
-                    url: "Professional network",
-                    cost: "Free",
-                    duration: "ongoing"
-                  }
-                ],
-                deliverables: ["Complete capstone project", "Case study documentation", "Professional references"]
-              }
-            ]
-          },
-          {
-            id: "phase-3",
-            title: "Professional Development",
-            duration: `${Math.max(3, Math.floor(userProfile.timeframe * 0.3))} months`,
-            description: "Build professional network and advanced expertise",
-            completed: false,
-            progress: 0,
-            milestones: [
-              {
-                id: "milestone-3-1",
-                title: "Advanced Specialization",
-                description: "Develop expertise in specific area of interest",
-                completed: false,
-                progress: 0,
-                skills: ["Specialized Knowledge", "Industry Trends", "Innovation", "Leadership", "Strategic Thinking"],
-                resources: [
-                  {
-                    type: "course",
-                    name: "Advanced Specialization Course",
-                    url: "https://edx.org",
-                    cost: "$99",
-                    duration: "8 weeks"
-                  },
-                  {
-                    type: "conference",
-                    name: "Industry Conference",
-                    url: "Professional association",
-                    cost: "$300",
-                    duration: "3 days"
-                  }
-                ],
-                deliverables: ["Specialization portfolio", "Conference networking", "Thought leadership article"]
-              }
-            ]
-          },
-          {
-            id: "phase-4",
-            title: "Career Transition",
-            duration: "3 months",
-            description: "Transition into professional role and establish career",
-            completed: false,
-            progress: 0,
-            milestones: [
-              {
-                id: "milestone-4-1",
-                title: "Job Search Preparation",
-                description: "Prepare all materials and strategies for job search",
-                completed: false,
-                progress: 0,
-                skills: ["Interview Skills", "Resume Writing", "Professional Networking", "Salary Negotiation", "Personal Branding"],
-                resources: [
-                  {
-                    type: "workshop",
-                    name: "Job Search Bootcamp",
-                    url: "Career services",
-                    cost: "$100",
-                    duration: "1 week"
-                  },
-                  {
-                    type: "service",
-                    name: "Resume Review Service",
-                    url: "Professional service",
-                    cost: "$75",
-                    duration: "3 days"
-                  }
-                ],
-                deliverables: ["Polished resume", "Interview practice portfolio", "LinkedIn optimization"]
-              },
-              {
-                id: "milestone-4-2",
-                title: "Active Job Search",
-                description: "Execute job search strategy and secure position",
-                completed: false,
-                progress: 0,
-                skills: ["Application Strategy", "Interview Performance", "Follow-up Communication", "Decision Making"],
-                resources: [
-                  {
-                    type: "platform",
-                    name: "Job Search Platforms",
-                    url: "https://linkedin.com",
-                    cost: "Free",
-                    duration: "ongoing"
-                  }
-                ],
-                deliverables: ["Job applications submitted", "Interview completions", "Job offer received"]
-              }
-            ]
-          }
-        ],
-        recommendations: {
-          colleges: [
-            {
-              name: "University of California, Berkeley",
-              location: "Berkeley, CA",
-              program: `${careerGoal} Bachelor's Program`,
-              why: "Top-ranked program with excellent industry connections and career services",
-              type: "Public"
-            },
-            {
-              name: "Stanford University",
-              location: "Stanford, CA", 
-              program: `${careerGoal} Master's Program`,
-              why: "Prestigious program with cutting-edge research and Silicon Valley connections",
-              type: "Private"
-            },
-            {
-              name: "Community College of Denver",
-              location: "Denver, CO",
-              program: `${careerGoal} Certificate Program`,
-              why: "Affordable, practical program with strong local employer partnerships",
-              type: "Community"
-            },
-            {
-              name: "Arizona State University Online",
-              location: "Tempe, AZ (Online)",
-              program: `Online ${careerGoal} Degree`,
-              why: "Flexible online program perfect for working professionals",
-              type: "Public"
-            }
-          ],
-          certifications: [`${careerGoal} Professional Certification`, "Industry Standard Certification", "Advanced Specialization Certificate"],
-          networking: ["Professional Association Membership", "LinkedIn Groups", "Industry Meetups", "Alumni Networks", "Mentorship Programs"],
-          portfolio: ["Showcase Portfolio Website", "Case Study Collection", "Project Documentation", "Client Testimonials", "Technical Blog"]
-        },
-        timeline: {
-          short_term: "Complete foundation phase and master basic tools and concepts",
-          medium_term: "Develop intermediate skills, earn certifications, and build professional portfolio",
-          long_term: "Secure professional role, establish career trajectory, and continue advanced development"
-        }
-      }
+      throw error;
     }
   }
 
@@ -925,6 +611,9 @@ Return ONLY valid JSON, no additional text or markdown.`
   private getAvailableProviders(): AIProvider[] {
     const providers: AIProvider[] = []
     
+    if (this.config.ai.groqKey) {
+      providers.push('groq')
+    }
     if (this.config.ai.huggingfaceKey) {
       providers.push('huggingface')
     }
@@ -992,19 +681,13 @@ Return ONLY valid JSON, no additional text.`
 
     try {
       const response = await this.generateResponse(prompt, options)
-      return JSON.parse(response.content)
+      return extractJSON(response.content)
     } catch (error) {
       console.error('❌ Resume matching error:', error)
-      return {
-        matchScore: 75,
-        matchingSkills: ["General experience", "Communication skills"],
-        missingSkills: ["Specific technical requirements"],
-        recommendations: ["Highlight relevant experience", "Learn missing technical skills"],
-        improvementAreas: ["Technical skills", "Industry experience"],
-        coverLetterSuggestions: ["Emphasize your relevant experience", "Show enthusiasm for the role", "Address any skill gaps with learning plans"]
-      }
+      throw error;
     }
   }
 }
+
 
 export default FreeAIService
