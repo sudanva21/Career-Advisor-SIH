@@ -704,5 +704,5 @@ With **production-ready architecture**, **comprehensive testing**, and **enterpr
 
 ---
 
-*Built with ❤️ by the Career Advisor Platform Team*  
+*Built by Sudanva, the Career Advisor *  
 *© 2025 Career Advisor Platform. All rights reserved.*
